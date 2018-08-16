@@ -75,7 +75,7 @@ cdef extern from "../examples/cpp/parsing/FactorHeadAutomaton.h" namespace "AD3"
 
     cdef cppclass FactorHeadAutomaton(Factor):
         FactorHeadAutomaton()
-        void Initialize(int, vector[Sibling *])
+        void Initialize(vector[Arc *], vector[Sibling *])
 
 
 cdef class PFactorSequence(PGenericFactor):
@@ -256,25 +256,31 @@ cdef class PFactorHeadAutomaton(PGenericFactor):
         if self.allocate:
             del self.thisptr
 
-    def initialize(self, int length, list siblings, bool validate=True):
+    def initialize(self, list arcs, list siblings, bool validate=True):
         # length = max(s - h) for (h, m, s) in siblings
+        length = max(s - h for (h, m, s) in siblings)
 
+        cdef vector[Arc *] arcs_v
         cdef vector[Sibling *] siblings_v
 
+        cdef tuple arc
         cdef tuple sibling
+        for arc in arcs:
+            arcs_v.push_back(new Arc(arc[0], arc[1]))
+
         for sibling in siblings:
             siblings_v.push_back(new Sibling(sibling[0],
                                              sibling[1],
                                              sibling[2]))
 
         if validate:
-            if siblings_v.size() != length * (1 + length) / 2:
-                raise ValueError("Inconsistent length passed.")
+            # if siblings_v.size() != length * (1 + length) / 2:
+            #     raise ValueError("Inconsistent length passed.")
 
             if length != self.thisptr.Degree() + 1:
                 raise ValueError("Number of variables doesn't match.")
 
-        (<FactorHeadAutomaton*>self.thisptr).Initialize(length, siblings_v)
+        (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
 
         for sibp in siblings_v:
             del sibp

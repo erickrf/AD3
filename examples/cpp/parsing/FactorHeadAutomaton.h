@@ -20,6 +20,7 @@
 #define FACTOR_HEAD_AUTOMATON
 
 #include "ad3/GenericFactor.h"
+#include "FactorTree.h"
 
 namespace AD3 {
 
@@ -195,21 +196,48 @@ class FactorHeadAutomaton : public GenericFactor {
   // length is relative to the head position. 
   // E.g. for a right automaton with h=3 and instance_length=10,
   // length = 7. For a left automaton, it would be length = 3.
-  void Initialize(int length, const vector<Sibling*> &siblings) {
-    length_ = length;
-    index_siblings_.assign(length, vector<int>(length+1, -1));
+  void Initialize(const vector<Arc*> &arcs, const vector<Sibling*> &siblings) {
+    length_ = arcs.size() + 1;
+    index_siblings_.assign(length_, vector<int>(length_ + 1, -1));
+
+    // in case the given vector of arcs doesn't contain all possible arcs 
+    // (in case some were pruned), map the given ones to a sequence
+    int h = (arcs.size() > 0) ? arcs[0]->head() : -1;
+    int m = (arcs.size() > 0) ? arcs[0]->modifier() : -1;
+    vector<int> index_modifiers(1, 0);
+    bool right = (h < m) ? true : false;
+    for (int k = 0; k < arcs.size(); ++k) {
+      int previous_modifier = m;
+      // CHECK_EQ(h, arcs[k]->head());
+      m = arcs[k]->modifier();
+      // if (k > 0) CHECK_EQ((m > previous_modifier), right);
+
+      int position = right ? m - h : h - m;
+      index_modifiers.resize(position + 1, -1);
+      index_modifiers[position] = k + 1;
+    }
+
     for (int k = 0; k < siblings.size(); ++k) {
       int h = siblings[k]->head();
       int m = siblings[k]->modifier();
       int s = siblings[k]->sibling();
-      if (s > h) {
-        m -= h;
-        s -= h;
-      } else {
-        m = h - m;
-        s = h - s;
-      }
-      index_siblings_[m][s] = k;
+      right = (s > h) ? true : false;
+
+      int position_modifier = right ? m - h : h - m;
+      int position_sibling = right ? s - h : h - s;
+      int index_modifier = index_modifiers[position_modifier];
+      int index_sibling = (position_sibling < index_modifiers.size()) ?
+        index_modifiers[position_sibling] : length_;
+      index_siblings_[index_modifier][index_sibling] = k;
+
+      // if (s > h) {
+      //   m -= h;
+      //   s -= h;
+      // } else {
+      //   m = h - m;
+      //   s = h - s;
+      // }
+      // index_siblings_[m][s] = k;
     }
   }
 
