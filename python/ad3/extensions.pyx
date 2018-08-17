@@ -274,8 +274,8 @@ cdef class PFactorHeadAutomaton(PGenericFactor):
                                              sibling[2]))
 
         if validate:
-            # if siblings_v.size() != length * (1 + length) / 2:
-            #     raise ValueError("Inconsistent length passed.")
+            if siblings_v.size() != length * (1 + length) / 2:
+                raise ValueError("Inconsistent length passed.")
 
             if length != self.thisptr.Degree() + 1:
                 raise ValueError("Number of variables doesn't match.")
@@ -284,3 +284,6 @@ cdef class PFactorHeadAutomaton(PGenericFactor):
 
         for sibp in siblings_v:
             del sibp
+
+        for arcp in arcs_v:
+            del arcp
