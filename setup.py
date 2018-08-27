@@ -1,4 +1,5 @@
 import sys
+import numpy as np
 from setuptools import setup
 from setuptools.command.bdist_egg import bdist_egg
 from setuptools.extension import Extension
@@ -71,7 +72,7 @@ setup(name='ad3',
                     language="c++"),
           Extension("ad3.extensions",
                     ["python/ad3/extensions.cpp"],
-                    include_dirs=[".", "ad3"],
+                    include_dirs=[".", "ad3", np.get_include()],
                     language="c++",
                     extra_compile_args=AD3_COMPILE_ARGS),
           ])

@@ -14,7 +14,7 @@ namespace AD3
   // decoder for an arc factored parser; it invokes the matrix-tree theorem.
   // index is a n x (n - 1) matrix mapping (head, modifier) to either -1 (if
   // it doesn't exist) or its index in the scores vector.
-  void DecodeMatrixTree(const vector<vector<int>> &index, const vector<Arc*> &arcs, 
+  void DecodeMatrixTree(const vector<vector<int> > &index, const vector<Arc*> &arcs,
                         const vector<double> &scores,
                         vector<double> *predicted_output,
                         double *log_partition_function, double *entropy) {

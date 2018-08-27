@@ -1,13 +1,21 @@
 from libcpp.vector cimport vector
 from libcpp cimport bool
 
+import numpy as np
 cimport cython
+cimport numpy as np
 
 from base cimport Factor
 from base cimport BinaryVariable
 from base cimport MultiVariable
 from base cimport FactorGraph
 from base cimport PBinaryVariable, PMultiVariable, PFactor, PGenericFactor
+
+np.import_array()
+INT_DTYPE = np.int
+FLOAT_DTYPE = np.float
+ctypedef np.int_t INT_DTYPE_T
+ctypedef np.float_t FLOAT_DTYPE_T
 
 
 cdef extern from "../examples/cpp/dense/FactorSequence.h" namespace "AD3":
@@ -77,6 +85,12 @@ cdef extern from "../examples/cpp/parsing/FactorHeadAutomaton.h" namespace "AD3"
         FactorHeadAutomaton()
         void Initialize(vector[Arc *], vector[Sibling *])
 
+
+cdef extern from "../examples/cpp/parsing/Decode.cpp" namespace "AD3":
+    void DecodeMatrixTree(vector[vector [int]] &index, vector[Arc*] &arcs, 
+                        vector[double] &scores,
+                        vector[double] *predicted_output,
+                        double *log_partition_function, double *entropy)
 
 cdef class PFactorSequence(PGenericFactor):
     def __cinit__(self, allocate=True):
@@ -287,3 +301,47 @@ cdef class PFactorHeadAutomaton(PGenericFactor):
 
         for arcp in arcs_v:
             del arcp
+
+
+cpdef decode_matrix_tree(int sentence_length, dict index, list arcs,
+                         np.ndarray scores):
+    """
+    :param index: dictionary mapping each head to another dictionary; the second 
+        one maps modifiers to the position of the corresponding (h, m) arc in the
+        arcs list.
+    :param arcs: list of tuples (h, m)
+    """
+    cdef vector[double] predicted_output
+    cdef vector[double] scores_v
+    cdef vector[vector [int]] index_v
+    cdef vector[Arc*] arcs_v
+    cdef double log_partition_function
+    cdef double entropy
+    cdef tuple arc
+    cdef vector[int] *row_v
+
+    for score in scores:
+        scores_v.push_back(score)
+
+    for arc in arcs:
+        arcs_v.push_back(new Arc(arc[0], arc[1]))
+
+    for i in range(sentence_length):
+        row_v = new vector[int](sentence_length, -1)
+        index_v.push_back(row_v[0])
+
+    for head, modifier_dict in index.items():
+        for modifier, position in modifier_dict.items():
+            index_v[head][modifier] = position
+    
+#    for row in index:
+#        for value in row:
+#            row_v.push_back(value)
+#        
+#        index_v.push_back(row_v)
+#        row_v = empty_vector
+
+    DecodeMatrixTree(index_v, arcs_v, scores_v, &predicted_output, 
+                     &log_partition_function, &entropy)
+    
+    return predicted_output, log_partition_function, entropy
