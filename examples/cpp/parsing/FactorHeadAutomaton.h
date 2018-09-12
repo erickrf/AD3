@@ -205,6 +205,8 @@ class FactorHeadAutomaton : public GenericFactor {
   // length is relative to the head position. 
   // E.g. for a right automaton with h=3 and instance_length=10,
   // length = 7. For a left automaton, it would be length = 3.
+  // If the arcs are to the left of a head token, they must be sorted by increasing
+  // modifier indices. If they are to the right, by decreasing indices.
   void Initialize(const vector<Arc*> &arcs, const vector<Sibling*> &siblings) {
     length_ = arcs.size() + 1;
     num_siblings_ = siblings.size();
