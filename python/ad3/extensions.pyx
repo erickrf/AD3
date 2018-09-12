@@ -86,6 +86,21 @@ cdef extern from "../examples/cpp/parsing/FactorHeadAutomaton.h" namespace "AD3"
         void Initialize(vector[Arc *], vector[Sibling *])
 
 
+cdef extern from "../examples/cpp/parsing/FactorGrandparentHeadAutomaton.h" namespace "AD3":
+    cdef cppclass Grandparent:
+        Grandparent(int, int, int)
+
+    cdef cppclass Grandsibling:
+        Grandsibling(int, int, int, int)
+
+    cdef cppclass FactorGrandparentHeadAutomaton(Factor):
+        FactorGrandparentHeadAutomaton()
+        void Initialize(vector[Arc*], vector[Arc*], vector[Grandparent*],
+            vector[Sibling*])
+        void Initialize(vector[Arc*], vector[Arc*], vector[Grandparent*], 
+            vector[Sibling*], vector[Grandsibling*])
+
+
 cdef extern from "../examples/cpp/parsing/Decode.cpp" namespace "AD3":
     void DecodeMatrixTree(vector[vector [int]] &index, vector[Arc*] &arcs, 
                         vector[double] &scores,
@@ -302,6 +317,68 @@ cdef class PFactorHeadAutomaton(PGenericFactor):
         for arcp in arcs_v:
             del arcp
 
+cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
+    def __cinit__(self, allocate=True):
+        self.allocate = allocate
+        if allocate:
+            self.thisptr = new FactorGrandparentHeadAutomaton()
+    
+    def __dealloc__(self):
+        if self.allocate:
+            del self.thisptr
+    
+    def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,
+        list siblings, list grandsiblings=None):
+
+        cdef vector[Arc *] incoming_v, outgoing_v
+        cdef vector[Sibling *] siblings_v
+        cdef vector[Grandparent *] grandparents_v
+        cdef vector[Grandsibling *] grandsiblings_v
+        
+        cdef tuple arc
+        cdef tuple sibling
+        cdef tuple grandparent
+        cdef tuple grandsibling
+        for arc in incoming_arcs:
+            incoming_v.push_back(new Arc(arc[0], arc[1]))
+        
+        for arc in outgoing_arcs:
+            outgoing_v.push_back(new Arc(arc[0], arc[1]))
+        
+        for sibling in siblings:
+            siblings_v.push_back(new Sibling(sibling[0], 
+                                             sibling[1], 
+                                             sibling[2]))
+        
+        for grandparent in grandparents:
+            grandparents_v.push_back(new Grandparent(grandparent[0], 
+                                                     grandparent[1],
+                                                     grandparent[2]))
+        
+        if grandsiblings is None:
+            (<FactorGrandparentHeadAutomaton*>self.thisptr).Initialize(
+                incoming_v, outgoing_v, grandparents_v, siblings_v)
+        else:
+            for grandsibling in grandsiblings:
+                grandsiblings_v.push_back(new Grandsibling(grandsibling[0],
+                                                           grandsibling[1],
+                                                           grandsibling[2],
+                                                           grandsibling[3]))
+            
+            (<FactorGrandparentHeadAutomaton*>self.thisptr).Initialize(
+                incoming_v, outgoing_v, grandparents_v, siblings_v, grandsiblings_v)
+
+        for arcp in incoming_v:
+            del arcp
+        for arcp in outgoing_v:
+            del arcp
+        for sibp in siblings_v:
+            del sibp
+        for gpp in grandparents_v:
+            del gpp
+        for gsp in grandsiblings_v:
+            del gsp
+
 
 cpdef decode_matrix_tree(int sentence_length, dict index, list arcs,
                          np.ndarray scores):
@@ -334,13 +411,6 @@ cpdef decode_matrix_tree(int sentence_length, dict index, list arcs,
         for modifier, position in modifier_dict.items():
             index_v[head][modifier] = position
     
-#    for row in index:
-#        for value in row:
-#            row_v.push_back(value)
-#        
-#        index_v.push_back(row_v)
-#        row_v = empty_vector
-
     DecodeMatrixTree(index_v, arcs_v, scores_v, &predicted_output, 
                      &log_partition_function, &entropy)
     
