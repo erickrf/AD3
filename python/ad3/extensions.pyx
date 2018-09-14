@@ -329,6 +329,27 @@ cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
     
     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,
         list siblings, list grandsiblings=None):
+        """
+        Incoming arcs are of the form (g,h) for each g.
+        Outgoing arcs are of the form (h,m) for each m.
+        
+        Siblings are tuples (h, m, s)
+        Grandparents are tuples (g, h, m)
+        Grandsiblings are tuples (g, h, m , s)
+
+        The variables linked to this factor must be in the same order as
+        the incoming arcs, followed by the outgoing arcs.
+        The incoming arcs must be sorted by grandparent, from smaller to
+        bigger.
+        The outgoing arcs must be sorted for the closest to the farthest
+        away from the root.
+
+        When solving the problem, the returned additional posteriors will be ordered
+        as grandparent factors, then sibling factors, and finally grandsiblings if
+        any.
+
+        Potentials should be set in the same order.
+        """
 
         cdef vector[Arc *] incoming_v, outgoing_v
         cdef vector[Sibling *] siblings_v

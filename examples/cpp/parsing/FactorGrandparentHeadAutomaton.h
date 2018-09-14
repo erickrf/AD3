@@ -275,10 +275,12 @@ class FactorGrandparentHeadAutomaton : public GenericFactor {
 
  public:
   // Incoming arcs are of the form (g,h) for each g.
-  // Outgoing arcs are of the form (h,m) for eacg m.
+  // Outgoing arcs are of the form (h,m) for each m.
   // The variables linked to this factor must be in the same order as
   // the incoming arcs, followed by the outgoing arcs.
-  // The incoming arcs must be sorted for the closest to the farthest
+  // The incoming arcs must be sorted by grandparent, from smaller to
+  // bigger.
+  // The outgoing arcs must be sorted for the closest to the farthest
   // away from the root.
   void Initialize(const vector<Arc*> &incoming_arcs,
                   const vector<Arc*> &outgoing_arcs,
@@ -327,7 +329,7 @@ class FactorGrandparentHeadAutomaton : public GenericFactor {
       h = siblings[k]->head();
       m = siblings[k]->modifier();
       int s = siblings[k]->sibling();
-      //cout << "sibling " << h << " -> " << m << " -> " << s << endl;
+      // cout << "sibling " << h << " -> " << m << " -> " << s << endl;
       right = (s > h) ? true : false;
       int position_modifier = right ? m - h : h - m;
       int position_sibling = right ? s - h : h - s;
