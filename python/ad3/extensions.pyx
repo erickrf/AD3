@@ -18,6 +18,15 @@ ctypedef np.int_t INT_DTYPE_T
 ctypedef np.float_t FLOAT_DTYPE_T
 
 
+cdef extern from "<iostream>" namespace "std":
+    cdef cppclass ostream:
+        ostream& write(const char*, int) except +
+
+
+cdef extern from "<iostream>" namespace "std":
+    ostream cout
+
+
 cdef extern from "../examples/cpp/dense/FactorSequence.h" namespace "AD3":
     cdef cppclass FactorSequence(Factor):
         FactorSequence()
@@ -99,6 +108,7 @@ cdef extern from "../examples/cpp/parsing/FactorGrandparentHeadAutomaton.h" name
             vector[Sibling*])
         void Initialize(vector[Arc*], vector[Arc*], vector[Grandparent*], 
             vector[Sibling*], vector[Grandsibling*])
+        void Print(ostream&)
 
 
 cdef extern from "../examples/cpp/parsing/Decode.cpp" namespace "AD3":
@@ -326,6 +336,9 @@ cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
     def __dealloc__(self):
         if self.allocate:
             del self.thisptr
+
+    def print_factor(self):
+        (<FactorGrandparentHeadAutomaton*>self.thisptr).Print(cout)
     
     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,
         list siblings, list grandsiblings=None):
@@ -343,6 +356,9 @@ cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
         bigger.
         The outgoing arcs must be sorted for the closest to the farthest
         away from the root.
+
+        Grandparent parts must include all combinations of incoming and outgoing arcs,
+        including the tuples in which g = m.
 
         When solving the problem, the returned additional posteriors will be ordered
         as grandparent factors, then sibling factors, and finally grandsiblings if
