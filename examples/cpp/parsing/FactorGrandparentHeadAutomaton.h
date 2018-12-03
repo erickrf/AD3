@@ -278,12 +278,12 @@ class FactorGrandparentHeadAutomaton : public GenericFactor {
   // Outgoing arcs are of the form (h,m) for each m.
   // The variables linked to this factor must be in the same order as
   // the incoming arcs, followed by the outgoing arcs.
-  // The incoming arcs must be sorted by grandparent, from smaller to
-  // bigger.
-  // The outgoing arcs must be sorted for the closest to the farthest
+  // The incoming arcs must be sorted by grandparent, from smallest to
+  // biggest index.
+  // The outgoing arcs must be sorted from the closest to the farthest
   // away from the root.
-  // Grandparent parts (g, h, m) must include cases where g = m!
-  // Factors without incoming arcs must not be created
+  // Grandparent parts (g, h, m) must include cases where g = m.
+  // Factors without incoming arcs must not be created.
   void Initialize(const vector<Arc*> &incoming_arcs,
                   const vector<Arc*> &outgoing_arcs,
                   const vector<Grandparent*> &grandparents,

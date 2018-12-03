@@ -354,8 +354,8 @@ cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
         the incoming arcs, followed by the outgoing arcs.
         The incoming arcs must be sorted by grandparent, from smaller to
         bigger.
-        The outgoing arcs must be sorted for the closest to the farthest
-        away from the root.
+        The outgoing arcs must be sorted from the closest to the farthest
+        away from the head.
 
         Grandparent parts must include all combinations of incoming and outgoing arcs,
         including the tuples in which g = m.
