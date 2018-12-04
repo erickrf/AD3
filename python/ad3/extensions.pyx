@@ -352,8 +352,12 @@ cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
 
         The variables linked to this factor must be in the same order as
         the incoming arcs, followed by the outgoing arcs.
-        The incoming arcs must be sorted by grandparent, from smaller to
-        bigger.
+
+        The incoming arcs must be sorted by grandparent, from smallest to
+        biggest. Incoming arcs must be included even if they don't have a corresponding
+        grandparent part. This happens when the only sibling parts are (h, h, 0) and
+        (h, h, length).
+
         The outgoing arcs must be sorted from the closest to the farthest
         away from the head.
 
