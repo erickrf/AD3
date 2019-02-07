@@ -1,7 +1,6 @@
 from libcpp.vector cimport vector
 from libcpp cimport bool
 
-import numpy as np
 cimport cython
 cimport numpy as np
 

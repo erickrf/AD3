@@ -205,8 +205,30 @@ class FactorHeadAutomaton : public GenericFactor {
   // length is relative to the head position. 
   // E.g. for a right automaton with h=3 and instance_length=10,
   // length = 7. For a left automaton, it would be length = 3.
+  // This function assumes that all possible arcs exist; i.e., 
+  // there was no pruning. If that's not the case, use the Initialize
+  // that receives a vector of arcs.
+  void Initialize(int length, const vector<Sibling*> &siblings) {
+    length_ = length;
+    index_siblings_.assign(length, vector<int>(length+1, -1));
+    for (int k = 0; k < siblings.size(); ++k) {
+      int h = siblings[k]->head();
+      int m = siblings[k]->modifier();
+      int s = siblings[k]->sibling();
+      if (s > h) {
+        m -= h;
+        s -= h;
+      } else {
+        m = h - m;
+        s = h - s;
+      }
+      index_siblings_[m][s] = k;
+    }
+  }
+
   // If the arcs are to the left of a head token, they must be sorted by increasing
   // modifier indices. If they are to the right, by decreasing indices.
+  // This function should be used when some arcs were pruned.
   void Initialize(const vector<Arc*> &arcs, const vector<Sibling*> &siblings) {
     length_ = arcs.size() + 1;
     num_siblings_ = siblings.size();
