@@ -156,6 +156,13 @@ LogVal<T> operator*(LogVal<T> o1, const LogVal<T>& o2) {
 }
 
 template<class T>
+	LogVal<T> operator*(LogVal<T> o1, const long int& o2) {
+	  LogVal<T> o2log = LogVal<T>(double(o2));
+	  o1 *= o2log;
+	  return o1;
+	}
+
+template<class T>
 LogVal<T> operator/(LogVal<T> o1, const LogVal<T>& o2) {
   o1 /= o2;
   return o1;

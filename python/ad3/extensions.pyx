@@ -2,17 +2,12 @@ from libcpp.vector cimport vector
 from libcpp cimport bool
 
 cimport cython
-cimport numpy as np
 
 from base cimport Factor
 from base cimport BinaryVariable
 from base cimport MultiVariable
 from base cimport FactorGraph
 from base cimport PBinaryVariable, PMultiVariable, PFactor, PGenericFactor
-
-np.import_array()
-ctypedef np.int_t INT_DTYPE_T
-ctypedef np.float_t FLOAT_DTYPE_T
 
 
 cdef extern from "<iostream>" namespace "std":
@@ -90,6 +85,7 @@ cdef extern from "../examples/cpp/parsing/FactorHeadAutomaton.h" namespace "AD3"
     cdef cppclass FactorHeadAutomaton(Factor):
         FactorHeadAutomaton()
         void Initialize(vector[Arc *], vector[Sibling *])
+        void Initialize(int, vector[Sibling *])
 
 
 cdef extern from "../examples/cpp/parsing/FactorGrandparentHeadAutomaton.h" namespace "AD3":
@@ -292,22 +288,32 @@ cdef class PFactorHeadAutomaton(PGenericFactor):
         if self.allocate:
             del self.thisptr
 
-    def initialize(self, list arcs, list siblings, bool validate=True):
-        # length = max(s - h) for (h, m, s) in siblings
-        length = max(s - h for (h, m, s) in siblings)
+    def initialize(self, arcs_or_length, list siblings, bool validate=True):
+        """
+        If arcs_or_length is the length, it is assumed that all possible arcs
+        in the tree exist, i.e., there was no pruning.
+        The length is relative to the head position. 
+        E.g. for a right automaton with h=3 and instance_length=10,
+        length = 7. For a left automaton, it would be length = 3.
 
+        If any arcs were pruned, arcs_or_length should be a list with the
+        remaining arcs.
+        """
+        cdef tuple arc
         cdef vector[Arc *] arcs_v
         cdef vector[Sibling *] siblings_v
-
-        cdef tuple arc
         cdef tuple sibling
-        for arc in arcs:
-            arcs_v.push_back(new Arc(arc[0], arc[1]))
+        cdef int length
 
         for sibling in siblings:
             siblings_v.push_back(new Sibling(sibling[0],
                                              sibling[1],
                                              sibling[2]))
+        
+        if isinstance(arcs_or_length, int):
+            length = arcs_or_length
+        else:
+            length = max(s - h for (h, m, s) in siblings)
 
         if validate:
             if siblings_v.size() != length * (1 + length) / 2:
@@ -316,13 +322,19 @@ cdef class PFactorHeadAutomaton(PGenericFactor):
             if length != self.thisptr.Degree() + 1:
                 raise ValueError("Number of variables doesn't match.")
 
-        (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
+        if isinstance(arcs_or_length, list):
+            for arc in arcs_or_length:
+                arcs_v.push_back(new Arc(arcs_or_length[0], arcs_or_length[1]))
+
+            (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
+
+            for arcp in arcs_v:
+                del arcp
+        else:
+            (<FactorHeadAutomaton*>self.thisptr).Initialize(length, siblings_v)
 
         for sibp in siblings_v:
             del sibp
-
-        for arcp in arcs_v:
-            del arcp
 
 cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
     def __cinit__(self, allocate=True):
@@ -418,8 +430,7 @@ cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
             del gsp
 
 
-cpdef decode_matrix_tree(int sentence_length, dict index, list arcs,
-                         np.ndarray scores):
+cpdef decode_matrix_tree(int sentence_length, dict index, list arcs, scores):
     """
     :param index: dictionary mapping each head to another dictionary; the second 
         one maps modifiers to the position of the corresponding (h, m) arc in the
