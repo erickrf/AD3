@@ -11,8 +11,6 @@ from base cimport FactorGraph
 from base cimport PBinaryVariable, PMultiVariable, PFactor, PGenericFactor
 
 np.import_array()
-INT_DTYPE = np.int
-FLOAT_DTYPE = np.float
 ctypedef np.int_t INT_DTYPE_T
 ctypedef np.float_t FLOAT_DTYPE_T
 

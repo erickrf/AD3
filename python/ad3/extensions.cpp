@@ -1072,17 +1072,17 @@ typedef npy_double __pyx_t_5numpy_double_t;
  */
 typedef npy_longdouble __pyx_t_5numpy_longdouble_t;
 
-/* "ad3/extensions.pyx":17
- * INT_DTYPE = np.int
- * FLOAT_DTYPE = np.float
+/* "ad3/extensions.pyx":14
+ * 
+ * np.import_array()
  * ctypedef np.int_t INT_DTYPE_T             # <<<<<<<<<<<<<<
  * ctypedef np.float_t FLOAT_DTYPE_T
  * 
  */
 typedef __pyx_t_5numpy_int_t __pyx_t_3ad3_10extensions_INT_DTYPE_T;
 
-/* "ad3/extensions.pyx":18
- * FLOAT_DTYPE = np.float
+/* "ad3/extensions.pyx":15
+ * np.import_array()
  * ctypedef np.int_t INT_DTYPE_T
  * ctypedef np.float_t FLOAT_DTYPE_T             # <<<<<<<<<<<<<<
  * 
@@ -1223,7 +1223,7 @@ struct __pyx_obj_3ad3_4base_PGenericFactor {
 };
 
 
-/* "ad3/extensions.pyx":120
+/* "ad3/extensions.pyx":117
  *                         double *log_partition_function, double *entropy)
  * 
  * cdef class PFactorSequence(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1235,7 +1235,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorSequence {
 };
 
 
-/* "ad3/extensions.pyx":134
+/* "ad3/extensions.pyx":131
  * 
  * 
  * cdef class PFactorSequenceCompressor(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1247,7 +1247,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorSequenceCompressor {
 };
 
 
-/* "ad3/extensions.pyx":151
+/* "ad3/extensions.pyx":148
  * 
  * 
  * cdef class PFactorCompressionBudget(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1259,7 +1259,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorCompressionBudget {
 };
 
 
-/* "ad3/extensions.pyx":172
+/* "ad3/extensions.pyx":169
  * 
  * 
  * cdef class PFactorBinaryTree(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1271,7 +1271,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorBinaryTree {
 };
 
 
-/* "ad3/extensions.pyx":186
+/* "ad3/extensions.pyx":183
  * 
  * 
  * cdef class PFactorBinaryTreeCounts(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1283,7 +1283,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorBinaryTreeCounts {
 };
 
 
-/* "ad3/extensions.pyx":220
+/* "ad3/extensions.pyx":217
  * 
  * 
  * cdef class PFactorGeneralTree(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1295,7 +1295,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorGeneralTree {
 };
 
 
-/* "ad3/extensions.pyx":234
+/* "ad3/extensions.pyx":231
  * 
  * 
  * cdef class PFactorGeneralTreeCounts(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1307,7 +1307,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorGeneralTreeCounts {
 };
 
 
-/* "ad3/extensions.pyx":249
+/* "ad3/extensions.pyx":246
  * 
  * 
  * cdef class PFactorTree(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1319,7 +1319,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorTree {
 };
 
 
-/* "ad3/extensions.pyx":288
+/* "ad3/extensions.pyx":285
  * 
  * 
  * cdef class PFactorHeadAutomaton(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1331,7 +1331,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorHeadAutomaton {
 };
 
 
-/* "ad3/extensions.pyx":330
+/* "ad3/extensions.pyx":327
  *             del arcp
  * 
  * cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1343,7 +1343,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorGrandparentHeadAutomaton {
 };
 
 
-/* "ad3/extensions.pyx":298
+/* "ad3/extensions.pyx":295
  *             del self.thisptr
  * 
  *     def initialize(self, list arcs, list siblings, bool validate=True):             # <<<<<<<<<<<<<<
@@ -1356,7 +1356,7 @@ struct __pyx_obj_3ad3_10extensions___pyx_scope_struct__initialize {
 };
 
 
-/* "ad3/extensions.pyx":300
+/* "ad3/extensions.pyx":297
  *     def initialize(self, list arcs, list siblings, bool validate=True):
  *         # length = max(s - h) for (h, m, s) in siblings
  *         length = max(s - h for (h, m, s) in siblings)             # <<<<<<<<<<<<<<
@@ -1402,7 +1402,7 @@ struct __pyx_vtabstruct_3ad3_4base_PGenericFactor {
 static struct __pyx_vtabstruct_3ad3_4base_PGenericFactor *__pyx_vtabptr_3ad3_4base_PGenericFactor;
 
 
-/* "ad3/extensions.pyx":120
+/* "ad3/extensions.pyx":117
  *                         double *log_partition_function, double *entropy)
  * 
  * cdef class PFactorSequence(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1416,7 +1416,7 @@ struct __pyx_vtabstruct_3ad3_10extensions_PFactorSequence {
 static struct __pyx_vtabstruct_3ad3_10extensions_PFactorSequence *__pyx_vtabptr_3ad3_10extensions_PFactorSequence;
 
 
-/* "ad3/extensions.pyx":134
+/* "ad3/extensions.pyx":131
  * 
  * 
  * cdef class PFactorSequenceCompressor(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1430,7 +1430,7 @@ struct __pyx_vtabstruct_3ad3_10extensions_PFactorSequenceCompressor {
 static struct __pyx_vtabstruct_3ad3_10extensions_PFactorSequenceCompressor *__pyx_vtabptr_3ad3_10extensions_PFactorSequenceCompressor;
 
 
-/* "ad3/extensions.pyx":151
+/* "ad3/extensions.pyx":148
  * 
  * 
  * cdef class PFactorCompressionBudget(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1444,7 +1444,7 @@ struct __pyx_vtabstruct_3ad3_10extensions_PFactorCompressionBudget {
 static struct __pyx_vtabstruct_3ad3_10extensions_PFactorCompressionBudget *__pyx_vtabptr_3ad3_10extensions_PFactorCompressionBudget;
 
 
-/* "ad3/extensions.pyx":172
+/* "ad3/extensions.pyx":169
  * 
  * 
  * cdef class PFactorBinaryTree(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1458,7 +1458,7 @@ struct __pyx_vtabstruct_3ad3_10extensions_PFactorBinaryTree {
 static struct __pyx_vtabstruct_3ad3_10extensions_PFactorBinaryTree *__pyx_vtabptr_3ad3_10extensions_PFactorBinaryTree;
 
 
-/* "ad3/extensions.pyx":186
+/* "ad3/extensions.pyx":183
  * 
  * 
  * cdef class PFactorBinaryTreeCounts(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1472,7 +1472,7 @@ struct __pyx_vtabstruct_3ad3_10extensions_PFactorBinaryTreeCounts {
 static struct __pyx_vtabstruct_3ad3_10extensions_PFactorBinaryTreeCounts *__pyx_vtabptr_3ad3_10extensions_PFactorBinaryTreeCounts;
 
 
-/* "ad3/extensions.pyx":220
+/* "ad3/extensions.pyx":217
  * 
  * 
  * cdef class PFactorGeneralTree(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1486,7 +1486,7 @@ struct __pyx_vtabstruct_3ad3_10extensions_PFactorGeneralTree {
 static struct __pyx_vtabstruct_3ad3_10extensions_PFactorGeneralTree *__pyx_vtabptr_3ad3_10extensions_PFactorGeneralTree;
 
 
-/* "ad3/extensions.pyx":234
+/* "ad3/extensions.pyx":231
  * 
  * 
  * cdef class PFactorGeneralTreeCounts(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1500,7 +1500,7 @@ struct __pyx_vtabstruct_3ad3_10extensions_PFactorGeneralTreeCounts {
 static struct __pyx_vtabstruct_3ad3_10extensions_PFactorGeneralTreeCounts *__pyx_vtabptr_3ad3_10extensions_PFactorGeneralTreeCounts;
 
 
-/* "ad3/extensions.pyx":249
+/* "ad3/extensions.pyx":246
  * 
  * 
  * cdef class PFactorTree(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1514,7 +1514,7 @@ struct __pyx_vtabstruct_3ad3_10extensions_PFactorTree {
 static struct __pyx_vtabstruct_3ad3_10extensions_PFactorTree *__pyx_vtabptr_3ad3_10extensions_PFactorTree;
 
 
-/* "ad3/extensions.pyx":288
+/* "ad3/extensions.pyx":285
  * 
  * 
  * cdef class PFactorHeadAutomaton(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1528,7 +1528,7 @@ struct __pyx_vtabstruct_3ad3_10extensions_PFactorHeadAutomaton {
 static struct __pyx_vtabstruct_3ad3_10extensions_PFactorHeadAutomaton *__pyx_vtabptr_3ad3_10extensions_PFactorHeadAutomaton;
 
 
-/* "ad3/extensions.pyx":330
+/* "ad3/extensions.pyx":327
  *             del arcp
  * 
  * cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1907,30 +1907,6 @@ static int __Pyx_SetVtable(PyObject *dict, void *vtable);
 /* SetupReduce.proto */
 static int __Pyx_setup_reduce(PyObject* type_obj);
 
-/* Import.proto */
-static PyObject *__Pyx_Import(PyObject *name, PyObject *from_list, int level);
-
-/* GetModuleGlobalName.proto */
-#if CYTHON_USE_DICT_VERSIONS
-#define __Pyx_GetModuleGlobalName(var, name)  {\
-    static PY_UINT64_T __pyx_dict_version = 0;\
-    static PyObject *__pyx_dict_cached_value = NULL;\
-    (var) = (likely(__pyx_dict_version == __PYX_GET_DICT_VERSION(__pyx_d))) ?\
-        (likely(__pyx_dict_cached_value) ? __Pyx_NewRef(__pyx_dict_cached_value) : __Pyx_GetBuiltinName(name)) :\
-        __Pyx__GetModuleGlobalName(name, &__pyx_dict_version, &__pyx_dict_cached_value);\
-}
-#define __Pyx_GetModuleGlobalNameUncached(var, name)  {\
-    PY_UINT64_T __pyx_dict_version;\
-    PyObject *__pyx_dict_cached_value;\
-    (var) = __Pyx__GetModuleGlobalName(name, &__pyx_dict_version, &__pyx_dict_cached_value);\
-}
-static PyObject *__Pyx__GetModuleGlobalName(PyObject *name, PY_UINT64_T *dict_version, PyObject **dict_cached_value);
-#else
-#define __Pyx_GetModuleGlobalName(var, name)  (var) = __Pyx__GetModuleGlobalName(name)
-#define __Pyx_GetModuleGlobalNameUncached(var, name)  (var) = __Pyx__GetModuleGlobalName(name)
-static CYTHON_INLINE PyObject *__Pyx__GetModuleGlobalName(PyObject *name);
-#endif
-
 /* CLineInTraceback.proto */
 #ifdef CYTHON_CLINE_IN_TRACEBACK
 #define __Pyx_CLineForTraceback(tstate, c_line)  (((CYTHON_CLINE_IN_TRACEBACK)) ? c_line : 0)
@@ -2299,8 +2275,6 @@ static PyObject *__pyx_builtin_max;
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_RuntimeError;
 static PyObject *__pyx_builtin_ImportError;
-static const char __pyx_k_np[] = "np";
-static const char __pyx_k_int[] = "int";
 static const char __pyx_k_max[] = "max";
 static const char __pyx_k_arcs[] = "arcs";
 static const char __pyx_k_args[] = "args";
@@ -2309,14 +2283,11 @@ static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_send[] = "send";
 static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_close[] = "close";
-static const char __pyx_k_float[] = "float";
 static const char __pyx_k_index[] = "index";
 static const char __pyx_k_items[] = "items";
-static const char __pyx_k_numpy[] = "numpy";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_throw[] = "throw";
 static const char __pyx_k_budget[] = "budget";
-static const char __pyx_k_import[] = "__import__";
 static const char __pyx_k_length[] = "length";
 static const char __pyx_k_reduce[] = "__reduce__";
 static const char __pyx_k_scores[] = "scores";
@@ -2328,13 +2299,11 @@ static const char __pyx_k_getstate[] = "__getstate__";
 static const char __pyx_k_setstate[] = "__setstate__";
 static const char __pyx_k_siblings[] = "siblings";
 static const char __pyx_k_validate[] = "validate";
-static const char __pyx_k_INT_DTYPE[] = "INT_DTYPE";
 static const char __pyx_k_TypeError[] = "TypeError";
 static const char __pyx_k_reduce_ex[] = "__reduce_ex__";
 static const char __pyx_k_ValueError[] = "ValueError";
 static const char __pyx_k_num_states[] = "num_states";
 static const char __pyx_k_pyx_vtable[] = "__pyx_vtable__";
-static const char __pyx_k_FLOAT_DTYPE[] = "FLOAT_DTYPE";
 static const char __pyx_k_ImportError[] = "ImportError";
 static const char __pyx_k_PFactorTree[] = "PFactorTree";
 static const char __pyx_k_RuntimeError[] = "RuntimeError";
@@ -2379,10 +2348,8 @@ static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __red
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
 static const char __pyx_k_Format_string_allocated_too_shor_2[] = "Format string allocated too short.";
 static PyObject *__pyx_kp_s_1_length;
-static PyObject *__pyx_n_s_FLOAT_DTYPE;
 static PyObject *__pyx_kp_u_Format_string_allocated_too_shor;
 static PyObject *__pyx_kp_u_Format_string_allocated_too_shor_2;
-static PyObject *__pyx_n_s_INT_DTYPE;
 static PyObject *__pyx_n_s_ImportError;
 static PyObject *__pyx_kp_s_Inconsistent_length_passed;
 static PyObject *__pyx_kp_s_Invalid_arc_head_cannot_be_the_s;
@@ -2412,16 +2379,13 @@ static PyObject *__pyx_n_s_bigram_positions;
 static PyObject *__pyx_n_s_budget;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_close;
-static PyObject *__pyx_n_s_float;
 static PyObject *__pyx_n_s_genexpr;
 static PyObject *__pyx_n_s_getstate;
 static PyObject *__pyx_n_s_grandparents;
 static PyObject *__pyx_n_s_grandsiblings;
-static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_incoming_arcs;
 static PyObject *__pyx_n_s_index;
 static PyObject *__pyx_n_s_initialize_locals_genexpr;
-static PyObject *__pyx_n_s_int;
 static PyObject *__pyx_n_s_items;
 static PyObject *__pyx_n_s_left_positions;
 static PyObject *__pyx_n_s_length;
@@ -2432,9 +2396,7 @@ static PyObject *__pyx_n_s_name;
 static PyObject *__pyx_kp_u_ndarray_is_not_C_contiguous;
 static PyObject *__pyx_kp_u_ndarray_is_not_Fortran_contiguou;
 static PyObject *__pyx_kp_s_no_default___reduce___due_to_non;
-static PyObject *__pyx_n_s_np;
 static PyObject *__pyx_n_s_num_states;
-static PyObject *__pyx_n_s_numpy;
 static PyObject *__pyx_kp_s_numpy_core_multiarray_failed_to;
 static PyObject *__pyx_kp_s_numpy_core_umath_failed_to_impor;
 static PyObject *__pyx_n_s_outgoing_arcs;
@@ -2562,7 +2524,7 @@ static PyObject *__pyx_tuple__32;
 static PyObject *__pyx_tuple__33;
 /* Late includes */
 
-/* "ad3/extensions.pyx":121
+/* "ad3/extensions.pyx":118
  * 
  * cdef class PFactorSequence(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -2599,7 +2561,7 @@ static int __pyx_pw_3ad3_10extensions_15PFactorSequence_1__cinit__(PyObject *__p
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 121, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 118, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2613,7 +2575,7 @@ static int __pyx_pw_3ad3_10extensions_15PFactorSequence_1__cinit__(PyObject *__p
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 121, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 118, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorSequence.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2633,27 +2595,27 @@ static int __pyx_pf_3ad3_10extensions_15PFactorSequence___cinit__(struct __pyx_o
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":122
+  /* "ad3/extensions.pyx":119
  * cdef class PFactorSequence(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *            self.thisptr = new FactorSequence()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 122, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 119, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":123
+  /* "ad3/extensions.pyx":120
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *            self.thisptr = new FactorSequence()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 123, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 120, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":124
+    /* "ad3/extensions.pyx":121
  *         self.allocate = allocate
  *         if allocate:
  *            self.thisptr = new FactorSequence()             # <<<<<<<<<<<<<<
@@ -2662,7 +2624,7 @@ static int __pyx_pf_3ad3_10extensions_15PFactorSequence___cinit__(struct __pyx_o
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorSequence();
 
-    /* "ad3/extensions.pyx":123
+    /* "ad3/extensions.pyx":120
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -2671,7 +2633,7 @@ static int __pyx_pf_3ad3_10extensions_15PFactorSequence___cinit__(struct __pyx_o
  */
   }
 
-  /* "ad3/extensions.pyx":121
+  /* "ad3/extensions.pyx":118
  * 
  * cdef class PFactorSequence(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -2690,7 +2652,7 @@ static int __pyx_pf_3ad3_10extensions_15PFactorSequence___cinit__(struct __pyx_o
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":126
+/* "ad3/extensions.pyx":123
  *            self.thisptr = new FactorSequence()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -2714,7 +2676,7 @@ static void __pyx_pf_3ad3_10extensions_15PFactorSequence_2__dealloc__(struct __p
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":127
+  /* "ad3/extensions.pyx":124
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -2724,7 +2686,7 @@ static void __pyx_pf_3ad3_10extensions_15PFactorSequence_2__dealloc__(struct __p
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":128
+    /* "ad3/extensions.pyx":125
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -2733,7 +2695,7 @@ static void __pyx_pf_3ad3_10extensions_15PFactorSequence_2__dealloc__(struct __p
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":127
+    /* "ad3/extensions.pyx":124
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -2742,7 +2704,7 @@ static void __pyx_pf_3ad3_10extensions_15PFactorSequence_2__dealloc__(struct __p
  */
   }
 
-  /* "ad3/extensions.pyx":126
+  /* "ad3/extensions.pyx":123
  *            self.thisptr = new FactorSequence()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -2754,7 +2716,7 @@ static void __pyx_pf_3ad3_10extensions_15PFactorSequence_2__dealloc__(struct __p
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":130
+/* "ad3/extensions.pyx":127
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] num_states):             # <<<<<<<<<<<<<<
@@ -2770,7 +2732,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_15PFactorSequence_5initialize(PyObje
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("initialize (wrapper)", 0);
   assert(__pyx_arg_num_states); {
-    __pyx_v_num_states = __pyx_convert_vector_from_py_int(__pyx_arg_num_states); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 130, __pyx_L3_error)
+    __pyx_v_num_states = __pyx_convert_vector_from_py_int(__pyx_arg_num_states); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 127, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -2790,7 +2752,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_15PFactorSequence_4initialize(struct
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("initialize", 0);
 
-  /* "ad3/extensions.pyx":131
+  /* "ad3/extensions.pyx":128
  * 
  *     def initialize(self, vector[int] num_states):
  *         (<FactorSequence*>self.thisptr).Initialize(num_states)             # <<<<<<<<<<<<<<
@@ -2799,7 +2761,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_15PFactorSequence_4initialize(struct
  */
   ((AD3::FactorSequence *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_num_states);
 
-  /* "ad3/extensions.pyx":130
+  /* "ad3/extensions.pyx":127
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] num_states):             # <<<<<<<<<<<<<<
@@ -2921,7 +2883,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_15PFactorSequence_8__setstate_cython
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":135
+/* "ad3/extensions.pyx":132
  * 
  * cdef class PFactorSequenceCompressor(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -2958,7 +2920,7 @@ static int __pyx_pw_3ad3_10extensions_25PFactorSequenceCompressor_1__cinit__(PyO
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 135, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 132, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2972,7 +2934,7 @@ static int __pyx_pw_3ad3_10extensions_25PFactorSequenceCompressor_1__cinit__(PyO
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 135, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 132, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorSequenceCompressor.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2992,27 +2954,27 @@ static int __pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor___cinit__(stru
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":136
+  /* "ad3/extensions.pyx":133
  * cdef class PFactorSequenceCompressor(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *            self.thisptr = new FactorSequenceCompressor()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 136, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 133, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":137
+  /* "ad3/extensions.pyx":134
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *            self.thisptr = new FactorSequenceCompressor()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 137, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 134, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":138
+    /* "ad3/extensions.pyx":135
  *         self.allocate = allocate
  *         if allocate:
  *            self.thisptr = new FactorSequenceCompressor()             # <<<<<<<<<<<<<<
@@ -3021,7 +2983,7 @@ static int __pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor___cinit__(stru
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorSequenceCompressor();
 
-    /* "ad3/extensions.pyx":137
+    /* "ad3/extensions.pyx":134
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -3030,7 +2992,7 @@ static int __pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor___cinit__(stru
  */
   }
 
-  /* "ad3/extensions.pyx":135
+  /* "ad3/extensions.pyx":132
  * 
  * cdef class PFactorSequenceCompressor(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -3049,7 +3011,7 @@ static int __pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor___cinit__(stru
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":140
+/* "ad3/extensions.pyx":137
  *            self.thisptr = new FactorSequenceCompressor()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -3073,7 +3035,7 @@ static void __pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor_2__dealloc__(
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":141
+  /* "ad3/extensions.pyx":138
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -3083,7 +3045,7 @@ static void __pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor_2__dealloc__(
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":142
+    /* "ad3/extensions.pyx":139
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -3092,7 +3054,7 @@ static void __pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor_2__dealloc__(
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":141
+    /* "ad3/extensions.pyx":138
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -3101,7 +3063,7 @@ static void __pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor_2__dealloc__(
  */
   }
 
-  /* "ad3/extensions.pyx":140
+  /* "ad3/extensions.pyx":137
  *            self.thisptr = new FactorSequenceCompressor()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -3113,7 +3075,7 @@ static void __pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor_2__dealloc__(
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":144
+/* "ad3/extensions.pyx":141
  *             del self.thisptr
  * 
  *     def initialize(self, int length, vector[int] left_positions,             # <<<<<<<<<<<<<<
@@ -3155,17 +3117,17 @@ static PyObject *__pyx_pw_3ad3_10extensions_25PFactorSequenceCompressor_5initial
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_left_positions)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 1, 3, 3, 1); __PYX_ERR(1, 144, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 1, 3, 3, 1); __PYX_ERR(1, 141, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_right_positions)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 1, 3, 3, 2); __PYX_ERR(1, 144, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 1, 3, 3, 2); __PYX_ERR(1, 141, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 144, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 141, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -3174,13 +3136,13 @@ static PyObject *__pyx_pw_3ad3_10extensions_25PFactorSequenceCompressor_5initial
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
-    __pyx_v_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 144, __pyx_L3_error)
-    __pyx_v_left_positions = __pyx_convert_vector_from_py_int(values[1]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 144, __pyx_L3_error)
-    __pyx_v_right_positions = __pyx_convert_vector_from_py_int(values[2]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 145, __pyx_L3_error)
+    __pyx_v_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 141, __pyx_L3_error)
+    __pyx_v_left_positions = __pyx_convert_vector_from_py_int(values[1]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 141, __pyx_L3_error)
+    __pyx_v_right_positions = __pyx_convert_vector_from_py_int(values[2]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 142, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("initialize", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 144, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("initialize", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 141, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorSequenceCompressor.initialize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3198,7 +3160,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor_4initial
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("initialize", 0);
 
-  /* "ad3/extensions.pyx":146
+  /* "ad3/extensions.pyx":143
  *     def initialize(self, int length, vector[int] left_positions,
  *                    vector[int] right_positions):
  *         (<FactorSequenceCompressor*>self.thisptr).Initialize(length,             # <<<<<<<<<<<<<<
@@ -3207,7 +3169,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor_4initial
  */
   ((AD3::FactorSequenceCompressor *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_length, __pyx_v_left_positions, __pyx_v_right_positions);
 
-  /* "ad3/extensions.pyx":144
+  /* "ad3/extensions.pyx":141
  *             del self.thisptr
  * 
  *     def initialize(self, int length, vector[int] left_positions,             # <<<<<<<<<<<<<<
@@ -3329,7 +3291,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_25PFactorSequenceCompressor_8__setst
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":152
+/* "ad3/extensions.pyx":149
  * 
  * cdef class PFactorCompressionBudget(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -3366,7 +3328,7 @@ static int __pyx_pw_3ad3_10extensions_24PFactorCompressionBudget_1__cinit__(PyOb
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 152, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 149, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3380,7 +3342,7 @@ static int __pyx_pw_3ad3_10extensions_24PFactorCompressionBudget_1__cinit__(PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 152, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 149, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorCompressionBudget.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3400,27 +3362,27 @@ static int __pyx_pf_3ad3_10extensions_24PFactorCompressionBudget___cinit__(struc
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":153
+  /* "ad3/extensions.pyx":150
  * cdef class PFactorCompressionBudget(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *            self.thisptr = new FactorCompressionBudget()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 153, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 150, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":154
+  /* "ad3/extensions.pyx":151
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *            self.thisptr = new FactorCompressionBudget()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 154, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 151, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":155
+    /* "ad3/extensions.pyx":152
  *         self.allocate = allocate
  *         if allocate:
  *            self.thisptr = new FactorCompressionBudget()             # <<<<<<<<<<<<<<
@@ -3429,7 +3391,7 @@ static int __pyx_pf_3ad3_10extensions_24PFactorCompressionBudget___cinit__(struc
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorCompressionBudget();
 
-    /* "ad3/extensions.pyx":154
+    /* "ad3/extensions.pyx":151
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -3438,7 +3400,7 @@ static int __pyx_pf_3ad3_10extensions_24PFactorCompressionBudget___cinit__(struc
  */
   }
 
-  /* "ad3/extensions.pyx":152
+  /* "ad3/extensions.pyx":149
  * 
  * cdef class PFactorCompressionBudget(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -3457,7 +3419,7 @@ static int __pyx_pf_3ad3_10extensions_24PFactorCompressionBudget___cinit__(struc
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":157
+/* "ad3/extensions.pyx":154
  *            self.thisptr = new FactorCompressionBudget()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -3481,7 +3443,7 @@ static void __pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_2__dealloc__(s
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":158
+  /* "ad3/extensions.pyx":155
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -3491,7 +3453,7 @@ static void __pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_2__dealloc__(s
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":159
+    /* "ad3/extensions.pyx":156
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -3500,7 +3462,7 @@ static void __pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_2__dealloc__(s
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":158
+    /* "ad3/extensions.pyx":155
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -3509,7 +3471,7 @@ static void __pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_2__dealloc__(s
  */
   }
 
-  /* "ad3/extensions.pyx":157
+  /* "ad3/extensions.pyx":154
  *            self.thisptr = new FactorCompressionBudget()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -3521,7 +3483,7 @@ static void __pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_2__dealloc__(s
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":161
+/* "ad3/extensions.pyx":158
  *             del self.thisptr
  * 
  *     def initialize(self, int length, int budget,             # <<<<<<<<<<<<<<
@@ -3566,23 +3528,23 @@ static PyObject *__pyx_pw_3ad3_10extensions_24PFactorCompressionBudget_5initiali
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_budget)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 1, 4, 4, 1); __PYX_ERR(1, 161, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 1, 4, 4, 1); __PYX_ERR(1, 158, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pcounts_for_budget)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 1, 4, 4, 2); __PYX_ERR(1, 161, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 1, 4, 4, 2); __PYX_ERR(1, 158, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_bigram_positions)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 1, 4, 4, 3); __PYX_ERR(1, 161, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 1, 4, 4, 3); __PYX_ERR(1, 158, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 161, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 158, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -3592,14 +3554,14 @@ static PyObject *__pyx_pw_3ad3_10extensions_24PFactorCompressionBudget_5initiali
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
-    __pyx_v_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 161, __pyx_L3_error)
-    __pyx_v_budget = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_budget == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 161, __pyx_L3_error)
+    __pyx_v_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 158, __pyx_L3_error)
+    __pyx_v_budget = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_budget == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 158, __pyx_L3_error)
     __pyx_v_pcounts_for_budget = values[2];
-    __pyx_v_bigram_positions = __pyx_convert_vector_from_py_int(values[3]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 163, __pyx_L3_error)
+    __pyx_v_bigram_positions = __pyx_convert_vector_from_py_int(values[3]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 160, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("initialize", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 161, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("initialize", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 158, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorCompressionBudget.initialize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3624,7 +3586,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_4initiali
   bool __pyx_t_5;
   __Pyx_RefNannySetupContext("initialize", 0);
 
-  /* "ad3/extensions.pyx":165
+  /* "ad3/extensions.pyx":162
  *                    vector[int] bigram_positions):
  *         cdef vector[bool] counts_for_budget
  *         for counts in pcounts_for_budget:             # <<<<<<<<<<<<<<
@@ -3635,26 +3597,26 @@ static PyObject *__pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_4initiali
     __pyx_t_1 = __pyx_v_pcounts_for_budget; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_pcounts_for_budget); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 165, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_pcounts_for_budget); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 162, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 165, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 162, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 165, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 162, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 165, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 162, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 165, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 162, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 165, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 162, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -3664,7 +3626,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_4initiali
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(1, 165, __pyx_L1_error)
+          else __PYX_ERR(1, 162, __pyx_L1_error)
         }
         break;
       }
@@ -3673,22 +3635,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_4initiali
     __Pyx_XDECREF_SET(__pyx_v_counts, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "ad3/extensions.pyx":166
+    /* "ad3/extensions.pyx":163
  *         cdef vector[bool] counts_for_budget
  *         for counts in pcounts_for_budget:
  *             counts_for_budget.push_back(counts)             # <<<<<<<<<<<<<<
  *         (<FactorCompressionBudget*>self.thisptr).Initialize(length, budget,
  *                                                             counts_for_budget,
  */
-    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_counts); if (unlikely((__pyx_t_5 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 166, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_counts); if (unlikely((__pyx_t_5 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 163, __pyx_L1_error)
     try {
       __pyx_v_counts_for_budget.push_back(__pyx_t_5);
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 166, __pyx_L1_error)
+      __PYX_ERR(1, 163, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":165
+    /* "ad3/extensions.pyx":162
  *                    vector[int] bigram_positions):
  *         cdef vector[bool] counts_for_budget
  *         for counts in pcounts_for_budget:             # <<<<<<<<<<<<<<
@@ -3698,7 +3660,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_4initiali
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":167
+  /* "ad3/extensions.pyx":164
  *         for counts in pcounts_for_budget:
  *             counts_for_budget.push_back(counts)
  *         (<FactorCompressionBudget*>self.thisptr).Initialize(length, budget,             # <<<<<<<<<<<<<<
@@ -3707,7 +3669,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_4initiali
  */
   ((AD3::FactorCompressionBudget *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_length, __pyx_v_budget, __pyx_v_counts_for_budget, __pyx_v_bigram_positions);
 
-  /* "ad3/extensions.pyx":161
+  /* "ad3/extensions.pyx":158
  *             del self.thisptr
  * 
  *     def initialize(self, int length, int budget,             # <<<<<<<<<<<<<<
@@ -3837,7 +3799,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_24PFactorCompressionBudget_8__setsta
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":173
+/* "ad3/extensions.pyx":170
  * 
  * cdef class PFactorBinaryTree(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -3874,7 +3836,7 @@ static int __pyx_pw_3ad3_10extensions_17PFactorBinaryTree_1__cinit__(PyObject *_
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 173, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 170, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3888,7 +3850,7 @@ static int __pyx_pw_3ad3_10extensions_17PFactorBinaryTree_1__cinit__(PyObject *_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 173, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 170, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorBinaryTree.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3908,27 +3870,27 @@ static int __pyx_pf_3ad3_10extensions_17PFactorBinaryTree___cinit__(struct __pyx
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":174
+  /* "ad3/extensions.pyx":171
  * cdef class PFactorBinaryTree(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *            self.thisptr = new FactorBinaryTree()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 174, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 171, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":175
+  /* "ad3/extensions.pyx":172
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *            self.thisptr = new FactorBinaryTree()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 175, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 172, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":176
+    /* "ad3/extensions.pyx":173
  *         self.allocate = allocate
  *         if allocate:
  *            self.thisptr = new FactorBinaryTree()             # <<<<<<<<<<<<<<
@@ -3937,7 +3899,7 @@ static int __pyx_pf_3ad3_10extensions_17PFactorBinaryTree___cinit__(struct __pyx
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorBinaryTree();
 
-    /* "ad3/extensions.pyx":175
+    /* "ad3/extensions.pyx":172
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -3946,7 +3908,7 @@ static int __pyx_pf_3ad3_10extensions_17PFactorBinaryTree___cinit__(struct __pyx
  */
   }
 
-  /* "ad3/extensions.pyx":173
+  /* "ad3/extensions.pyx":170
  * 
  * cdef class PFactorBinaryTree(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -3965,7 +3927,7 @@ static int __pyx_pf_3ad3_10extensions_17PFactorBinaryTree___cinit__(struct __pyx
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":178
+/* "ad3/extensions.pyx":175
  *            self.thisptr = new FactorBinaryTree()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -3989,7 +3951,7 @@ static void __pyx_pf_3ad3_10extensions_17PFactorBinaryTree_2__dealloc__(struct _
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":179
+  /* "ad3/extensions.pyx":176
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -3999,7 +3961,7 @@ static void __pyx_pf_3ad3_10extensions_17PFactorBinaryTree_2__dealloc__(struct _
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":180
+    /* "ad3/extensions.pyx":177
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -4008,7 +3970,7 @@ static void __pyx_pf_3ad3_10extensions_17PFactorBinaryTree_2__dealloc__(struct _
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":179
+    /* "ad3/extensions.pyx":176
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -4017,7 +3979,7 @@ static void __pyx_pf_3ad3_10extensions_17PFactorBinaryTree_2__dealloc__(struct _
  */
   }
 
-  /* "ad3/extensions.pyx":178
+  /* "ad3/extensions.pyx":175
  *            self.thisptr = new FactorBinaryTree()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -4029,7 +3991,7 @@ static void __pyx_pf_3ad3_10extensions_17PFactorBinaryTree_2__dealloc__(struct _
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":182
+/* "ad3/extensions.pyx":179
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] parents):             # <<<<<<<<<<<<<<
@@ -4045,7 +4007,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_17PFactorBinaryTree_5initialize(PyOb
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("initialize (wrapper)", 0);
   assert(__pyx_arg_parents); {
-    __pyx_v_parents = __pyx_convert_vector_from_py_int(__pyx_arg_parents); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 182, __pyx_L3_error)
+    __pyx_v_parents = __pyx_convert_vector_from_py_int(__pyx_arg_parents); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 179, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -4065,7 +4027,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_17PFactorBinaryTree_4initialize(stru
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("initialize", 0);
 
-  /* "ad3/extensions.pyx":183
+  /* "ad3/extensions.pyx":180
  * 
  *     def initialize(self, vector[int] parents):
  *         (<FactorBinaryTree*>self.thisptr).Initialize(parents)             # <<<<<<<<<<<<<<
@@ -4074,7 +4036,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_17PFactorBinaryTree_4initialize(stru
  */
   ((AD3::FactorBinaryTree *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_parents);
 
-  /* "ad3/extensions.pyx":182
+  /* "ad3/extensions.pyx":179
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] parents):             # <<<<<<<<<<<<<<
@@ -4196,7 +4158,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_17PFactorBinaryTree_8__setstate_cyth
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":187
+/* "ad3/extensions.pyx":184
  * 
  * cdef class PFactorBinaryTreeCounts(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -4233,7 +4195,7 @@ static int __pyx_pw_3ad3_10extensions_23PFactorBinaryTreeCounts_1__cinit__(PyObj
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 187, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 184, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -4247,7 +4209,7 @@ static int __pyx_pw_3ad3_10extensions_23PFactorBinaryTreeCounts_1__cinit__(PyObj
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 187, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 184, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorBinaryTreeCounts.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4267,27 +4229,27 @@ static int __pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts___cinit__(struct
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":188
+  /* "ad3/extensions.pyx":185
  * cdef class PFactorBinaryTreeCounts(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *            self.thisptr = new FactorBinaryTreeCounts()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 188, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 185, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":189
+  /* "ad3/extensions.pyx":186
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *            self.thisptr = new FactorBinaryTreeCounts()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 189, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 186, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":190
+    /* "ad3/extensions.pyx":187
  *         self.allocate = allocate
  *         if allocate:
  *            self.thisptr = new FactorBinaryTreeCounts()             # <<<<<<<<<<<<<<
@@ -4296,7 +4258,7 @@ static int __pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts___cinit__(struct
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorBinaryTreeCounts();
 
-    /* "ad3/extensions.pyx":189
+    /* "ad3/extensions.pyx":186
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -4305,7 +4267,7 @@ static int __pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts___cinit__(struct
  */
   }
 
-  /* "ad3/extensions.pyx":187
+  /* "ad3/extensions.pyx":184
  * 
  * cdef class PFactorBinaryTreeCounts(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -4324,7 +4286,7 @@ static int __pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts___cinit__(struct
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":192
+/* "ad3/extensions.pyx":189
  *            self.thisptr = new FactorBinaryTreeCounts()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -4348,7 +4310,7 @@ static void __pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_2__dealloc__(st
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":193
+  /* "ad3/extensions.pyx":190
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -4358,7 +4320,7 @@ static void __pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_2__dealloc__(st
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":194
+    /* "ad3/extensions.pyx":191
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -4367,7 +4329,7 @@ static void __pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_2__dealloc__(st
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":193
+    /* "ad3/extensions.pyx":190
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -4376,7 +4338,7 @@ static void __pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_2__dealloc__(st
  */
   }
 
-  /* "ad3/extensions.pyx":192
+  /* "ad3/extensions.pyx":189
  *            self.thisptr = new FactorBinaryTreeCounts()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -4388,7 +4350,7 @@ static void __pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_2__dealloc__(st
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":196
+/* "ad3/extensions.pyx":193
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] parents,             # <<<<<<<<<<<<<<
@@ -4410,7 +4372,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_23PFactorBinaryTreeCounts_5initializ
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_parents,&__pyx_n_s_pcounts_for_budget,&__pyx_n_s_phas_count_scores,&__pyx_n_s_max_num_bins,0};
     PyObject* values[4] = {0,0,0,0};
 
-    /* "ad3/extensions.pyx":198
+    /* "ad3/extensions.pyx":195
  *     def initialize(self, vector[int] parents,
  *                    pcounts_for_budget,
  *                    phas_count_scores=None,             # <<<<<<<<<<<<<<
@@ -4419,7 +4381,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_23PFactorBinaryTreeCounts_5initializ
  */
     values[2] = ((PyObject *)Py_None);
 
-    /* "ad3/extensions.pyx":199
+    /* "ad3/extensions.pyx":196
  *                    pcounts_for_budget,
  *                    phas_count_scores=None,
  *                    max_num_bins=None):             # <<<<<<<<<<<<<<
@@ -4451,7 +4413,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_23PFactorBinaryTreeCounts_5initializ
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pcounts_for_budget)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 4, 1); __PYX_ERR(1, 196, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 4, 1); __PYX_ERR(1, 193, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -4467,7 +4429,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_23PFactorBinaryTreeCounts_5initializ
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 196, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 193, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -4481,14 +4443,14 @@ static PyObject *__pyx_pw_3ad3_10extensions_23PFactorBinaryTreeCounts_5initializ
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_parents = __pyx_convert_vector_from_py_int(values[0]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 196, __pyx_L3_error)
+    __pyx_v_parents = __pyx_convert_vector_from_py_int(values[0]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 193, __pyx_L3_error)
     __pyx_v_pcounts_for_budget = values[1];
     __pyx_v_phas_count_scores = values[2];
     __pyx_v_max_num_bins = values[3];
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 196, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 193, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorBinaryTreeCounts.initialize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4496,7 +4458,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_23PFactorBinaryTreeCounts_5initializ
   __pyx_L4_argument_unpacking_done:;
   __pyx_r = __pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initialize(((struct __pyx_obj_3ad3_10extensions_PFactorBinaryTreeCounts *)__pyx_v_self), __pyx_v_parents, __pyx_v_pcounts_for_budget, __pyx_v_phas_count_scores, __pyx_v_max_num_bins);
 
-  /* "ad3/extensions.pyx":196
+  /* "ad3/extensions.pyx":193
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] parents,             # <<<<<<<<<<<<<<
@@ -4526,7 +4488,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
   int __pyx_t_8;
   __Pyx_RefNannySetupContext("initialize", 0);
 
-  /* "ad3/extensions.pyx":202
+  /* "ad3/extensions.pyx":199
  *         cdef vector[bool] counts_for_budget
  *         cdef vector[bool] has_count_scores
  *         for counts in pcounts_for_budget:             # <<<<<<<<<<<<<<
@@ -4537,26 +4499,26 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
     __pyx_t_1 = __pyx_v_pcounts_for_budget; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_pcounts_for_budget); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 202, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_pcounts_for_budget); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 199, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 202, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 199, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 202, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 199, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 202, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 199, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 202, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 199, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 202, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 199, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -4566,7 +4528,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(1, 202, __pyx_L1_error)
+          else __PYX_ERR(1, 199, __pyx_L1_error)
         }
         break;
       }
@@ -4575,22 +4537,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
     __Pyx_XDECREF_SET(__pyx_v_counts, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "ad3/extensions.pyx":203
+    /* "ad3/extensions.pyx":200
  *         cdef vector[bool] has_count_scores
  *         for counts in pcounts_for_budget:
  *             counts_for_budget.push_back(counts)             # <<<<<<<<<<<<<<
  *         if phas_count_scores is not None:
  *             for has_count in phas_count_scores:
  */
-    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_counts); if (unlikely((__pyx_t_5 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 203, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_counts); if (unlikely((__pyx_t_5 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 200, __pyx_L1_error)
     try {
       __pyx_v_counts_for_budget.push_back(__pyx_t_5);
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 203, __pyx_L1_error)
+      __PYX_ERR(1, 200, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":202
+    /* "ad3/extensions.pyx":199
  *         cdef vector[bool] counts_for_budget
  *         cdef vector[bool] has_count_scores
  *         for counts in pcounts_for_budget:             # <<<<<<<<<<<<<<
@@ -4600,7 +4562,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":204
+  /* "ad3/extensions.pyx":201
  *         for counts in pcounts_for_budget:
  *             counts_for_budget.push_back(counts)
  *         if phas_count_scores is not None:             # <<<<<<<<<<<<<<
@@ -4611,7 +4573,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
-    /* "ad3/extensions.pyx":205
+    /* "ad3/extensions.pyx":202
  *             counts_for_budget.push_back(counts)
  *         if phas_count_scores is not None:
  *             for has_count in phas_count_scores:             # <<<<<<<<<<<<<<
@@ -4622,26 +4584,26 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
       __pyx_t_1 = __pyx_v_phas_count_scores; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
       __pyx_t_3 = NULL;
     } else {
-      __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_phas_count_scores); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 205, __pyx_L1_error)
+      __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_phas_count_scores); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 202, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 205, __pyx_L1_error)
+      __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 202, __pyx_L1_error)
     }
     for (;;) {
       if (likely(!__pyx_t_3)) {
         if (likely(PyList_CheckExact(__pyx_t_1))) {
           if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 205, __pyx_L1_error)
+          __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 202, __pyx_L1_error)
           #else
-          __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 205, __pyx_L1_error)
+          __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 202, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           #endif
         } else {
           if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 205, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 202, __pyx_L1_error)
           #else
-          __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 205, __pyx_L1_error)
+          __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 202, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           #endif
         }
@@ -4651,7 +4613,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(1, 205, __pyx_L1_error)
+            else __PYX_ERR(1, 202, __pyx_L1_error)
           }
           break;
         }
@@ -4660,22 +4622,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
       __Pyx_XDECREF_SET(__pyx_v_has_count, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "ad3/extensions.pyx":206
+      /* "ad3/extensions.pyx":203
  *         if phas_count_scores is not None:
  *             for has_count in phas_count_scores:
  *                 has_count_scores.push_back(has_count)             # <<<<<<<<<<<<<<
  *             if max_num_bins is not None:
  *                 (<FactorBinaryTreeCounts*>self.thisptr).Initialize(
  */
-      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_has_count); if (unlikely((__pyx_t_5 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 206, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_has_count); if (unlikely((__pyx_t_5 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 203, __pyx_L1_error)
       try {
         __pyx_v_has_count_scores.push_back(__pyx_t_5);
       } catch(...) {
         __Pyx_CppExn2PyErr();
-        __PYX_ERR(1, 206, __pyx_L1_error)
+        __PYX_ERR(1, 203, __pyx_L1_error)
       }
 
-      /* "ad3/extensions.pyx":205
+      /* "ad3/extensions.pyx":202
  *             counts_for_budget.push_back(counts)
  *         if phas_count_scores is not None:
  *             for has_count in phas_count_scores:             # <<<<<<<<<<<<<<
@@ -4685,7 +4647,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "ad3/extensions.pyx":207
+    /* "ad3/extensions.pyx":204
  *             for has_count in phas_count_scores:
  *                 has_count_scores.push_back(has_count)
  *             if max_num_bins is not None:             # <<<<<<<<<<<<<<
@@ -4696,16 +4658,16 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
     __pyx_t_6 = (__pyx_t_7 != 0);
     if (__pyx_t_6) {
 
-      /* "ad3/extensions.pyx":209
+      /* "ad3/extensions.pyx":206
  *             if max_num_bins is not None:
  *                 (<FactorBinaryTreeCounts*>self.thisptr).Initialize(
  *                     parents, counts_for_budget, has_count_scores, max_num_bins)             # <<<<<<<<<<<<<<
  * 
  *             else:
  */
-      __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_v_max_num_bins); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 209, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyInt_As_int(__pyx_v_max_num_bins); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 206, __pyx_L1_error)
 
-      /* "ad3/extensions.pyx":208
+      /* "ad3/extensions.pyx":205
  *                 has_count_scores.push_back(has_count)
  *             if max_num_bins is not None:
  *                 (<FactorBinaryTreeCounts*>self.thisptr).Initialize(             # <<<<<<<<<<<<<<
@@ -4714,7 +4676,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
  */
       ((AD3::FactorBinaryTreeCounts *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_parents, __pyx_v_counts_for_budget, __pyx_v_has_count_scores, __pyx_t_8);
 
-      /* "ad3/extensions.pyx":207
+      /* "ad3/extensions.pyx":204
  *             for has_count in phas_count_scores:
  *                 has_count_scores.push_back(has_count)
  *             if max_num_bins is not None:             # <<<<<<<<<<<<<<
@@ -4724,7 +4686,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
       goto __pyx_L8;
     }
 
-    /* "ad3/extensions.pyx":212
+    /* "ad3/extensions.pyx":209
  * 
  *             else:
  *                 (<FactorBinaryTreeCounts*>self.thisptr).Initialize(             # <<<<<<<<<<<<<<
@@ -4733,7 +4695,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
  */
     /*else*/ {
 
-      /* "ad3/extensions.pyx":213
+      /* "ad3/extensions.pyx":210
  *             else:
  *                 (<FactorBinaryTreeCounts*>self.thisptr).Initialize(
  *                     parents, counts_for_budget, has_count_scores)             # <<<<<<<<<<<<<<
@@ -4744,7 +4706,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
     }
     __pyx_L8:;
 
-    /* "ad3/extensions.pyx":204
+    /* "ad3/extensions.pyx":201
  *         for counts in pcounts_for_budget:
  *             counts_for_budget.push_back(counts)
  *         if phas_count_scores is not None:             # <<<<<<<<<<<<<<
@@ -4754,7 +4716,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
     goto __pyx_L5;
   }
 
-  /* "ad3/extensions.pyx":216
+  /* "ad3/extensions.pyx":213
  * 
  *         else:
  *             (<FactorBinaryTreeCounts*>self.thisptr).Initialize(             # <<<<<<<<<<<<<<
@@ -4763,7 +4725,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
  */
   /*else*/ {
 
-    /* "ad3/extensions.pyx":217
+    /* "ad3/extensions.pyx":214
  *         else:
  *             (<FactorBinaryTreeCounts*>self.thisptr).Initialize(
  *                 parents, counts_for_budget)             # <<<<<<<<<<<<<<
@@ -4774,7 +4736,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_4initializ
   }
   __pyx_L5:;
 
-  /* "ad3/extensions.pyx":196
+  /* "ad3/extensions.pyx":193
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] parents,             # <<<<<<<<<<<<<<
@@ -4905,7 +4867,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_23PFactorBinaryTreeCounts_8__setstat
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":221
+/* "ad3/extensions.pyx":218
  * 
  * cdef class PFactorGeneralTree(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -4942,7 +4904,7 @@ static int __pyx_pw_3ad3_10extensions_18PFactorGeneralTree_1__cinit__(PyObject *
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 221, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 218, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -4956,7 +4918,7 @@ static int __pyx_pw_3ad3_10extensions_18PFactorGeneralTree_1__cinit__(PyObject *
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 221, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 218, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorGeneralTree.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4976,27 +4938,27 @@ static int __pyx_pf_3ad3_10extensions_18PFactorGeneralTree___cinit__(struct __py
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":222
+  /* "ad3/extensions.pyx":219
  * cdef class PFactorGeneralTree(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *            self.thisptr = new FactorGeneralTree()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 222, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 219, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":223
+  /* "ad3/extensions.pyx":220
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *            self.thisptr = new FactorGeneralTree()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 223, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 220, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":224
+    /* "ad3/extensions.pyx":221
  *         self.allocate = allocate
  *         if allocate:
  *            self.thisptr = new FactorGeneralTree()             # <<<<<<<<<<<<<<
@@ -5005,7 +4967,7 @@ static int __pyx_pf_3ad3_10extensions_18PFactorGeneralTree___cinit__(struct __py
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorGeneralTree();
 
-    /* "ad3/extensions.pyx":223
+    /* "ad3/extensions.pyx":220
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -5014,7 +4976,7 @@ static int __pyx_pf_3ad3_10extensions_18PFactorGeneralTree___cinit__(struct __py
  */
   }
 
-  /* "ad3/extensions.pyx":221
+  /* "ad3/extensions.pyx":218
  * 
  * cdef class PFactorGeneralTree(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -5033,7 +4995,7 @@ static int __pyx_pf_3ad3_10extensions_18PFactorGeneralTree___cinit__(struct __py
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":226
+/* "ad3/extensions.pyx":223
  *            self.thisptr = new FactorGeneralTree()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -5057,7 +5019,7 @@ static void __pyx_pf_3ad3_10extensions_18PFactorGeneralTree_2__dealloc__(struct 
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":227
+  /* "ad3/extensions.pyx":224
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -5067,7 +5029,7 @@ static void __pyx_pf_3ad3_10extensions_18PFactorGeneralTree_2__dealloc__(struct 
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":228
+    /* "ad3/extensions.pyx":225
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -5076,7 +5038,7 @@ static void __pyx_pf_3ad3_10extensions_18PFactorGeneralTree_2__dealloc__(struct 
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":227
+    /* "ad3/extensions.pyx":224
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -5085,7 +5047,7 @@ static void __pyx_pf_3ad3_10extensions_18PFactorGeneralTree_2__dealloc__(struct 
  */
   }
 
-  /* "ad3/extensions.pyx":226
+  /* "ad3/extensions.pyx":223
  *            self.thisptr = new FactorGeneralTree()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -5097,7 +5059,7 @@ static void __pyx_pf_3ad3_10extensions_18PFactorGeneralTree_2__dealloc__(struct 
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":230
+/* "ad3/extensions.pyx":227
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] parents, vector[int] num_states):             # <<<<<<<<<<<<<<
@@ -5136,11 +5098,11 @@ static PyObject *__pyx_pw_3ad3_10extensions_18PFactorGeneralTree_5initialize(PyO
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_num_states)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 1, 2, 2, 1); __PYX_ERR(1, 230, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 1, 2, 2, 1); __PYX_ERR(1, 227, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 230, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 227, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -5148,12 +5110,12 @@ static PyObject *__pyx_pw_3ad3_10extensions_18PFactorGeneralTree_5initialize(PyO
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_parents = __pyx_convert_vector_from_py_int(values[0]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 230, __pyx_L3_error)
-    __pyx_v_num_states = __pyx_convert_vector_from_py_int(values[1]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 230, __pyx_L3_error)
+    __pyx_v_parents = __pyx_convert_vector_from_py_int(values[0]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 227, __pyx_L3_error)
+    __pyx_v_num_states = __pyx_convert_vector_from_py_int(values[1]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 227, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("initialize", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 230, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("initialize", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 227, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorGeneralTree.initialize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5171,7 +5133,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_18PFactorGeneralTree_4initialize(str
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("initialize", 0);
 
-  /* "ad3/extensions.pyx":231
+  /* "ad3/extensions.pyx":228
  * 
  *     def initialize(self, vector[int] parents, vector[int] num_states):
  *         (<FactorGeneralTree*>self.thisptr).Initialize(parents, num_states)             # <<<<<<<<<<<<<<
@@ -5180,7 +5142,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_18PFactorGeneralTree_4initialize(str
  */
   ((AD3::FactorGeneralTree *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_parents, __pyx_v_num_states);
 
-  /* "ad3/extensions.pyx":230
+  /* "ad3/extensions.pyx":227
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] parents, vector[int] num_states):             # <<<<<<<<<<<<<<
@@ -5302,7 +5264,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_18PFactorGeneralTree_8__setstate_cyt
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":235
+/* "ad3/extensions.pyx":232
  * 
  * cdef class PFactorGeneralTreeCounts(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -5339,7 +5301,7 @@ static int __pyx_pw_3ad3_10extensions_24PFactorGeneralTreeCounts_1__cinit__(PyOb
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 235, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 232, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -5353,7 +5315,7 @@ static int __pyx_pw_3ad3_10extensions_24PFactorGeneralTreeCounts_1__cinit__(PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 235, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 232, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorGeneralTreeCounts.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5373,27 +5335,27 @@ static int __pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts___cinit__(struc
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":236
+  /* "ad3/extensions.pyx":233
  * cdef class PFactorGeneralTreeCounts(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *            self.thisptr = new FactorGeneralTreeCounts()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 236, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 233, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":237
+  /* "ad3/extensions.pyx":234
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *            self.thisptr = new FactorGeneralTreeCounts()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 237, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 234, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":238
+    /* "ad3/extensions.pyx":235
  *         self.allocate = allocate
  *         if allocate:
  *            self.thisptr = new FactorGeneralTreeCounts()             # <<<<<<<<<<<<<<
@@ -5402,7 +5364,7 @@ static int __pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts___cinit__(struc
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorGeneralTreeCounts();
 
-    /* "ad3/extensions.pyx":237
+    /* "ad3/extensions.pyx":234
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -5411,7 +5373,7 @@ static int __pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts___cinit__(struc
  */
   }
 
-  /* "ad3/extensions.pyx":235
+  /* "ad3/extensions.pyx":232
  * 
  * cdef class PFactorGeneralTreeCounts(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -5430,7 +5392,7 @@ static int __pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts___cinit__(struc
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":240
+/* "ad3/extensions.pyx":237
  *            self.thisptr = new FactorGeneralTreeCounts()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -5454,7 +5416,7 @@ static void __pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts_2__dealloc__(s
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":241
+  /* "ad3/extensions.pyx":238
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -5464,7 +5426,7 @@ static void __pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts_2__dealloc__(s
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":242
+    /* "ad3/extensions.pyx":239
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -5473,7 +5435,7 @@ static void __pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts_2__dealloc__(s
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":241
+    /* "ad3/extensions.pyx":238
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -5482,7 +5444,7 @@ static void __pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts_2__dealloc__(s
  */
   }
 
-  /* "ad3/extensions.pyx":240
+  /* "ad3/extensions.pyx":237
  *            self.thisptr = new FactorGeneralTreeCounts()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -5494,7 +5456,7 @@ static void __pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts_2__dealloc__(s
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":244
+/* "ad3/extensions.pyx":241
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] parents, vector[int] num_states):             # <<<<<<<<<<<<<<
@@ -5533,11 +5495,11 @@ static PyObject *__pyx_pw_3ad3_10extensions_24PFactorGeneralTreeCounts_5initiali
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_num_states)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 1, 2, 2, 1); __PYX_ERR(1, 244, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 1, 2, 2, 1); __PYX_ERR(1, 241, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 244, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 241, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -5545,12 +5507,12 @@ static PyObject *__pyx_pw_3ad3_10extensions_24PFactorGeneralTreeCounts_5initiali
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_parents = __pyx_convert_vector_from_py_int(values[0]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L3_error)
-    __pyx_v_num_states = __pyx_convert_vector_from_py_int(values[1]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 244, __pyx_L3_error)
+    __pyx_v_parents = __pyx_convert_vector_from_py_int(values[0]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L3_error)
+    __pyx_v_num_states = __pyx_convert_vector_from_py_int(values[1]); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 241, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("initialize", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 244, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("initialize", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 241, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorGeneralTreeCounts.initialize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5568,7 +5530,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts_4initiali
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("initialize", 0);
 
-  /* "ad3/extensions.pyx":245
+  /* "ad3/extensions.pyx":242
  * 
  *     def initialize(self, vector[int] parents, vector[int] num_states):
  *         (<FactorGeneralTreeCounts*>self.thisptr).Initialize(parents,             # <<<<<<<<<<<<<<
@@ -5577,7 +5539,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts_4initiali
  */
   ((AD3::FactorGeneralTreeCounts *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_parents, __pyx_v_num_states);
 
-  /* "ad3/extensions.pyx":244
+  /* "ad3/extensions.pyx":241
  *             del self.thisptr
  * 
  *     def initialize(self, vector[int] parents, vector[int] num_states):             # <<<<<<<<<<<<<<
@@ -5699,7 +5661,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_24PFactorGeneralTreeCounts_8__setsta
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":250
+/* "ad3/extensions.pyx":247
  * 
  * cdef class PFactorTree(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -5736,7 +5698,7 @@ static int __pyx_pw_3ad3_10extensions_11PFactorTree_1__cinit__(PyObject *__pyx_v
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 250, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 247, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -5750,7 +5712,7 @@ static int __pyx_pw_3ad3_10extensions_11PFactorTree_1__cinit__(PyObject *__pyx_v
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 250, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 247, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorTree.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5770,27 +5732,27 @@ static int __pyx_pf_3ad3_10extensions_11PFactorTree___cinit__(struct __pyx_obj_3
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":251
+  /* "ad3/extensions.pyx":248
  * cdef class PFactorTree(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *            self.thisptr = new FactorTree()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 251, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 248, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":252
+  /* "ad3/extensions.pyx":249
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *            self.thisptr = new FactorTree()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 252, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 249, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":253
+    /* "ad3/extensions.pyx":250
  *         self.allocate = allocate
  *         if allocate:
  *            self.thisptr = new FactorTree()             # <<<<<<<<<<<<<<
@@ -5799,7 +5761,7 @@ static int __pyx_pf_3ad3_10extensions_11PFactorTree___cinit__(struct __pyx_obj_3
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorTree();
 
-    /* "ad3/extensions.pyx":252
+    /* "ad3/extensions.pyx":249
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -5808,7 +5770,7 @@ static int __pyx_pf_3ad3_10extensions_11PFactorTree___cinit__(struct __pyx_obj_3
  */
   }
 
-  /* "ad3/extensions.pyx":250
+  /* "ad3/extensions.pyx":247
  * 
  * cdef class PFactorTree(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -5827,7 +5789,7 @@ static int __pyx_pf_3ad3_10extensions_11PFactorTree___cinit__(struct __pyx_obj_3
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":255
+/* "ad3/extensions.pyx":252
  *            self.thisptr = new FactorTree()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -5851,7 +5813,7 @@ static void __pyx_pf_3ad3_10extensions_11PFactorTree_2__dealloc__(struct __pyx_o
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":256
+  /* "ad3/extensions.pyx":253
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -5861,7 +5823,7 @@ static void __pyx_pf_3ad3_10extensions_11PFactorTree_2__dealloc__(struct __pyx_o
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":257
+    /* "ad3/extensions.pyx":254
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -5870,7 +5832,7 @@ static void __pyx_pf_3ad3_10extensions_11PFactorTree_2__dealloc__(struct __pyx_o
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":256
+    /* "ad3/extensions.pyx":253
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -5879,7 +5841,7 @@ static void __pyx_pf_3ad3_10extensions_11PFactorTree_2__dealloc__(struct __pyx_o
  */
   }
 
-  /* "ad3/extensions.pyx":255
+  /* "ad3/extensions.pyx":252
  *            self.thisptr = new FactorTree()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -5891,7 +5853,7 @@ static void __pyx_pf_3ad3_10extensions_11PFactorTree_2__dealloc__(struct __pyx_o
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":259
+/* "ad3/extensions.pyx":256
  *             del self.thisptr
  * 
  *     def initialize(self, int length, list arcs, bool validate=True):             # <<<<<<<<<<<<<<
@@ -5933,7 +5895,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_11PFactorTree_5initialize(PyObject *
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_arcs)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 3, 1); __PYX_ERR(1, 259, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 3, 1); __PYX_ERR(1, 256, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -5943,7 +5905,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_11PFactorTree_5initialize(PyObject *
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 259, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 256, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -5955,23 +5917,23 @@ static PyObject *__pyx_pw_3ad3_10extensions_11PFactorTree_5initialize(PyObject *
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 259, __pyx_L3_error)
+    __pyx_v_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 256, __pyx_L3_error)
     __pyx_v_arcs = ((PyObject*)values[1]);
     if (values[2]) {
-      __pyx_v_validate = __Pyx_PyObject_IsTrue(values[2]); if (unlikely((__pyx_v_validate == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 259, __pyx_L3_error)
+      __pyx_v_validate = __Pyx_PyObject_IsTrue(values[2]); if (unlikely((__pyx_v_validate == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 256, __pyx_L3_error)
     } else {
       __pyx_v_validate = ((bool)1);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 259, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 256, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorTree.initialize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arcs), (&PyList_Type), 1, "arcs", 1))) __PYX_ERR(1, 259, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arcs), (&PyList_Type), 1, "arcs", 1))) __PYX_ERR(1, 256, __pyx_L1_error)
   __pyx_r = __pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(((struct __pyx_obj_3ad3_10extensions_PFactorTree *)__pyx_v_self), __pyx_v_length, __pyx_v_arcs, __pyx_v_validate);
 
   /* function exit code */
@@ -6001,7 +5963,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
   AD3::Arc *__pyx_t_8;
   __Pyx_RefNannySetupContext("initialize", 0);
 
-  /* "ad3/extensions.pyx":264
+  /* "ad3/extensions.pyx":261
  * 
  *         cdef tuple arc
  *         for arc in arcs:             # <<<<<<<<<<<<<<
@@ -6010,22 +5972,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
   if (unlikely(__pyx_v_arcs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 264, __pyx_L1_error)
+    __PYX_ERR(1, 261, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_arcs; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 264, __pyx_L1_error)
+    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 261, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 264, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 261, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 264, __pyx_L1_error)
+    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 261, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_arc, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":265
+    /* "ad3/extensions.pyx":262
  *         cdef tuple arc
  *         for arc in arcs:
  *             head = arc[0]             # <<<<<<<<<<<<<<
@@ -6034,15 +5996,15 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 265, __pyx_L1_error)
+      __PYX_ERR(1, 262, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 265, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 262, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 265, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 262, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_head = __pyx_t_4;
 
-    /* "ad3/extensions.pyx":266
+    /* "ad3/extensions.pyx":263
  *         for arc in arcs:
  *             head = arc[0]
  *             modifier = arc[1]             # <<<<<<<<<<<<<<
@@ -6051,15 +6013,15 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 266, __pyx_L1_error)
+      __PYX_ERR(1, 263, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 266, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 263, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 266, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 263, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_modifier = __pyx_t_4;
 
-    /* "ad3/extensions.pyx":268
+    /* "ad3/extensions.pyx":265
  *             modifier = arc[1]
  * 
  *             if validate:             # <<<<<<<<<<<<<<
@@ -6069,7 +6031,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
     __pyx_t_5 = (__pyx_v_validate != 0);
     if (__pyx_t_5) {
 
-      /* "ad3/extensions.pyx":269
+      /* "ad3/extensions.pyx":266
  * 
  *             if validate:
  *                 if not 0 <= head < length:             # <<<<<<<<<<<<<<
@@ -6083,20 +6045,20 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
       __pyx_t_6 = ((!(__pyx_t_5 != 0)) != 0);
       if (unlikely(__pyx_t_6)) {
 
-        /* "ad3/extensions.pyx":270
+        /* "ad3/extensions.pyx":267
  *             if validate:
  *                 if not 0 <= head < length:
  *                     raise ValueError("Invalid arc: head must be in [0, length)")             # <<<<<<<<<<<<<<
  *                 if not 1 <= modifier < length:
  *                     raise ValueError("Invalid arc: modifier must be in ",
  */
-        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 270, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 267, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_Raise(__pyx_t_3, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __PYX_ERR(1, 270, __pyx_L1_error)
+        __PYX_ERR(1, 267, __pyx_L1_error)
 
-        /* "ad3/extensions.pyx":269
+        /* "ad3/extensions.pyx":266
  * 
  *             if validate:
  *                 if not 0 <= head < length:             # <<<<<<<<<<<<<<
@@ -6105,7 +6067,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
       }
 
-      /* "ad3/extensions.pyx":271
+      /* "ad3/extensions.pyx":268
  *                 if not 0 <= head < length:
  *                     raise ValueError("Invalid arc: head must be in [0, length)")
  *                 if not 1 <= modifier < length:             # <<<<<<<<<<<<<<
@@ -6119,20 +6081,20 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
       __pyx_t_5 = ((!(__pyx_t_6 != 0)) != 0);
       if (unlikely(__pyx_t_5)) {
 
-        /* "ad3/extensions.pyx":272
+        /* "ad3/extensions.pyx":269
  *                     raise ValueError("Invalid arc: head must be in [0, length)")
  *                 if not 1 <= modifier < length:
  *                     raise ValueError("Invalid arc: modifier must be in ",             # <<<<<<<<<<<<<<
  *                                      "[1, length)")
  *                 if not head != modifier:
  */
-        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 272, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 269, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_Raise(__pyx_t_3, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __PYX_ERR(1, 272, __pyx_L1_error)
+        __PYX_ERR(1, 269, __pyx_L1_error)
 
-        /* "ad3/extensions.pyx":271
+        /* "ad3/extensions.pyx":268
  *                 if not 0 <= head < length:
  *                     raise ValueError("Invalid arc: head must be in [0, length)")
  *                 if not 1 <= modifier < length:             # <<<<<<<<<<<<<<
@@ -6141,7 +6103,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
       }
 
-      /* "ad3/extensions.pyx":274
+      /* "ad3/extensions.pyx":271
  *                     raise ValueError("Invalid arc: modifier must be in ",
  *                                      "[1, length)")
  *                 if not head != modifier:             # <<<<<<<<<<<<<<
@@ -6151,20 +6113,20 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
       __pyx_t_5 = ((!((__pyx_v_head != __pyx_v_modifier) != 0)) != 0);
       if (unlikely(__pyx_t_5)) {
 
-        /* "ad3/extensions.pyx":275
+        /* "ad3/extensions.pyx":272
  *                                      "[1, length)")
  *                 if not head != modifier:
  *                     raise ValueError("Invalid arc: head cannot be the same as "             # <<<<<<<<<<<<<<
  *                                      "the modifier")
  *             arcs_v.push_back(new Arc(head, modifier))
  */
-        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 275, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 272, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_Raise(__pyx_t_3, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __PYX_ERR(1, 275, __pyx_L1_error)
+        __PYX_ERR(1, 272, __pyx_L1_error)
 
-        /* "ad3/extensions.pyx":274
+        /* "ad3/extensions.pyx":271
  *                     raise ValueError("Invalid arc: modifier must be in ",
  *                                      "[1, length)")
  *                 if not head != modifier:             # <<<<<<<<<<<<<<
@@ -6173,7 +6135,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
       }
 
-      /* "ad3/extensions.pyx":268
+      /* "ad3/extensions.pyx":265
  *             modifier = arc[1]
  * 
  *             if validate:             # <<<<<<<<<<<<<<
@@ -6182,7 +6144,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
     }
 
-    /* "ad3/extensions.pyx":277
+    /* "ad3/extensions.pyx":274
  *                     raise ValueError("Invalid arc: head cannot be the same as "
  *                                      "the modifier")
  *             arcs_v.push_back(new Arc(head, modifier))             # <<<<<<<<<<<<<<
@@ -6193,10 +6155,10 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
       __pyx_v_arcs_v.push_back(new AD3::Arc(__pyx_v_head, __pyx_v_modifier));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 277, __pyx_L1_error)
+      __PYX_ERR(1, 274, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":264
+    /* "ad3/extensions.pyx":261
  * 
  *         cdef tuple arc
  *         for arc in arcs:             # <<<<<<<<<<<<<<
@@ -6206,7 +6168,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":279
+  /* "ad3/extensions.pyx":276
  *             arcs_v.push_back(new Arc(head, modifier))
  * 
  *         if validate and arcs_v.size() != <Py_ssize_t> self.thisptr.Degree():             # <<<<<<<<<<<<<<
@@ -6224,20 +6186,20 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
   __pyx_L10_bool_binop_done:;
   if (unlikely(__pyx_t_5)) {
 
-    /* "ad3/extensions.pyx":280
+    /* "ad3/extensions.pyx":277
  * 
  *         if validate and arcs_v.size() != <Py_ssize_t> self.thisptr.Degree():
  *             raise ValueError("Number of arcs differs from number of bound "             # <<<<<<<<<<<<<<
  *                              "variables.")
  *         (<FactorTree*>self.thisptr).Initialize(length, arcs_v)
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 280, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 277, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(1, 280, __pyx_L1_error)
+    __PYX_ERR(1, 277, __pyx_L1_error)
 
-    /* "ad3/extensions.pyx":279
+    /* "ad3/extensions.pyx":276
  *             arcs_v.push_back(new Arc(head, modifier))
  * 
  *         if validate and arcs_v.size() != <Py_ssize_t> self.thisptr.Degree():             # <<<<<<<<<<<<<<
@@ -6246,7 +6208,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
   }
 
-  /* "ad3/extensions.pyx":282
+  /* "ad3/extensions.pyx":279
  *             raise ValueError("Number of arcs differs from number of bound "
  *                              "variables.")
  *         (<FactorTree*>self.thisptr).Initialize(length, arcs_v)             # <<<<<<<<<<<<<<
@@ -6255,7 +6217,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
   ((AD3::FactorTree *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_length, __pyx_v_arcs_v);
 
-  /* "ad3/extensions.pyx":284
+  /* "ad3/extensions.pyx":281
  *         (<FactorTree*>self.thisptr).Initialize(length, arcs_v)
  * 
  *         for arcp in arcs_v:             # <<<<<<<<<<<<<<
@@ -6269,7 +6231,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
     ++__pyx_t_7;
     __pyx_v_arcp = __pyx_t_8;
 
-    /* "ad3/extensions.pyx":285
+    /* "ad3/extensions.pyx":282
  * 
  *         for arcp in arcs_v:
  *             del arcp             # <<<<<<<<<<<<<<
@@ -6278,7 +6240,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
     delete __pyx_v_arcp;
 
-    /* "ad3/extensions.pyx":284
+    /* "ad3/extensions.pyx":281
  *         (<FactorTree*>self.thisptr).Initialize(length, arcs_v)
  * 
  *         for arcp in arcs_v:             # <<<<<<<<<<<<<<
@@ -6287,7 +6249,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_4initialize(struct __p
  */
   }
 
-  /* "ad3/extensions.pyx":259
+  /* "ad3/extensions.pyx":256
  *             del self.thisptr
  * 
  *     def initialize(self, int length, list arcs, bool validate=True):             # <<<<<<<<<<<<<<
@@ -6417,7 +6379,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_11PFactorTree_8__setstate_cython__(C
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":289
+/* "ad3/extensions.pyx":286
  * 
  * cdef class PFactorHeadAutomaton(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -6454,7 +6416,7 @@ static int __pyx_pw_3ad3_10extensions_20PFactorHeadAutomaton_1__cinit__(PyObject
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 289, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 286, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -6468,7 +6430,7 @@ static int __pyx_pw_3ad3_10extensions_20PFactorHeadAutomaton_1__cinit__(PyObject
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 289, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 286, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorHeadAutomaton.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -6488,27 +6450,27 @@ static int __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton___cinit__(struct __
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":290
+  /* "ad3/extensions.pyx":287
  * cdef class PFactorHeadAutomaton(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *            self.thisptr = new FactorHeadAutomaton()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 290, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 287, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":291
+  /* "ad3/extensions.pyx":288
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *            self.thisptr = new FactorHeadAutomaton()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 291, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 288, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":292
+    /* "ad3/extensions.pyx":289
  *         self.allocate = allocate
  *         if allocate:
  *            self.thisptr = new FactorHeadAutomaton()             # <<<<<<<<<<<<<<
@@ -6517,7 +6479,7 @@ static int __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton___cinit__(struct __
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorHeadAutomaton();
 
-    /* "ad3/extensions.pyx":291
+    /* "ad3/extensions.pyx":288
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -6526,7 +6488,7 @@ static int __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton___cinit__(struct __
  */
   }
 
-  /* "ad3/extensions.pyx":289
+  /* "ad3/extensions.pyx":286
  * 
  * cdef class PFactorHeadAutomaton(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -6545,7 +6507,7 @@ static int __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton___cinit__(struct __
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":294
+/* "ad3/extensions.pyx":291
  *            self.thisptr = new FactorHeadAutomaton()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -6569,7 +6531,7 @@ static void __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_2__dealloc__(struc
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":295
+  /* "ad3/extensions.pyx":292
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -6579,7 +6541,7 @@ static void __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_2__dealloc__(struc
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":296
+    /* "ad3/extensions.pyx":293
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -6588,7 +6550,7 @@ static void __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_2__dealloc__(struc
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":295
+    /* "ad3/extensions.pyx":292
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -6597,7 +6559,7 @@ static void __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_2__dealloc__(struc
  */
   }
 
-  /* "ad3/extensions.pyx":294
+  /* "ad3/extensions.pyx":291
  *            self.thisptr = new FactorHeadAutomaton()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -6609,7 +6571,7 @@ static void __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_2__dealloc__(struc
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":298
+/* "ad3/extensions.pyx":295
  *             del self.thisptr
  * 
  *     def initialize(self, list arcs, list siblings, bool validate=True):             # <<<<<<<<<<<<<<
@@ -6651,7 +6613,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_20PFactorHeadAutomaton_5initialize(P
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_siblings)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 3, 1); __PYX_ERR(1, 298, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 3, 1); __PYX_ERR(1, 295, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -6661,7 +6623,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_20PFactorHeadAutomaton_5initialize(P
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 298, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 295, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -6676,21 +6638,21 @@ static PyObject *__pyx_pw_3ad3_10extensions_20PFactorHeadAutomaton_5initialize(P
     __pyx_v_arcs = ((PyObject*)values[0]);
     __pyx_v_siblings = ((PyObject*)values[1]);
     if (values[2]) {
-      __pyx_v_validate = __Pyx_PyObject_IsTrue(values[2]); if (unlikely((__pyx_v_validate == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 298, __pyx_L3_error)
+      __pyx_v_validate = __Pyx_PyObject_IsTrue(values[2]); if (unlikely((__pyx_v_validate == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 295, __pyx_L3_error)
     } else {
       __pyx_v_validate = ((bool)1);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 298, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("initialize", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 295, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorHeadAutomaton.initialize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arcs), (&PyList_Type), 1, "arcs", 1))) __PYX_ERR(1, 298, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_siblings), (&PyList_Type), 1, "siblings", 1))) __PYX_ERR(1, 298, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arcs), (&PyList_Type), 1, "arcs", 1))) __PYX_ERR(1, 295, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_siblings), (&PyList_Type), 1, "siblings", 1))) __PYX_ERR(1, 295, __pyx_L1_error)
   __pyx_r = __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(((struct __pyx_obj_3ad3_10extensions_PFactorHeadAutomaton *)__pyx_v_self), __pyx_v_arcs, __pyx_v_siblings, __pyx_v_validate);
 
   /* function exit code */
@@ -6703,7 +6665,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_20PFactorHeadAutomaton_5initialize(P
 }
 static PyObject *__pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_2generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "ad3/extensions.pyx":300
+/* "ad3/extensions.pyx":297
  *     def initialize(self, list arcs, list siblings, bool validate=True):
  *         # length = max(s - h) for (h, m, s) in siblings
  *         length = max(s - h for (h, m, s) in siblings)             # <<<<<<<<<<<<<<
@@ -6720,7 +6682,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_3ad3_10extensions___pyx_scope_struct_1_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(1, 300, __pyx_L1_error)
+    __PYX_ERR(1, 297, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -6728,7 +6690,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_2generator, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_initialize_locals_genexpr, __pyx_n_s_ad3_extensions); if (unlikely(!gen)) __PYX_ERR(1, 300, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_2generator, NULL, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_initialize_locals_genexpr, __pyx_n_s_ad3_extensions); if (unlikely(!gen)) __PYX_ERR(1, 297, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -6766,19 +6728,19 @@ static PyObject *__pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(1, 300, __pyx_L1_error)
-  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_siblings)) { __Pyx_RaiseClosureNameError("siblings"); __PYX_ERR(1, 300, __pyx_L1_error) }
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(1, 297, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_siblings)) { __Pyx_RaiseClosureNameError("siblings"); __PYX_ERR(1, 297, __pyx_L1_error) }
   if (unlikely(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_siblings == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 300, __pyx_L1_error)
+    __PYX_ERR(1, 297, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_cur_scope->__pyx_outer_scope->__pyx_v_siblings; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 300, __pyx_L1_error)
+    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 297, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 300, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 297, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     if ((likely(PyTuple_CheckExact(__pyx_t_3))) || (PyList_CheckExact(__pyx_t_3))) {
@@ -6787,7 +6749,7 @@ static PyObject *__pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
       if (unlikely(size != 3)) {
         if (size > 3) __Pyx_RaiseTooManyValuesError(3);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(1, 300, __pyx_L1_error)
+        __PYX_ERR(1, 297, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -6803,17 +6765,17 @@ static PyObject *__pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 300, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 297, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 300, __pyx_L1_error)
+      __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 297, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 300, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 297, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       #endif
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 300, __pyx_L1_error)
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 297, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_8 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -6823,7 +6785,7 @@ static PyObject *__pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
       __Pyx_GOTREF(__pyx_t_5);
       index = 2; __pyx_t_6 = __pyx_t_8(__pyx_t_7); if (unlikely(!__pyx_t_6)) goto __pyx_L6_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_6);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 3) < 0) __PYX_ERR(1, 300, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 3) < 0) __PYX_ERR(1, 297, __pyx_L1_error)
       __pyx_t_8 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L7_unpacking_done;
@@ -6831,7 +6793,7 @@ static PyObject *__pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(1, 300, __pyx_L1_error)
+      __PYX_ERR(1, 297, __pyx_L1_error)
       __pyx_L7_unpacking_done:;
     }
     __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_h);
@@ -6846,7 +6808,7 @@ static PyObject *__pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
     __Pyx_XDECREF_SET(__pyx_cur_scope->__pyx_v_s, __pyx_t_6);
     __Pyx_GIVEREF(__pyx_t_6);
     __pyx_t_6 = 0;
-    __pyx_t_3 = PyNumber_Subtract(__pyx_cur_scope->__pyx_v_s, __pyx_cur_scope->__pyx_v_h); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 300, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Subtract(__pyx_cur_scope->__pyx_v_s, __pyx_cur_scope->__pyx_v_h); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 297, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
@@ -6864,7 +6826,7 @@ static PyObject *__pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
     __pyx_cur_scope->__pyx_t_0 = 0;
     __Pyx_XGOTREF(__pyx_t_1);
     __pyx_t_2 = __pyx_cur_scope->__pyx_t_1;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(1, 300, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(1, 297, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
@@ -6891,7 +6853,7 @@ static PyObject *__pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":298
+/* "ad3/extensions.pyx":295
  *             del self.thisptr
  * 
  *     def initialize(self, list arcs, list siblings, bool validate=True):             # <<<<<<<<<<<<<<
@@ -6927,7 +6889,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_3ad3_10extensions___pyx_scope_struct__initialize *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(1, 298, __pyx_L1_error)
+    __PYX_ERR(1, 295, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -6935,22 +6897,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_siblings);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_siblings);
 
-  /* "ad3/extensions.pyx":300
+  /* "ad3/extensions.pyx":297
  *     def initialize(self, list arcs, list siblings, bool validate=True):
  *         # length = max(s - h) for (h, m, s) in siblings
  *         length = max(s - h for (h, m, s) in siblings)             # <<<<<<<<<<<<<<
  * 
  *         cdef vector[Arc *] arcs_v
  */
-  __pyx_t_1 = __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 300, __pyx_L1_error)
+  __pyx_t_1 = __pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_max, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 300, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_max, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_length = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "ad3/extensions.pyx":307
+  /* "ad3/extensions.pyx":304
  *         cdef tuple arc
  *         cdef tuple sibling
  *         for arc in arcs:             # <<<<<<<<<<<<<<
@@ -6959,22 +6921,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
   if (unlikely(__pyx_v_arcs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 307, __pyx_L1_error)
+    __PYX_ERR(1, 304, __pyx_L1_error)
   }
   __pyx_t_2 = __pyx_v_arcs; __Pyx_INCREF(__pyx_t_2); __pyx_t_3 = 0;
   for (;;) {
     if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_2)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(1, 307, __pyx_L1_error)
+    __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(1, 304, __pyx_L1_error)
     #else
-    __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 307, __pyx_L1_error)
+    __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 304, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 307, __pyx_L1_error)
+    if (!(likely(PyTuple_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 304, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_arc, ((PyObject*)__pyx_t_1));
     __pyx_t_1 = 0;
 
-    /* "ad3/extensions.pyx":308
+    /* "ad3/extensions.pyx":305
  *         cdef tuple sibling
  *         for arc in arcs:
  *             arcs_v.push_back(new Arc(arc[0], arc[1]))             # <<<<<<<<<<<<<<
@@ -6983,28 +6945,28 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 308, __pyx_L1_error)
+      __PYX_ERR(1, 305, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 308, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 305, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 308, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 305, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 308, __pyx_L1_error)
+      __PYX_ERR(1, 305, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 308, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 305, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 308, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 305, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     try {
       __pyx_v_arcs_v.push_back(new AD3::Arc(__pyx_t_4, __pyx_t_5));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 308, __pyx_L1_error)
+      __PYX_ERR(1, 305, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":307
+    /* "ad3/extensions.pyx":304
  *         cdef tuple arc
  *         cdef tuple sibling
  *         for arc in arcs:             # <<<<<<<<<<<<<<
@@ -7014,7 +6976,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "ad3/extensions.pyx":310
+  /* "ad3/extensions.pyx":307
  *             arcs_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *         for sibling in siblings:             # <<<<<<<<<<<<<<
@@ -7023,22 +6985,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
   if (unlikely(__pyx_cur_scope->__pyx_v_siblings == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 310, __pyx_L1_error)
+    __PYX_ERR(1, 307, __pyx_L1_error)
   }
   __pyx_t_2 = __pyx_cur_scope->__pyx_v_siblings; __Pyx_INCREF(__pyx_t_2); __pyx_t_3 = 0;
   for (;;) {
     if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_2)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(1, 310, __pyx_L1_error)
+    __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(1, 307, __pyx_L1_error)
     #else
-    __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 310, __pyx_L1_error)
+    __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 307, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 310, __pyx_L1_error)
+    if (!(likely(PyTuple_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_1)->tp_name), 0))) __PYX_ERR(1, 307, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_sibling, ((PyObject*)__pyx_t_1));
     __pyx_t_1 = 0;
 
-    /* "ad3/extensions.pyx":311
+    /* "ad3/extensions.pyx":308
  * 
  *         for sibling in siblings:
  *             siblings_v.push_back(new Sibling(sibling[0],             # <<<<<<<<<<<<<<
@@ -7047,14 +7009,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
     if (unlikely(__pyx_v_sibling == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 311, __pyx_L1_error)
+      __PYX_ERR(1, 308, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 311, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 311, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 308, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "ad3/extensions.pyx":312
+    /* "ad3/extensions.pyx":309
  *         for sibling in siblings:
  *             siblings_v.push_back(new Sibling(sibling[0],
  *                                              sibling[1],             # <<<<<<<<<<<<<<
@@ -7063,14 +7025,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
     if (unlikely(__pyx_v_sibling == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 312, __pyx_L1_error)
+      __PYX_ERR(1, 309, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 312, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 309, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 312, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 309, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "ad3/extensions.pyx":313
+    /* "ad3/extensions.pyx":310
  *             siblings_v.push_back(new Sibling(sibling[0],
  *                                              sibling[1],
  *                                              sibling[2]))             # <<<<<<<<<<<<<<
@@ -7079,14 +7041,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
     if (unlikely(__pyx_v_sibling == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 313, __pyx_L1_error)
+      __PYX_ERR(1, 310, __pyx_L1_error)
     }
-    __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 313, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 310, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 313, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 310, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "ad3/extensions.pyx":311
+    /* "ad3/extensions.pyx":308
  * 
  *         for sibling in siblings:
  *             siblings_v.push_back(new Sibling(sibling[0],             # <<<<<<<<<<<<<<
@@ -7097,10 +7059,10 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
       __pyx_v_siblings_v.push_back(new AD3::Sibling(__pyx_t_5, __pyx_t_4, __pyx_t_6));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 311, __pyx_L1_error)
+      __PYX_ERR(1, 308, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":310
+    /* "ad3/extensions.pyx":307
  *             arcs_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *         for sibling in siblings:             # <<<<<<<<<<<<<<
@@ -7110,7 +7072,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "ad3/extensions.pyx":315
+  /* "ad3/extensions.pyx":312
  *                                              sibling[2]))
  * 
  *         if validate:             # <<<<<<<<<<<<<<
@@ -7120,44 +7082,44 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
   __pyx_t_7 = (__pyx_v_validate != 0);
   if (__pyx_t_7) {
 
-    /* "ad3/extensions.pyx":316
+    /* "ad3/extensions.pyx":313
  * 
  *         if validate:
  *             if siblings_v.size() != length * (1 + length) / 2:             # <<<<<<<<<<<<<<
  *                 raise ValueError("Inconsistent length passed.")
  * 
  */
-    __pyx_t_2 = __Pyx_PyInt_FromSize_t(__pyx_v_siblings_v.size()); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 316, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_FromSize_t(__pyx_v_siblings_v.size()); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 313, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyInt_AddCObj(__pyx_int_1, __pyx_v_length, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 316, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_AddCObj(__pyx_int_1, __pyx_v_length, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 313, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_8 = PyNumber_Multiply(__pyx_v_length, __pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 316, __pyx_L1_error)
+    __pyx_t_8 = PyNumber_Multiply(__pyx_v_length, __pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 313, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_t_8, __pyx_int_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 316, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_t_8, __pyx_int_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 313, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = PyObject_RichCompare(__pyx_t_2, __pyx_t_1, Py_NE); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 316, __pyx_L1_error)
+    __pyx_t_8 = PyObject_RichCompare(__pyx_t_2, __pyx_t_1, Py_NE); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 313, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(1, 316, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(1, 313, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     if (unlikely(__pyx_t_7)) {
 
-      /* "ad3/extensions.pyx":317
+      /* "ad3/extensions.pyx":314
  *         if validate:
  *             if siblings_v.size() != length * (1 + length) / 2:
  *                 raise ValueError("Inconsistent length passed.")             # <<<<<<<<<<<<<<
  * 
  *             if length != self.thisptr.Degree() + 1:
  */
-      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__21, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 317, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__21, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 314, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_Raise(__pyx_t_8, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __PYX_ERR(1, 317, __pyx_L1_error)
+      __PYX_ERR(1, 314, __pyx_L1_error)
 
-      /* "ad3/extensions.pyx":316
+      /* "ad3/extensions.pyx":313
  * 
  *         if validate:
  *             if siblings_v.size() != length * (1 + length) / 2:             # <<<<<<<<<<<<<<
@@ -7166,35 +7128,35 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
     }
 
-    /* "ad3/extensions.pyx":319
+    /* "ad3/extensions.pyx":316
  *                 raise ValueError("Inconsistent length passed.")
  * 
  *             if length != self.thisptr.Degree() + 1:             # <<<<<<<<<<<<<<
  *                 raise ValueError("Number of variables doesn't match.")
  * 
  */
-    __pyx_t_8 = __Pyx_PyInt_From_long((__pyx_v_self->__pyx_base.__pyx_base.thisptr->Degree() + 1)); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 319, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_From_long((__pyx_v_self->__pyx_base.__pyx_base.thisptr->Degree() + 1)); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 316, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_1 = PyObject_RichCompare(__pyx_v_length, __pyx_t_8, Py_NE); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 319, __pyx_L1_error)
+    __pyx_t_1 = PyObject_RichCompare(__pyx_v_length, __pyx_t_8, Py_NE); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 316, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(1, 319, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(1, 316, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (unlikely(__pyx_t_7)) {
 
-      /* "ad3/extensions.pyx":320
+      /* "ad3/extensions.pyx":317
  * 
  *             if length != self.thisptr.Degree() + 1:
  *                 raise ValueError("Number of variables doesn't match.")             # <<<<<<<<<<<<<<
  * 
  *         (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
  */
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 320, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 317, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(1, 320, __pyx_L1_error)
+      __PYX_ERR(1, 317, __pyx_L1_error)
 
-      /* "ad3/extensions.pyx":319
+      /* "ad3/extensions.pyx":316
  *                 raise ValueError("Inconsistent length passed.")
  * 
  *             if length != self.thisptr.Degree() + 1:             # <<<<<<<<<<<<<<
@@ -7203,7 +7165,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
     }
 
-    /* "ad3/extensions.pyx":315
+    /* "ad3/extensions.pyx":312
  *                                              sibling[2]))
  * 
  *         if validate:             # <<<<<<<<<<<<<<
@@ -7212,7 +7174,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
   }
 
-  /* "ad3/extensions.pyx":322
+  /* "ad3/extensions.pyx":319
  *                 raise ValueError("Number of variables doesn't match.")
  * 
  *         (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)             # <<<<<<<<<<<<<<
@@ -7221,7 +7183,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
   ((AD3::FactorHeadAutomaton *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_arcs_v, __pyx_v_siblings_v);
 
-  /* "ad3/extensions.pyx":324
+  /* "ad3/extensions.pyx":321
  *         (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
  * 
  *         for sibp in siblings_v:             # <<<<<<<<<<<<<<
@@ -7235,7 +7197,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
     ++__pyx_t_9;
     __pyx_v_sibp = __pyx_t_10;
 
-    /* "ad3/extensions.pyx":325
+    /* "ad3/extensions.pyx":322
  * 
  *         for sibp in siblings_v:
  *             del sibp             # <<<<<<<<<<<<<<
@@ -7244,7 +7206,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
     delete __pyx_v_sibp;
 
-    /* "ad3/extensions.pyx":324
+    /* "ad3/extensions.pyx":321
  *         (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
  * 
  *         for sibp in siblings_v:             # <<<<<<<<<<<<<<
@@ -7253,7 +7215,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
   }
 
-  /* "ad3/extensions.pyx":327
+  /* "ad3/extensions.pyx":324
  *             del sibp
  * 
  *         for arcp in arcs_v:             # <<<<<<<<<<<<<<
@@ -7267,7 +7229,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
     ++__pyx_t_11;
     __pyx_v_arcp = __pyx_t_12;
 
-    /* "ad3/extensions.pyx":328
+    /* "ad3/extensions.pyx":325
  * 
  *         for arcp in arcs_v:
  *             del arcp             # <<<<<<<<<<<<<<
@@ -7276,7 +7238,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
     delete __pyx_v_arcp;
 
-    /* "ad3/extensions.pyx":327
+    /* "ad3/extensions.pyx":324
  *             del sibp
  * 
  *         for arcp in arcs_v:             # <<<<<<<<<<<<<<
@@ -7285,7 +7247,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
   }
 
-  /* "ad3/extensions.pyx":298
+  /* "ad3/extensions.pyx":295
  *             del self.thisptr
  * 
  *     def initialize(self, list arcs, list siblings, bool validate=True):             # <<<<<<<<<<<<<<
@@ -7419,7 +7381,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_8__setstate_c
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":331
+/* "ad3/extensions.pyx":328
  * 
  * cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -7456,7 +7418,7 @@ static int __pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_1__cinit
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 331, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 328, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7470,7 +7432,7 @@ static int __pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_1__cinit
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 331, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 328, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorGrandparentHeadAutomaton.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -7490,27 +7452,27 @@ static int __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton___cinit_
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":332
+  /* "ad3/extensions.pyx":329
  * cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *             self.thisptr = new FactorGrandparentHeadAutomaton()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 332, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 329, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":333
+  /* "ad3/extensions.pyx":330
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *             self.thisptr = new FactorGrandparentHeadAutomaton()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 333, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 330, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":334
+    /* "ad3/extensions.pyx":331
  *         self.allocate = allocate
  *         if allocate:
  *             self.thisptr = new FactorGrandparentHeadAutomaton()             # <<<<<<<<<<<<<<
@@ -7519,7 +7481,7 @@ static int __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton___cinit_
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorGrandparentHeadAutomaton();
 
-    /* "ad3/extensions.pyx":333
+    /* "ad3/extensions.pyx":330
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -7528,7 +7490,7 @@ static int __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton___cinit_
  */
   }
 
-  /* "ad3/extensions.pyx":331
+  /* "ad3/extensions.pyx":328
  * 
  * cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -7547,7 +7509,7 @@ static int __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton___cinit_
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":336
+/* "ad3/extensions.pyx":333
  *             self.thisptr = new FactorGrandparentHeadAutomaton()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -7571,7 +7533,7 @@ static void __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_2__deal
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":337
+  /* "ad3/extensions.pyx":334
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -7581,7 +7543,7 @@ static void __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_2__deal
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":338
+    /* "ad3/extensions.pyx":335
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -7590,7 +7552,7 @@ static void __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_2__deal
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":337
+    /* "ad3/extensions.pyx":334
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -7599,7 +7561,7 @@ static void __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_2__deal
  */
   }
 
-  /* "ad3/extensions.pyx":336
+  /* "ad3/extensions.pyx":333
  *             self.thisptr = new FactorGrandparentHeadAutomaton()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -7611,7 +7573,7 @@ static void __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_2__deal
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":340
+/* "ad3/extensions.pyx":337
  *             del self.thisptr
  * 
  *     def print_factor(self):             # <<<<<<<<<<<<<<
@@ -7637,7 +7599,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_4p
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("print_factor", 0);
 
-  /* "ad3/extensions.pyx":341
+  /* "ad3/extensions.pyx":338
  * 
  *     def print_factor(self):
  *         (<FactorGrandparentHeadAutomaton*>self.thisptr).Print(cout)             # <<<<<<<<<<<<<<
@@ -7646,7 +7608,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_4p
  */
   ((AD3::FactorGrandparentHeadAutomaton *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Print(std::cout);
 
-  /* "ad3/extensions.pyx":340
+  /* "ad3/extensions.pyx":337
  *             del self.thisptr
  * 
  *     def print_factor(self):             # <<<<<<<<<<<<<<
@@ -7661,7 +7623,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_4p
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":343
+/* "ad3/extensions.pyx":340
  *         (<FactorGrandparentHeadAutomaton*>self.thisptr).Print(cout)
  * 
  *     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,             # <<<<<<<<<<<<<<
@@ -7685,7 +7647,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_7i
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_incoming_arcs,&__pyx_n_s_outgoing_arcs,&__pyx_n_s_grandparents,&__pyx_n_s_siblings,&__pyx_n_s_grandsiblings,0};
     PyObject* values[5] = {0,0,0,0,0};
 
-    /* "ad3/extensions.pyx":344
+    /* "ad3/extensions.pyx":341
  * 
  *     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,
  *         list siblings, list grandsiblings=None):             # <<<<<<<<<<<<<<
@@ -7719,19 +7681,19 @@ static PyObject *__pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_7i
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_outgoing_arcs)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 1); __PYX_ERR(1, 343, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 1); __PYX_ERR(1, 340, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_grandparents)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 2); __PYX_ERR(1, 343, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 2); __PYX_ERR(1, 340, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_siblings)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 3); __PYX_ERR(1, 343, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 3); __PYX_ERR(1, 340, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -7741,7 +7703,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_7i
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 343, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 340, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7763,20 +7725,20 @@ static PyObject *__pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_7i
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 343, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 340, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorGrandparentHeadAutomaton.initialize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_incoming_arcs), (&PyList_Type), 1, "incoming_arcs", 1))) __PYX_ERR(1, 343, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_outgoing_arcs), (&PyList_Type), 1, "outgoing_arcs", 1))) __PYX_ERR(1, 343, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_grandparents), (&PyList_Type), 1, "grandparents", 1))) __PYX_ERR(1, 343, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_siblings), (&PyList_Type), 1, "siblings", 1))) __PYX_ERR(1, 344, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_grandsiblings), (&PyList_Type), 1, "grandsiblings", 1))) __PYX_ERR(1, 344, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_incoming_arcs), (&PyList_Type), 1, "incoming_arcs", 1))) __PYX_ERR(1, 340, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_outgoing_arcs), (&PyList_Type), 1, "outgoing_arcs", 1))) __PYX_ERR(1, 340, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_grandparents), (&PyList_Type), 1, "grandparents", 1))) __PYX_ERR(1, 340, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_siblings), (&PyList_Type), 1, "siblings", 1))) __PYX_ERR(1, 341, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_grandsiblings), (&PyList_Type), 1, "grandsiblings", 1))) __PYX_ERR(1, 341, __pyx_L1_error)
   __pyx_r = __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6initialize(((struct __pyx_obj_3ad3_10extensions_PFactorGrandparentHeadAutomaton *)__pyx_v_self), __pyx_v_incoming_arcs, __pyx_v_outgoing_arcs, __pyx_v_grandparents, __pyx_v_siblings, __pyx_v_grandsiblings);
 
-  /* "ad3/extensions.pyx":343
+  /* "ad3/extensions.pyx":340
  *         (<FactorGrandparentHeadAutomaton*>self.thisptr).Print(cout)
  * 
  *     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,             # <<<<<<<<<<<<<<
@@ -7828,7 +7790,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   AD3::Grandsibling *__pyx_t_17;
   __Pyx_RefNannySetupContext("initialize", 0);
 
-  /* "ad3/extensions.pyx":383
+  /* "ad3/extensions.pyx":380
  *         cdef tuple grandparent
  *         cdef tuple grandsibling
  *         for arc in incoming_arcs:             # <<<<<<<<<<<<<<
@@ -7837,9 +7799,73 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   if (unlikely(__pyx_v_incoming_arcs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 383, __pyx_L1_error)
+    __PYX_ERR(1, 380, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_incoming_arcs; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
+  for (;;) {
+    if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
+    #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 380, __pyx_L1_error)
+    #else
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 380, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    #endif
+    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 380, __pyx_L1_error)
+    __Pyx_XDECREF_SET(__pyx_v_arc, ((PyObject*)__pyx_t_3));
+    __pyx_t_3 = 0;
+
+    /* "ad3/extensions.pyx":381
+ *         cdef tuple grandsibling
+ *         for arc in incoming_arcs:
+ *             incoming_v.push_back(new Arc(arc[0], arc[1]))             # <<<<<<<<<<<<<<
+ * 
+ *         for arc in outgoing_arcs:
+ */
+    if (unlikely(__pyx_v_arc == Py_None)) {
+      PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+      __PYX_ERR(1, 381, __pyx_L1_error)
+    }
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 381, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 381, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (unlikely(__pyx_v_arc == Py_None)) {
+      PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+      __PYX_ERR(1, 381, __pyx_L1_error)
+    }
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 381, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 381, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    try {
+      __pyx_v_incoming_v.push_back(new AD3::Arc(__pyx_t_4, __pyx_t_5));
+    } catch(...) {
+      __Pyx_CppExn2PyErr();
+      __PYX_ERR(1, 381, __pyx_L1_error)
+    }
+
+    /* "ad3/extensions.pyx":380
+ *         cdef tuple grandparent
+ *         cdef tuple grandsibling
+ *         for arc in incoming_arcs:             # <<<<<<<<<<<<<<
+ *             incoming_v.push_back(new Arc(arc[0], arc[1]))
+ * 
+ */
+  }
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "ad3/extensions.pyx":383
+ *             incoming_v.push_back(new Arc(arc[0], arc[1]))
+ * 
+ *         for arc in outgoing_arcs:             # <<<<<<<<<<<<<<
+ *             outgoing_v.push_back(new Arc(arc[0], arc[1]))
+ * 
+ */
+  if (unlikely(__pyx_v_outgoing_arcs == Py_None)) {
+    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
+    __PYX_ERR(1, 383, __pyx_L1_error)
+  }
+  __pyx_t_1 = __pyx_v_outgoing_arcs; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
@@ -7853,11 +7879,11 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     __pyx_t_3 = 0;
 
     /* "ad3/extensions.pyx":384
- *         cdef tuple grandsibling
- *         for arc in incoming_arcs:
- *             incoming_v.push_back(new Arc(arc[0], arc[1]))             # <<<<<<<<<<<<<<
  * 
  *         for arc in outgoing_arcs:
+ *             outgoing_v.push_back(new Arc(arc[0], arc[1]))             # <<<<<<<<<<<<<<
+ * 
+ *         for sibling in siblings:
  */
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -7865,7 +7891,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     }
     __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 384, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 384, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 384, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
@@ -7873,37 +7899,37 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     }
     __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 384, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 384, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 384, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     try {
-      __pyx_v_incoming_v.push_back(new AD3::Arc(__pyx_t_4, __pyx_t_5));
+      __pyx_v_outgoing_v.push_back(new AD3::Arc(__pyx_t_5, __pyx_t_4));
     } catch(...) {
       __Pyx_CppExn2PyErr();
       __PYX_ERR(1, 384, __pyx_L1_error)
     }
 
     /* "ad3/extensions.pyx":383
- *         cdef tuple grandparent
- *         cdef tuple grandsibling
- *         for arc in incoming_arcs:             # <<<<<<<<<<<<<<
- *             incoming_v.push_back(new Arc(arc[0], arc[1]))
- * 
- */
-  }
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "ad3/extensions.pyx":386
  *             incoming_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *         for arc in outgoing_arcs:             # <<<<<<<<<<<<<<
  *             outgoing_v.push_back(new Arc(arc[0], arc[1]))
  * 
  */
-  if (unlikely(__pyx_v_outgoing_arcs == Py_None)) {
+  }
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "ad3/extensions.pyx":386
+ *             outgoing_v.push_back(new Arc(arc[0], arc[1]))
+ * 
+ *         for sibling in siblings:             # <<<<<<<<<<<<<<
+ *             siblings_v.push_back(new Sibling(sibling[0],
+ *                                              sibling[1],
+ */
+  if (unlikely(__pyx_v_siblings == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
     __PYX_ERR(1, 386, __pyx_L1_error)
   }
-  __pyx_t_1 = __pyx_v_outgoing_arcs; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
+  __pyx_t_1 = __pyx_v_siblings; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
@@ -7913,74 +7939,10 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 386, __pyx_L1_error)
-    __Pyx_XDECREF_SET(__pyx_v_arc, ((PyObject*)__pyx_t_3));
-    __pyx_t_3 = 0;
-
-    /* "ad3/extensions.pyx":387
- * 
- *         for arc in outgoing_arcs:
- *             outgoing_v.push_back(new Arc(arc[0], arc[1]))             # <<<<<<<<<<<<<<
- * 
- *         for sibling in siblings:
- */
-    if (unlikely(__pyx_v_arc == Py_None)) {
-      PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 387, __pyx_L1_error)
-    }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 387, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 387, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(__pyx_v_arc == Py_None)) {
-      PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 387, __pyx_L1_error)
-    }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 387, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 387, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    try {
-      __pyx_v_outgoing_v.push_back(new AD3::Arc(__pyx_t_5, __pyx_t_4));
-    } catch(...) {
-      __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 387, __pyx_L1_error)
-    }
-
-    /* "ad3/extensions.pyx":386
- *             incoming_v.push_back(new Arc(arc[0], arc[1]))
- * 
- *         for arc in outgoing_arcs:             # <<<<<<<<<<<<<<
- *             outgoing_v.push_back(new Arc(arc[0], arc[1]))
- * 
- */
-  }
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "ad3/extensions.pyx":389
- *             outgoing_v.push_back(new Arc(arc[0], arc[1]))
- * 
- *         for sibling in siblings:             # <<<<<<<<<<<<<<
- *             siblings_v.push_back(new Sibling(sibling[0],
- *                                              sibling[1],
- */
-  if (unlikely(__pyx_v_siblings == Py_None)) {
-    PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 389, __pyx_L1_error)
-  }
-  __pyx_t_1 = __pyx_v_siblings; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
-  for (;;) {
-    if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
-    #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 389, __pyx_L1_error)
-    #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 389, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 389, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_sibling, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":390
+    /* "ad3/extensions.pyx":387
  * 
  *         for sibling in siblings:
  *             siblings_v.push_back(new Sibling(sibling[0],             # <<<<<<<<<<<<<<
@@ -7989,14 +7951,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_sibling == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 390, __pyx_L1_error)
+      __PYX_ERR(1, 387, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 390, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 387, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 390, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 387, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":391
+    /* "ad3/extensions.pyx":388
  *         for sibling in siblings:
  *             siblings_v.push_back(new Sibling(sibling[0],
  *                                              sibling[1],             # <<<<<<<<<<<<<<
@@ -8005,14 +7967,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_sibling == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 391, __pyx_L1_error)
+      __PYX_ERR(1, 388, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 391, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 388, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 391, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 388, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":392
+    /* "ad3/extensions.pyx":389
  *             siblings_v.push_back(new Sibling(sibling[0],
  *                                              sibling[1],
  *                                              sibling[2]))             # <<<<<<<<<<<<<<
@@ -8021,14 +7983,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_sibling == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 392, __pyx_L1_error)
+      __PYX_ERR(1, 389, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 392, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 389, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 392, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 389, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":390
+    /* "ad3/extensions.pyx":387
  * 
  *         for sibling in siblings:
  *             siblings_v.push_back(new Sibling(sibling[0],             # <<<<<<<<<<<<<<
@@ -8039,10 +8001,10 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
       __pyx_v_siblings_v.push_back(new AD3::Sibling(__pyx_t_4, __pyx_t_5, __pyx_t_6));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 390, __pyx_L1_error)
+      __PYX_ERR(1, 387, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":389
+    /* "ad3/extensions.pyx":386
  *             outgoing_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *         for sibling in siblings:             # <<<<<<<<<<<<<<
@@ -8052,7 +8014,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":394
+  /* "ad3/extensions.pyx":391
  *                                              sibling[2]))
  * 
  *         for grandparent in grandparents:             # <<<<<<<<<<<<<<
@@ -8061,22 +8023,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   if (unlikely(__pyx_v_grandparents == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 394, __pyx_L1_error)
+    __PYX_ERR(1, 391, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_grandparents; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 394, __pyx_L1_error)
+    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 391, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 394, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 391, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 394, __pyx_L1_error)
+    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 391, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_grandparent, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":395
+    /* "ad3/extensions.pyx":392
  * 
  *         for grandparent in grandparents:
  *             grandparents_v.push_back(new Grandparent(grandparent[0],             # <<<<<<<<<<<<<<
@@ -8085,14 +8047,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_grandparent == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 395, __pyx_L1_error)
+      __PYX_ERR(1, 392, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 395, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 392, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 395, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 392, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":396
+    /* "ad3/extensions.pyx":393
  *         for grandparent in grandparents:
  *             grandparents_v.push_back(new Grandparent(grandparent[0],
  *                                                      grandparent[1],             # <<<<<<<<<<<<<<
@@ -8101,14 +8063,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_grandparent == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 396, __pyx_L1_error)
+      __PYX_ERR(1, 393, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 396, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 393, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 396, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 393, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":397
+    /* "ad3/extensions.pyx":394
  *             grandparents_v.push_back(new Grandparent(grandparent[0],
  *                                                      grandparent[1],
  *                                                      grandparent[2]))             # <<<<<<<<<<<<<<
@@ -8117,14 +8079,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_grandparent == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 397, __pyx_L1_error)
+      __PYX_ERR(1, 394, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 397, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 394, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 397, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 394, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":395
+    /* "ad3/extensions.pyx":392
  * 
  *         for grandparent in grandparents:
  *             grandparents_v.push_back(new Grandparent(grandparent[0],             # <<<<<<<<<<<<<<
@@ -8135,10 +8097,10 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
       __pyx_v_grandparents_v.push_back(new AD3::Grandparent(__pyx_t_6, __pyx_t_5, __pyx_t_4));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 395, __pyx_L1_error)
+      __PYX_ERR(1, 392, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":394
+    /* "ad3/extensions.pyx":391
  *                                              sibling[2]))
  * 
  *         for grandparent in grandparents:             # <<<<<<<<<<<<<<
@@ -8148,7 +8110,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":399
+  /* "ad3/extensions.pyx":396
  *                                                      grandparent[2]))
  * 
  *         if grandsiblings is None:             # <<<<<<<<<<<<<<
@@ -8159,7 +8121,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   __pyx_t_8 = (__pyx_t_7 != 0);
   if (__pyx_t_8) {
 
-    /* "ad3/extensions.pyx":400
+    /* "ad3/extensions.pyx":397
  * 
  *         if grandsiblings is None:
  *             (<FactorGrandparentHeadAutomaton*>self.thisptr).Initialize(             # <<<<<<<<<<<<<<
@@ -8168,7 +8130,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     ((AD3::FactorGrandparentHeadAutomaton *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_incoming_v, __pyx_v_outgoing_v, __pyx_v_grandparents_v, __pyx_v_siblings_v);
 
-    /* "ad3/extensions.pyx":399
+    /* "ad3/extensions.pyx":396
  *                                                      grandparent[2]))
  * 
  *         if grandsiblings is None:             # <<<<<<<<<<<<<<
@@ -8178,7 +8140,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     goto __pyx_L11;
   }
 
-  /* "ad3/extensions.pyx":403
+  /* "ad3/extensions.pyx":400
  *                 incoming_v, outgoing_v, grandparents_v, siblings_v)
  *         else:
  *             for grandsibling in grandsiblings:             # <<<<<<<<<<<<<<
@@ -8188,22 +8150,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   /*else*/ {
     if (unlikely(__pyx_v_grandsiblings == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-      __PYX_ERR(1, 403, __pyx_L1_error)
+      __PYX_ERR(1, 400, __pyx_L1_error)
     }
     __pyx_t_1 = __pyx_v_grandsiblings; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     for (;;) {
       if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 403, __pyx_L1_error)
+      __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 400, __pyx_L1_error)
       #else
-      __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 403, __pyx_L1_error)
+      __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 400, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       #endif
-      if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 403, __pyx_L1_error)
+      if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 400, __pyx_L1_error)
       __Pyx_XDECREF_SET(__pyx_v_grandsibling, ((PyObject*)__pyx_t_3));
       __pyx_t_3 = 0;
 
-      /* "ad3/extensions.pyx":404
+      /* "ad3/extensions.pyx":401
  *         else:
  *             for grandsibling in grandsiblings:
  *                 grandsiblings_v.push_back(new Grandsibling(grandsibling[0],             # <<<<<<<<<<<<<<
@@ -8212,14 +8174,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
       if (unlikely(__pyx_v_grandsibling == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(1, 404, __pyx_L1_error)
+        __PYX_ERR(1, 401, __pyx_L1_error)
       }
-      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 404, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 401, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 404, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 401, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "ad3/extensions.pyx":405
+      /* "ad3/extensions.pyx":402
  *             for grandsibling in grandsiblings:
  *                 grandsiblings_v.push_back(new Grandsibling(grandsibling[0],
  *                                                            grandsibling[1],             # <<<<<<<<<<<<<<
@@ -8228,14 +8190,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
       if (unlikely(__pyx_v_grandsibling == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(1, 405, __pyx_L1_error)
+        __PYX_ERR(1, 402, __pyx_L1_error)
       }
-      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 405, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 402, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 405, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 402, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "ad3/extensions.pyx":406
+      /* "ad3/extensions.pyx":403
  *                 grandsiblings_v.push_back(new Grandsibling(grandsibling[0],
  *                                                            grandsibling[1],
  *                                                            grandsibling[2],             # <<<<<<<<<<<<<<
@@ -8244,14 +8206,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
       if (unlikely(__pyx_v_grandsibling == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(1, 406, __pyx_L1_error)
+        __PYX_ERR(1, 403, __pyx_L1_error)
       }
-      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 406, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 403, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 406, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 403, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "ad3/extensions.pyx":407
+      /* "ad3/extensions.pyx":404
  *                                                            grandsibling[1],
  *                                                            grandsibling[2],
  *                                                            grandsibling[3]))             # <<<<<<<<<<<<<<
@@ -8260,14 +8222,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
       if (unlikely(__pyx_v_grandsibling == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(1, 407, __pyx_L1_error)
+        __PYX_ERR(1, 404, __pyx_L1_error)
       }
-      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 407, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 404, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 407, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 404, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "ad3/extensions.pyx":404
+      /* "ad3/extensions.pyx":401
  *         else:
  *             for grandsibling in grandsiblings:
  *                 grandsiblings_v.push_back(new Grandsibling(grandsibling[0],             # <<<<<<<<<<<<<<
@@ -8278,10 +8240,10 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
         __pyx_v_grandsiblings_v.push_back(new AD3::Grandsibling(__pyx_t_4, __pyx_t_5, __pyx_t_6, __pyx_t_9));
       } catch(...) {
         __Pyx_CppExn2PyErr();
-        __PYX_ERR(1, 404, __pyx_L1_error)
+        __PYX_ERR(1, 401, __pyx_L1_error)
       }
 
-      /* "ad3/extensions.pyx":403
+      /* "ad3/extensions.pyx":400
  *                 incoming_v, outgoing_v, grandparents_v, siblings_v)
  *         else:
  *             for grandsibling in grandsiblings:             # <<<<<<<<<<<<<<
@@ -8291,7 +8253,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "ad3/extensions.pyx":409
+    /* "ad3/extensions.pyx":406
  *                                                            grandsibling[3]))
  * 
  *             (<FactorGrandparentHeadAutomaton*>self.thisptr).Initialize(             # <<<<<<<<<<<<<<
@@ -8302,7 +8264,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   }
   __pyx_L11:;
 
-  /* "ad3/extensions.pyx":412
+  /* "ad3/extensions.pyx":409
  *                 incoming_v, outgoing_v, grandparents_v, siblings_v, grandsiblings_v)
  * 
  *         for arcp in incoming_v:             # <<<<<<<<<<<<<<
@@ -8316,7 +8278,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     ++__pyx_t_10;
     __pyx_v_arcp = __pyx_t_11;
 
-    /* "ad3/extensions.pyx":413
+    /* "ad3/extensions.pyx":410
  * 
  *         for arcp in incoming_v:
  *             del arcp             # <<<<<<<<<<<<<<
@@ -8325,7 +8287,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     delete __pyx_v_arcp;
 
-    /* "ad3/extensions.pyx":412
+    /* "ad3/extensions.pyx":409
  *                 incoming_v, outgoing_v, grandparents_v, siblings_v, grandsiblings_v)
  * 
  *         for arcp in incoming_v:             # <<<<<<<<<<<<<<
@@ -8334,7 +8296,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   }
 
-  /* "ad3/extensions.pyx":414
+  /* "ad3/extensions.pyx":411
  *         for arcp in incoming_v:
  *             del arcp
  *         for arcp in outgoing_v:             # <<<<<<<<<<<<<<
@@ -8348,7 +8310,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     ++__pyx_t_10;
     __pyx_v_arcp = __pyx_t_11;
 
-    /* "ad3/extensions.pyx":415
+    /* "ad3/extensions.pyx":412
  *             del arcp
  *         for arcp in outgoing_v:
  *             del arcp             # <<<<<<<<<<<<<<
@@ -8357,7 +8319,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     delete __pyx_v_arcp;
 
-    /* "ad3/extensions.pyx":414
+    /* "ad3/extensions.pyx":411
  *         for arcp in incoming_v:
  *             del arcp
  *         for arcp in outgoing_v:             # <<<<<<<<<<<<<<
@@ -8366,7 +8328,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   }
 
-  /* "ad3/extensions.pyx":416
+  /* "ad3/extensions.pyx":413
  *         for arcp in outgoing_v:
  *             del arcp
  *         for sibp in siblings_v:             # <<<<<<<<<<<<<<
@@ -8380,7 +8342,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     ++__pyx_t_12;
     __pyx_v_sibp = __pyx_t_13;
 
-    /* "ad3/extensions.pyx":417
+    /* "ad3/extensions.pyx":414
  *             del arcp
  *         for sibp in siblings_v:
  *             del sibp             # <<<<<<<<<<<<<<
@@ -8389,7 +8351,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     delete __pyx_v_sibp;
 
-    /* "ad3/extensions.pyx":416
+    /* "ad3/extensions.pyx":413
  *         for arcp in outgoing_v:
  *             del arcp
  *         for sibp in siblings_v:             # <<<<<<<<<<<<<<
@@ -8398,7 +8360,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   }
 
-  /* "ad3/extensions.pyx":418
+  /* "ad3/extensions.pyx":415
  *         for sibp in siblings_v:
  *             del sibp
  *         for gpp in grandparents_v:             # <<<<<<<<<<<<<<
@@ -8412,7 +8374,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     ++__pyx_t_14;
     __pyx_v_gpp = __pyx_t_15;
 
-    /* "ad3/extensions.pyx":419
+    /* "ad3/extensions.pyx":416
  *             del sibp
  *         for gpp in grandparents_v:
  *             del gpp             # <<<<<<<<<<<<<<
@@ -8421,7 +8383,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     delete __pyx_v_gpp;
 
-    /* "ad3/extensions.pyx":418
+    /* "ad3/extensions.pyx":415
  *         for sibp in siblings_v:
  *             del sibp
  *         for gpp in grandparents_v:             # <<<<<<<<<<<<<<
@@ -8430,7 +8392,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   }
 
-  /* "ad3/extensions.pyx":420
+  /* "ad3/extensions.pyx":417
  *         for gpp in grandparents_v:
  *             del gpp
  *         for gsp in grandsiblings_v:             # <<<<<<<<<<<<<<
@@ -8444,7 +8406,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     ++__pyx_t_16;
     __pyx_v_gsp = __pyx_t_17;
 
-    /* "ad3/extensions.pyx":421
+    /* "ad3/extensions.pyx":418
  *             del gpp
  *         for gsp in grandsiblings_v:
  *             del gsp             # <<<<<<<<<<<<<<
@@ -8453,7 +8415,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     delete __pyx_v_gsp;
 
-    /* "ad3/extensions.pyx":420
+    /* "ad3/extensions.pyx":417
  *         for gpp in grandparents_v:
  *             del gpp
  *         for gsp in grandsiblings_v:             # <<<<<<<<<<<<<<
@@ -8462,7 +8424,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   }
 
-  /* "ad3/extensions.pyx":343
+  /* "ad3/extensions.pyx":340
  *         (<FactorGrandparentHeadAutomaton*>self.thisptr).Print(cout)
  * 
  *     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,             # <<<<<<<<<<<<<<
@@ -8595,7 +8557,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_10
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":424
+/* "ad3/extensions.pyx":421
  * 
  * 
  * cpdef decode_matrix_tree(int sentence_length, dict index, list arcs,             # <<<<<<<<<<<<<<
@@ -8641,7 +8603,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   std::vector<int> ::size_type __pyx_t_18;
   __Pyx_RefNannySetupContext("decode_matrix_tree", 0);
 
-  /* "ad3/extensions.pyx":441
+  /* "ad3/extensions.pyx":438
  *     cdef vector[int] *row_v
  * 
  *     for score in scores:             # <<<<<<<<<<<<<<
@@ -8652,26 +8614,26 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
     __pyx_t_1 = ((PyObject *)__pyx_v_scores); __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(((PyObject *)__pyx_v_scores)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 441, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(((PyObject *)__pyx_v_scores)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 438, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 441, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 438, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 441, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 438, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 441, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 438, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 441, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 438, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 441, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 438, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -8681,7 +8643,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(1, 441, __pyx_L1_error)
+          else __PYX_ERR(1, 438, __pyx_L1_error)
         }
         break;
       }
@@ -8690,22 +8652,22 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
     __Pyx_XDECREF_SET(__pyx_v_score, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "ad3/extensions.pyx":442
+    /* "ad3/extensions.pyx":439
  * 
  *     for score in scores:
  *         scores_v.push_back(score)             # <<<<<<<<<<<<<<
  * 
  *     for arc in arcs:
  */
-    __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_v_score); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 442, __pyx_L1_error)
+    __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_v_score); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 439, __pyx_L1_error)
     try {
       __pyx_v_scores_v.push_back(__pyx_t_5);
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 442, __pyx_L1_error)
+      __PYX_ERR(1, 439, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":441
+    /* "ad3/extensions.pyx":438
  *     cdef vector[int] *row_v
  * 
  *     for score in scores:             # <<<<<<<<<<<<<<
@@ -8715,7 +8677,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":444
+  /* "ad3/extensions.pyx":441
  *         scores_v.push_back(score)
  * 
  *     for arc in arcs:             # <<<<<<<<<<<<<<
@@ -8724,22 +8686,22 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
  */
   if (unlikely(__pyx_v_arcs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 444, __pyx_L1_error)
+    __PYX_ERR(1, 441, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_arcs; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 444, __pyx_L1_error)
+    __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 441, __pyx_L1_error)
     #else
-    __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 444, __pyx_L1_error)
+    __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 441, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_4))||((__pyx_t_4) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_4)->tp_name), 0))) __PYX_ERR(1, 444, __pyx_L1_error)
+    if (!(likely(PyTuple_CheckExact(__pyx_t_4))||((__pyx_t_4) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_4)->tp_name), 0))) __PYX_ERR(1, 441, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_arc, ((PyObject*)__pyx_t_4));
     __pyx_t_4 = 0;
 
-    /* "ad3/extensions.pyx":445
+    /* "ad3/extensions.pyx":442
  * 
  *     for arc in arcs:
  *         arcs_v.push_back(new Arc(arc[0], arc[1]))             # <<<<<<<<<<<<<<
@@ -8748,28 +8710,28 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
  */
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 445, __pyx_L1_error)
+      __PYX_ERR(1, 442, __pyx_L1_error)
     }
-    __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 445, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 442, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 445, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 442, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 445, __pyx_L1_error)
+      __PYX_ERR(1, 442, __pyx_L1_error)
     }
-    __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 445, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 442, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 445, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 442, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     try {
       __pyx_v_arcs_v.push_back(new AD3::Arc(__pyx_t_6, __pyx_t_7));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 445, __pyx_L1_error)
+      __PYX_ERR(1, 442, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":444
+    /* "ad3/extensions.pyx":441
  *         scores_v.push_back(score)
  * 
  *     for arc in arcs:             # <<<<<<<<<<<<<<
@@ -8779,7 +8741,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":447
+  /* "ad3/extensions.pyx":444
  *         arcs_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *     for i in range(sentence_length):             # <<<<<<<<<<<<<<
@@ -8791,7 +8753,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_6; __pyx_t_8+=1) {
     __pyx_v_i = __pyx_t_8;
 
-    /* "ad3/extensions.pyx":448
+    /* "ad3/extensions.pyx":445
  * 
  *     for i in range(sentence_length):
  *         row_v = new vector[int](sentence_length, -1)             # <<<<<<<<<<<<<<
@@ -8802,11 +8764,11 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __pyx_t_9 = new std::vector<int> (__pyx_v_sentence_length, -1);
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 448, __pyx_L1_error)
+      __PYX_ERR(1, 445, __pyx_L1_error)
     }
     __pyx_v_row_v = __pyx_t_9;
 
-    /* "ad3/extensions.pyx":449
+    /* "ad3/extensions.pyx":446
  *     for i in range(sentence_length):
  *         row_v = new vector[int](sentence_length, -1)
  *         index_v.push_back(row_v[0])             # <<<<<<<<<<<<<<
@@ -8817,11 +8779,11 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __pyx_v_index_v.push_back((__pyx_v_row_v[0]));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 449, __pyx_L1_error)
+      __PYX_ERR(1, 446, __pyx_L1_error)
     }
   }
 
-  /* "ad3/extensions.pyx":451
+  /* "ad3/extensions.pyx":448
  *         index_v.push_back(row_v[0])
  * 
  *     for head, modifier_dict in index.items():             # <<<<<<<<<<<<<<
@@ -8830,17 +8792,17 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
  */
   if (unlikely(__pyx_v_index == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "items");
-    __PYX_ERR(1, 451, __pyx_L1_error)
+    __PYX_ERR(1, 448, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_PyDict_Items(__pyx_v_index); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 451, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_Items(__pyx_v_index); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 448, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_4 = __pyx_t_1; __Pyx_INCREF(__pyx_t_4); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 451, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 448, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 451, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 448, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -8848,17 +8810,17 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_2); __Pyx_INCREF(__pyx_t_1); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 451, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_2); __Pyx_INCREF(__pyx_t_1); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 448, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_4, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 451, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_4, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 448, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_2); __Pyx_INCREF(__pyx_t_1); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 451, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_2); __Pyx_INCREF(__pyx_t_1); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 448, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_4, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 451, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_4, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 448, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -8868,7 +8830,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(1, 451, __pyx_L1_error)
+          else __PYX_ERR(1, 448, __pyx_L1_error)
         }
         break;
       }
@@ -8880,7 +8842,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(1, 451, __pyx_L1_error)
+        __PYX_ERR(1, 448, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -8893,15 +8855,15 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __Pyx_INCREF(__pyx_t_10);
       __Pyx_INCREF(__pyx_t_11);
       #else
-      __pyx_t_10 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 451, __pyx_L1_error)
+      __pyx_t_10 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 448, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 451, __pyx_L1_error)
+      __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 448, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_12 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 451, __pyx_L1_error)
+      __pyx_t_12 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 448, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_13 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -8909,7 +8871,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __Pyx_GOTREF(__pyx_t_10);
       index = 1; __pyx_t_11 = __pyx_t_13(__pyx_t_12); if (unlikely(!__pyx_t_11)) goto __pyx_L11_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_11);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(1, 451, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(1, 448, __pyx_L1_error)
       __pyx_t_13 = NULL;
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       goto __pyx_L12_unpacking_done;
@@ -8917,7 +8879,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __pyx_t_13 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(1, 451, __pyx_L1_error)
+      __PYX_ERR(1, 448, __pyx_L1_error)
       __pyx_L12_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_head, __pyx_t_10);
@@ -8925,14 +8887,14 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
     __Pyx_XDECREF_SET(__pyx_v_modifier_dict, __pyx_t_11);
     __pyx_t_11 = 0;
 
-    /* "ad3/extensions.pyx":452
+    /* "ad3/extensions.pyx":449
  * 
  *     for head, modifier_dict in index.items():
  *         for modifier, position in modifier_dict.items():             # <<<<<<<<<<<<<<
  *             index_v[head][modifier] = position
  * 
  */
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_modifier_dict, __pyx_n_s_items); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 452, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_modifier_dict, __pyx_n_s_items); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 449, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_11))) {
@@ -8946,16 +8908,16 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
     }
     __pyx_t_1 = (__pyx_t_10) ? __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_10) : __Pyx_PyObject_CallNoArg(__pyx_t_11);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 452, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 449, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
       __pyx_t_11 = __pyx_t_1; __Pyx_INCREF(__pyx_t_11); __pyx_t_14 = 0;
       __pyx_t_15 = NULL;
     } else {
-      __pyx_t_14 = -1; __pyx_t_11 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 452, __pyx_L1_error)
+      __pyx_t_14 = -1; __pyx_t_11 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 449, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_15 = Py_TYPE(__pyx_t_11)->tp_iternext; if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 452, __pyx_L1_error)
+      __pyx_t_15 = Py_TYPE(__pyx_t_11)->tp_iternext; if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 449, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     for (;;) {
@@ -8963,17 +8925,17 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         if (likely(PyList_CheckExact(__pyx_t_11))) {
           if (__pyx_t_14 >= PyList_GET_SIZE(__pyx_t_11)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(1, 452, __pyx_L1_error)
+          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(1, 449, __pyx_L1_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 452, __pyx_L1_error)
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 449, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           #endif
         } else {
           if (__pyx_t_14 >= PyTuple_GET_SIZE(__pyx_t_11)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(1, 452, __pyx_L1_error)
+          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(1, 449, __pyx_L1_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 452, __pyx_L1_error)
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 449, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           #endif
         }
@@ -8983,7 +8945,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(1, 452, __pyx_L1_error)
+            else __PYX_ERR(1, 449, __pyx_L1_error)
           }
           break;
         }
@@ -8995,7 +8957,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         if (unlikely(size != 2)) {
           if (size > 2) __Pyx_RaiseTooManyValuesError(2);
           else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-          __PYX_ERR(1, 452, __pyx_L1_error)
+          __PYX_ERR(1, 449, __pyx_L1_error)
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
@@ -9008,15 +8970,15 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         __Pyx_INCREF(__pyx_t_10);
         __Pyx_INCREF(__pyx_t_12);
         #else
-        __pyx_t_10 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 452, __pyx_L1_error)
+        __pyx_t_10 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 449, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_12 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 452, __pyx_L1_error)
+        __pyx_t_12 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 449, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         #endif
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       } else {
         Py_ssize_t index = -1;
-        __pyx_t_16 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 452, __pyx_L1_error)
+        __pyx_t_16 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 449, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_16);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_t_13 = Py_TYPE(__pyx_t_16)->tp_iternext;
@@ -9024,7 +8986,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         __Pyx_GOTREF(__pyx_t_10);
         index = 1; __pyx_t_12 = __pyx_t_13(__pyx_t_16); if (unlikely(!__pyx_t_12)) goto __pyx_L15_unpacking_failed;
         __Pyx_GOTREF(__pyx_t_12);
-        if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_16), 2) < 0) __PYX_ERR(1, 452, __pyx_L1_error)
+        if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_16), 2) < 0) __PYX_ERR(1, 449, __pyx_L1_error)
         __pyx_t_13 = NULL;
         __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
         goto __pyx_L16_unpacking_done;
@@ -9032,7 +8994,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
         __pyx_t_13 = NULL;
         if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-        __PYX_ERR(1, 452, __pyx_L1_error)
+        __PYX_ERR(1, 449, __pyx_L1_error)
         __pyx_L16_unpacking_done:;
       }
       __Pyx_XDECREF_SET(__pyx_v_modifier, __pyx_t_10);
@@ -9040,19 +9002,19 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __Pyx_XDECREF_SET(__pyx_v_position, __pyx_t_12);
       __pyx_t_12 = 0;
 
-      /* "ad3/extensions.pyx":453
+      /* "ad3/extensions.pyx":450
  *     for head, modifier_dict in index.items():
  *         for modifier, position in modifier_dict.items():
  *             index_v[head][modifier] = position             # <<<<<<<<<<<<<<
  * 
  *     DecodeMatrixTree(index_v, arcs_v, scores_v, &predicted_output,
  */
-      __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_position); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 453, __pyx_L1_error)
-      __pyx_t_17 = __Pyx_PyInt_As_size_t(__pyx_v_head); if (unlikely((__pyx_t_17 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 453, __pyx_L1_error)
-      __pyx_t_18 = __Pyx_PyInt_As_size_t(__pyx_v_modifier); if (unlikely((__pyx_t_18 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 453, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_position); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 450, __pyx_L1_error)
+      __pyx_t_17 = __Pyx_PyInt_As_size_t(__pyx_v_head); if (unlikely((__pyx_t_17 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 450, __pyx_L1_error)
+      __pyx_t_18 = __Pyx_PyInt_As_size_t(__pyx_v_modifier); if (unlikely((__pyx_t_18 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 450, __pyx_L1_error)
       ((__pyx_v_index_v[__pyx_t_17])[__pyx_t_18]) = __pyx_t_7;
 
-      /* "ad3/extensions.pyx":452
+      /* "ad3/extensions.pyx":449
  * 
  *     for head, modifier_dict in index.items():
  *         for modifier, position in modifier_dict.items():             # <<<<<<<<<<<<<<
@@ -9062,7 +9024,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
     }
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
-    /* "ad3/extensions.pyx":451
+    /* "ad3/extensions.pyx":448
  *         index_v.push_back(row_v[0])
  * 
  *     for head, modifier_dict in index.items():             # <<<<<<<<<<<<<<
@@ -9072,7 +9034,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ad3/extensions.pyx":455
+  /* "ad3/extensions.pyx":452
  *             index_v[head][modifier] = position
  * 
  *     DecodeMatrixTree(index_v, arcs_v, scores_v, &predicted_output,             # <<<<<<<<<<<<<<
@@ -9081,19 +9043,19 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
  */
   AD3::DecodeMatrixTree(__pyx_v_index_v, __pyx_v_arcs_v, __pyx_v_scores_v, (&__pyx_v_predicted_output), (&__pyx_v_log_partition_function), (&__pyx_v_entropy));
 
-  /* "ad3/extensions.pyx":458
+  /* "ad3/extensions.pyx":455
  *                      &log_partition_function, &entropy)
  * 
  *     return predicted_output, log_partition_function, entropy             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_4 = __pyx_convert_vector_to_py_double(__pyx_v_predicted_output); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 458, __pyx_L1_error)
+  __pyx_t_4 = __pyx_convert_vector_to_py_double(__pyx_v_predicted_output); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 455, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_11 = PyFloat_FromDouble(__pyx_v_log_partition_function); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 458, __pyx_L1_error)
+  __pyx_t_11 = PyFloat_FromDouble(__pyx_v_log_partition_function); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 455, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_entropy); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 458, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_entropy); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 455, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_12 = PyTuple_New(3); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 458, __pyx_L1_error)
+  __pyx_t_12 = PyTuple_New(3); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 455, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_4);
@@ -9108,7 +9070,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   __pyx_t_12 = 0;
   goto __pyx_L0;
 
-  /* "ad3/extensions.pyx":424
+  /* "ad3/extensions.pyx":421
  * 
  * 
  * cpdef decode_matrix_tree(int sentence_length, dict index, list arcs,             # <<<<<<<<<<<<<<
@@ -9176,23 +9138,23 @@ static PyObject *__pyx_pw_3ad3_10extensions_1decode_matrix_tree(PyObject *__pyx_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_index)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 1); __PYX_ERR(1, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 1); __PYX_ERR(1, 421, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_arcs)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 2); __PYX_ERR(1, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 2); __PYX_ERR(1, 421, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_scores)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 3); __PYX_ERR(1, 424, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 3); __PYX_ERR(1, 421, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decode_matrix_tree") < 0)) __PYX_ERR(1, 424, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decode_matrix_tree") < 0)) __PYX_ERR(1, 421, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -9202,22 +9164,22 @@ static PyObject *__pyx_pw_3ad3_10extensions_1decode_matrix_tree(PyObject *__pyx_
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
-    __pyx_v_sentence_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_sentence_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 424, __pyx_L3_error)
+    __pyx_v_sentence_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_sentence_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 421, __pyx_L3_error)
     __pyx_v_index = ((PyObject*)values[1]);
     __pyx_v_arcs = ((PyObject*)values[2]);
     __pyx_v_scores = ((PyArrayObject *)values[3]);
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 424, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 421, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.decode_matrix_tree", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_index), (&PyDict_Type), 1, "index", 1))) __PYX_ERR(1, 424, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arcs), (&PyList_Type), 1, "arcs", 1))) __PYX_ERR(1, 424, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_scores), __pyx_ptype_5numpy_ndarray, 1, "scores", 0))) __PYX_ERR(1, 425, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_index), (&PyDict_Type), 1, "index", 1))) __PYX_ERR(1, 421, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arcs), (&PyList_Type), 1, "arcs", 1))) __PYX_ERR(1, 421, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_scores), __pyx_ptype_5numpy_ndarray, 1, "scores", 0))) __PYX_ERR(1, 422, __pyx_L1_error)
   __pyx_r = __pyx_pf_3ad3_10extensions_decode_matrix_tree(__pyx_self, __pyx_v_sentence_length, __pyx_v_index, __pyx_v_arcs, __pyx_v_scores);
 
   /* function exit code */
@@ -9235,7 +9197,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_decode_matrix_tree(CYTHON_UNUSED PyO
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("decode_matrix_tree", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_3ad3_10extensions_decode_matrix_tree(__pyx_v_sentence_length, __pyx_v_index, __pyx_v_arcs, __pyx_v_scores, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 424, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_3ad3_10extensions_decode_matrix_tree(__pyx_v_sentence_length, __pyx_v_index, __pyx_v_arcs, __pyx_v_scores, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 421, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -13075,10 +13037,8 @@ static struct PyModuleDef __pyx_moduledef = {
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_1_length, __pyx_k_1_length, sizeof(__pyx_k_1_length), 0, 0, 1, 0},
-  {&__pyx_n_s_FLOAT_DTYPE, __pyx_k_FLOAT_DTYPE, sizeof(__pyx_k_FLOAT_DTYPE), 0, 0, 1, 1},
   {&__pyx_kp_u_Format_string_allocated_too_shor, __pyx_k_Format_string_allocated_too_shor, sizeof(__pyx_k_Format_string_allocated_too_shor), 0, 1, 0, 0},
   {&__pyx_kp_u_Format_string_allocated_too_shor_2, __pyx_k_Format_string_allocated_too_shor_2, sizeof(__pyx_k_Format_string_allocated_too_shor_2), 0, 1, 0, 0},
-  {&__pyx_n_s_INT_DTYPE, __pyx_k_INT_DTYPE, sizeof(__pyx_k_INT_DTYPE), 0, 0, 1, 1},
   {&__pyx_n_s_ImportError, __pyx_k_ImportError, sizeof(__pyx_k_ImportError), 0, 0, 1, 1},
   {&__pyx_kp_s_Inconsistent_length_passed, __pyx_k_Inconsistent_length_passed, sizeof(__pyx_k_Inconsistent_length_passed), 0, 0, 1, 0},
   {&__pyx_kp_s_Invalid_arc_head_cannot_be_the_s, __pyx_k_Invalid_arc_head_cannot_be_the_s, sizeof(__pyx_k_Invalid_arc_head_cannot_be_the_s), 0, 0, 1, 0},
@@ -13108,16 +13068,13 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_budget, __pyx_k_budget, sizeof(__pyx_k_budget), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_close, __pyx_k_close, sizeof(__pyx_k_close), 0, 0, 1, 1},
-  {&__pyx_n_s_float, __pyx_k_float, sizeof(__pyx_k_float), 0, 0, 1, 1},
   {&__pyx_n_s_genexpr, __pyx_k_genexpr, sizeof(__pyx_k_genexpr), 0, 0, 1, 1},
   {&__pyx_n_s_getstate, __pyx_k_getstate, sizeof(__pyx_k_getstate), 0, 0, 1, 1},
   {&__pyx_n_s_grandparents, __pyx_k_grandparents, sizeof(__pyx_k_grandparents), 0, 0, 1, 1},
   {&__pyx_n_s_grandsiblings, __pyx_k_grandsiblings, sizeof(__pyx_k_grandsiblings), 0, 0, 1, 1},
-  {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_incoming_arcs, __pyx_k_incoming_arcs, sizeof(__pyx_k_incoming_arcs), 0, 0, 1, 1},
   {&__pyx_n_s_index, __pyx_k_index, sizeof(__pyx_k_index), 0, 0, 1, 1},
   {&__pyx_n_s_initialize_locals_genexpr, __pyx_k_initialize_locals_genexpr, sizeof(__pyx_k_initialize_locals_genexpr), 0, 0, 1, 1},
-  {&__pyx_n_s_int, __pyx_k_int, sizeof(__pyx_k_int), 0, 0, 1, 1},
   {&__pyx_n_s_items, __pyx_k_items, sizeof(__pyx_k_items), 0, 0, 1, 1},
   {&__pyx_n_s_left_positions, __pyx_k_left_positions, sizeof(__pyx_k_left_positions), 0, 0, 1, 1},
   {&__pyx_n_s_length, __pyx_k_length, sizeof(__pyx_k_length), 0, 0, 1, 1},
@@ -13128,9 +13085,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_ndarray_is_not_C_contiguous, __pyx_k_ndarray_is_not_C_contiguous, sizeof(__pyx_k_ndarray_is_not_C_contiguous), 0, 1, 0, 0},
   {&__pyx_kp_u_ndarray_is_not_Fortran_contiguou, __pyx_k_ndarray_is_not_Fortran_contiguou, sizeof(__pyx_k_ndarray_is_not_Fortran_contiguou), 0, 1, 0, 0},
   {&__pyx_kp_s_no_default___reduce___due_to_non, __pyx_k_no_default___reduce___due_to_non, sizeof(__pyx_k_no_default___reduce___due_to_non), 0, 0, 1, 0},
-  {&__pyx_n_s_np, __pyx_k_np, sizeof(__pyx_k_np), 0, 0, 1, 1},
   {&__pyx_n_s_num_states, __pyx_k_num_states, sizeof(__pyx_k_num_states), 0, 0, 1, 1},
-  {&__pyx_n_s_numpy, __pyx_k_numpy, sizeof(__pyx_k_numpy), 0, 0, 1, 1},
   {&__pyx_kp_s_numpy_core_multiarray_failed_to, __pyx_k_numpy_core_multiarray_failed_to, sizeof(__pyx_k_numpy_core_multiarray_failed_to), 0, 0, 1, 0},
   {&__pyx_kp_s_numpy_core_umath_failed_to_impor, __pyx_k_numpy_core_umath_failed_to_impor, sizeof(__pyx_k_numpy_core_umath_failed_to_impor), 0, 0, 1, 0},
   {&__pyx_n_s_outgoing_arcs, __pyx_k_outgoing_arcs, sizeof(__pyx_k_outgoing_arcs), 0, 0, 1, 1},
@@ -13157,9 +13112,9 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 270, __pyx_L1_error)
-  __pyx_builtin_max = __Pyx_GetBuiltinName(__pyx_n_s_max); if (!__pyx_builtin_max) __PYX_ERR(1, 300, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(1, 447, __pyx_L1_error)
+  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 267, __pyx_L1_error)
+  __pyx_builtin_max = __Pyx_GetBuiltinName(__pyx_n_s_max); if (!__pyx_builtin_max) __PYX_ERR(1, 297, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(1, 444, __pyx_L1_error)
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(2, 856, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(2, 1038, __pyx_L1_error)
   return 0;
@@ -13304,47 +13259,47 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
 
-  /* "ad3/extensions.pyx":270
+  /* "ad3/extensions.pyx":267
  *             if validate:
  *                 if not 0 <= head < length:
  *                     raise ValueError("Invalid arc: head must be in [0, length)")             # <<<<<<<<<<<<<<
  *                 if not 1 <= modifier < length:
  *                     raise ValueError("Invalid arc: modifier must be in ",
  */
-  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_Invalid_arc_head_must_be_in_0_le); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(1, 270, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_Invalid_arc_head_must_be_in_0_le); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(1, 267, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "ad3/extensions.pyx":272
+  /* "ad3/extensions.pyx":269
  *                     raise ValueError("Invalid arc: head must be in [0, length)")
  *                 if not 1 <= modifier < length:
  *                     raise ValueError("Invalid arc: modifier must be in ",             # <<<<<<<<<<<<<<
  *                                      "[1, length)")
  *                 if not head != modifier:
  */
-  __pyx_tuple__16 = PyTuple_Pack(2, __pyx_kp_s_Invalid_arc_modifier_must_be_in, __pyx_kp_s_1_length); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(1, 272, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(2, __pyx_kp_s_Invalid_arc_modifier_must_be_in, __pyx_kp_s_1_length); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(1, 269, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "ad3/extensions.pyx":275
+  /* "ad3/extensions.pyx":272
  *                                      "[1, length)")
  *                 if not head != modifier:
  *                     raise ValueError("Invalid arc: head cannot be the same as "             # <<<<<<<<<<<<<<
  *                                      "the modifier")
  *             arcs_v.push_back(new Arc(head, modifier))
  */
-  __pyx_tuple__17 = PyTuple_Pack(1, __pyx_kp_s_Invalid_arc_head_cannot_be_the_s); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(1, 275, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(1, __pyx_kp_s_Invalid_arc_head_cannot_be_the_s); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(1, 272, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
 
-  /* "ad3/extensions.pyx":280
+  /* "ad3/extensions.pyx":277
  * 
  *         if validate and arcs_v.size() != <Py_ssize_t> self.thisptr.Degree():
  *             raise ValueError("Number of arcs differs from number of bound "             # <<<<<<<<<<<<<<
  *                              "variables.")
  *         (<FactorTree*>self.thisptr).Initialize(length, arcs_v)
  */
-  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_kp_s_Number_of_arcs_differs_from_numb); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(1, 280, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_kp_s_Number_of_arcs_differs_from_numb); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(1, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
 
@@ -13367,25 +13322,25 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
 
-  /* "ad3/extensions.pyx":317
+  /* "ad3/extensions.pyx":314
  *         if validate:
  *             if siblings_v.size() != length * (1 + length) / 2:
  *                 raise ValueError("Inconsistent length passed.")             # <<<<<<<<<<<<<<
  * 
  *             if length != self.thisptr.Degree() + 1:
  */
-  __pyx_tuple__21 = PyTuple_Pack(1, __pyx_kp_s_Inconsistent_length_passed); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(1, 317, __pyx_L1_error)
+  __pyx_tuple__21 = PyTuple_Pack(1, __pyx_kp_s_Inconsistent_length_passed); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(1, 314, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
   __Pyx_GIVEREF(__pyx_tuple__21);
 
-  /* "ad3/extensions.pyx":320
+  /* "ad3/extensions.pyx":317
  * 
  *             if length != self.thisptr.Degree() + 1:
  *                 raise ValueError("Number of variables doesn't match.")             # <<<<<<<<<<<<<<
  * 
  *         (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
  */
-  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_kp_s_Number_of_variables_doesn_t_matc); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(1, 320, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_kp_s_Number_of_variables_doesn_t_matc); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(1, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
@@ -13565,130 +13520,130 @@ static int __Pyx_modinit_type_init_code(void) {
   __pyx_vtabptr_3ad3_10extensions_PFactorSequence = &__pyx_vtable_3ad3_10extensions_PFactorSequence;
   __pyx_vtable_3ad3_10extensions_PFactorSequence.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorSequence.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorSequence) < 0) __PYX_ERR(1, 120, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorSequence) < 0) __PYX_ERR(1, 117, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorSequence.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorSequence.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorSequence.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorSequence.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorSequence.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorSequence) < 0) __PYX_ERR(1, 120, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorSequence, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorSequence) < 0) __PYX_ERR(1, 120, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorSequence) < 0) __PYX_ERR(1, 120, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorSequence.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorSequence) < 0) __PYX_ERR(1, 117, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorSequence, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorSequence) < 0) __PYX_ERR(1, 117, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorSequence) < 0) __PYX_ERR(1, 117, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorSequence = &__pyx_type_3ad3_10extensions_PFactorSequence;
   __pyx_vtabptr_3ad3_10extensions_PFactorSequenceCompressor = &__pyx_vtable_3ad3_10extensions_PFactorSequenceCompressor;
   __pyx_vtable_3ad3_10extensions_PFactorSequenceCompressor.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorSequenceCompressor.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorSequenceCompressor) < 0) __PYX_ERR(1, 134, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorSequenceCompressor) < 0) __PYX_ERR(1, 131, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorSequenceCompressor.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorSequenceCompressor.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorSequenceCompressor.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorSequenceCompressor.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorSequenceCompressor.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorSequenceCompressor) < 0) __PYX_ERR(1, 134, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorSequenceCompressor, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorSequenceCompressor) < 0) __PYX_ERR(1, 134, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorSequenceCompressor) < 0) __PYX_ERR(1, 134, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorSequenceCompressor.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorSequenceCompressor) < 0) __PYX_ERR(1, 131, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorSequenceCompressor, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorSequenceCompressor) < 0) __PYX_ERR(1, 131, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorSequenceCompressor) < 0) __PYX_ERR(1, 131, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorSequenceCompressor = &__pyx_type_3ad3_10extensions_PFactorSequenceCompressor;
   __pyx_vtabptr_3ad3_10extensions_PFactorCompressionBudget = &__pyx_vtable_3ad3_10extensions_PFactorCompressionBudget;
   __pyx_vtable_3ad3_10extensions_PFactorCompressionBudget.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorCompressionBudget.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorCompressionBudget) < 0) __PYX_ERR(1, 151, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorCompressionBudget) < 0) __PYX_ERR(1, 148, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorCompressionBudget.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorCompressionBudget.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorCompressionBudget.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorCompressionBudget.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorCompressionBudget.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorCompressionBudget) < 0) __PYX_ERR(1, 151, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorCompressionBudget, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorCompressionBudget) < 0) __PYX_ERR(1, 151, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorCompressionBudget) < 0) __PYX_ERR(1, 151, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorCompressionBudget.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorCompressionBudget) < 0) __PYX_ERR(1, 148, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorCompressionBudget, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorCompressionBudget) < 0) __PYX_ERR(1, 148, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorCompressionBudget) < 0) __PYX_ERR(1, 148, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorCompressionBudget = &__pyx_type_3ad3_10extensions_PFactorCompressionBudget;
   __pyx_vtabptr_3ad3_10extensions_PFactorBinaryTree = &__pyx_vtable_3ad3_10extensions_PFactorBinaryTree;
   __pyx_vtable_3ad3_10extensions_PFactorBinaryTree.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorBinaryTree.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorBinaryTree) < 0) __PYX_ERR(1, 172, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorBinaryTree) < 0) __PYX_ERR(1, 169, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorBinaryTree.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorBinaryTree.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorBinaryTree.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorBinaryTree.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorBinaryTree.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorBinaryTree) < 0) __PYX_ERR(1, 172, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorBinaryTree, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorBinaryTree) < 0) __PYX_ERR(1, 172, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorBinaryTree) < 0) __PYX_ERR(1, 172, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorBinaryTree.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorBinaryTree) < 0) __PYX_ERR(1, 169, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorBinaryTree, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorBinaryTree) < 0) __PYX_ERR(1, 169, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorBinaryTree) < 0) __PYX_ERR(1, 169, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorBinaryTree = &__pyx_type_3ad3_10extensions_PFactorBinaryTree;
   __pyx_vtabptr_3ad3_10extensions_PFactorBinaryTreeCounts = &__pyx_vtable_3ad3_10extensions_PFactorBinaryTreeCounts;
   __pyx_vtable_3ad3_10extensions_PFactorBinaryTreeCounts.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts) < 0) __PYX_ERR(1, 186, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts) < 0) __PYX_ERR(1, 183, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorBinaryTreeCounts) < 0) __PYX_ERR(1, 186, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorBinaryTreeCounts, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts) < 0) __PYX_ERR(1, 186, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts) < 0) __PYX_ERR(1, 186, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorBinaryTreeCounts) < 0) __PYX_ERR(1, 183, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorBinaryTreeCounts, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts) < 0) __PYX_ERR(1, 183, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts) < 0) __PYX_ERR(1, 183, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorBinaryTreeCounts = &__pyx_type_3ad3_10extensions_PFactorBinaryTreeCounts;
   __pyx_vtabptr_3ad3_10extensions_PFactorGeneralTree = &__pyx_vtable_3ad3_10extensions_PFactorGeneralTree;
   __pyx_vtable_3ad3_10extensions_PFactorGeneralTree.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorGeneralTree.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorGeneralTree) < 0) __PYX_ERR(1, 220, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorGeneralTree) < 0) __PYX_ERR(1, 217, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorGeneralTree.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorGeneralTree.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorGeneralTree.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorGeneralTree.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorGeneralTree.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorGeneralTree) < 0) __PYX_ERR(1, 220, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorGeneralTree, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorGeneralTree) < 0) __PYX_ERR(1, 220, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorGeneralTree) < 0) __PYX_ERR(1, 220, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorGeneralTree.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorGeneralTree) < 0) __PYX_ERR(1, 217, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorGeneralTree, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorGeneralTree) < 0) __PYX_ERR(1, 217, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorGeneralTree) < 0) __PYX_ERR(1, 217, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorGeneralTree = &__pyx_type_3ad3_10extensions_PFactorGeneralTree;
   __pyx_vtabptr_3ad3_10extensions_PFactorGeneralTreeCounts = &__pyx_vtable_3ad3_10extensions_PFactorGeneralTreeCounts;
   __pyx_vtable_3ad3_10extensions_PFactorGeneralTreeCounts.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts) < 0) __PYX_ERR(1, 234, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts) < 0) __PYX_ERR(1, 231, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorGeneralTreeCounts) < 0) __PYX_ERR(1, 234, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorGeneralTreeCounts, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts) < 0) __PYX_ERR(1, 234, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts) < 0) __PYX_ERR(1, 234, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorGeneralTreeCounts) < 0) __PYX_ERR(1, 231, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorGeneralTreeCounts, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts) < 0) __PYX_ERR(1, 231, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts) < 0) __PYX_ERR(1, 231, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorGeneralTreeCounts = &__pyx_type_3ad3_10extensions_PFactorGeneralTreeCounts;
   __pyx_vtabptr_3ad3_10extensions_PFactorTree = &__pyx_vtable_3ad3_10extensions_PFactorTree;
   __pyx_vtable_3ad3_10extensions_PFactorTree.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorTree.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorTree) < 0) __PYX_ERR(1, 249, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorTree) < 0) __PYX_ERR(1, 246, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorTree.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorTree.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorTree.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorTree.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorTree.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorTree) < 0) __PYX_ERR(1, 249, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorTree, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorTree) < 0) __PYX_ERR(1, 249, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorTree) < 0) __PYX_ERR(1, 249, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorTree.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorTree) < 0) __PYX_ERR(1, 246, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorTree, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorTree) < 0) __PYX_ERR(1, 246, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorTree) < 0) __PYX_ERR(1, 246, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorTree = &__pyx_type_3ad3_10extensions_PFactorTree;
   __pyx_vtabptr_3ad3_10extensions_PFactorHeadAutomaton = &__pyx_vtable_3ad3_10extensions_PFactorHeadAutomaton;
   __pyx_vtable_3ad3_10extensions_PFactorHeadAutomaton.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorHeadAutomaton.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorHeadAutomaton) < 0) __PYX_ERR(1, 288, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorHeadAutomaton) < 0) __PYX_ERR(1, 285, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorHeadAutomaton.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorHeadAutomaton.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorHeadAutomaton.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorHeadAutomaton.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorHeadAutomaton.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorHeadAutomaton) < 0) __PYX_ERR(1, 288, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorHeadAutomaton, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorHeadAutomaton) < 0) __PYX_ERR(1, 288, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorHeadAutomaton) < 0) __PYX_ERR(1, 288, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorHeadAutomaton.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorHeadAutomaton) < 0) __PYX_ERR(1, 285, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorHeadAutomaton, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorHeadAutomaton) < 0) __PYX_ERR(1, 285, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorHeadAutomaton) < 0) __PYX_ERR(1, 285, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorHeadAutomaton = &__pyx_type_3ad3_10extensions_PFactorHeadAutomaton;
   __pyx_vtabptr_3ad3_10extensions_PFactorGrandparentHeadAutomaton = &__pyx_vtable_3ad3_10extensions_PFactorGrandparentHeadAutomaton;
   __pyx_vtable_3ad3_10extensions_PFactorGrandparentHeadAutomaton.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 330, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 327, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 330, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorGrandparentHeadAutomaton, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 330, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 330, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 327, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorGrandparentHeadAutomaton, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 327, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 327, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorGrandparentHeadAutomaton = &__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions___pyx_scope_struct__initialize) < 0) __PYX_ERR(1, 298, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions___pyx_scope_struct__initialize) < 0) __PYX_ERR(1, 295, __pyx_L1_error)
   __pyx_type_3ad3_10extensions___pyx_scope_struct__initialize.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions___pyx_scope_struct__initialize.tp_dictoffset && __pyx_type_3ad3_10extensions___pyx_scope_struct__initialize.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions___pyx_scope_struct__initialize.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_3ad3_10extensions___pyx_scope_struct__initialize = &__pyx_type_3ad3_10extensions___pyx_scope_struct__initialize;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions___pyx_scope_struct_1_genexpr) < 0) __PYX_ERR(1, 300, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions___pyx_scope_struct_1_genexpr) < 0) __PYX_ERR(1, 297, __pyx_L1_error)
   __pyx_type_3ad3_10extensions___pyx_scope_struct_1_genexpr.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions___pyx_scope_struct_1_genexpr.tp_dictoffset && __pyx_type_3ad3_10extensions___pyx_scope_struct_1_genexpr.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions___pyx_scope_struct_1_genexpr.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
@@ -13858,9 +13813,8 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_extensions(PyObject *__pyx_pyinit_
 #endif
 #endif
 {
-  PyObject *__pyx_t_1 = NULL;
-  int __pyx_t_2;
-  PyObject *__pyx_t_3 = NULL;
+  int __pyx_t_1;
+  PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannyDeclarations
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
@@ -13966,66 +13920,24 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
 
-  /* "ad3/extensions.pyx":4
- * from libcpp cimport bool
- * 
- * import numpy as np             # <<<<<<<<<<<<<<
- * cimport cython
- * cimport numpy as np
- */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 4, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 4, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "ad3/extensions.pyx":14
+  /* "ad3/extensions.pyx":13
  * from base cimport PBinaryVariable, PMultiVariable, PFactor, PGenericFactor
  * 
  * np.import_array()             # <<<<<<<<<<<<<<
- * INT_DTYPE = np.int
- * FLOAT_DTYPE = np.float
- */
-  __pyx_t_2 = __pyx_f_5numpy_import_array(); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(1, 14, __pyx_L1_error)
-
-  /* "ad3/extensions.pyx":15
- * 
- * np.import_array()
- * INT_DTYPE = np.int             # <<<<<<<<<<<<<<
- * FLOAT_DTYPE = np.float
- * ctypedef np.int_t INT_DTYPE_T
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 15, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_int); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 15, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_INT_DTYPE, __pyx_t_3) < 0) __PYX_ERR(1, 15, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-
-  /* "ad3/extensions.pyx":16
- * np.import_array()
- * INT_DTYPE = np.int
- * FLOAT_DTYPE = np.float             # <<<<<<<<<<<<<<
  * ctypedef np.int_t INT_DTYPE_T
  * ctypedef np.float_t FLOAT_DTYPE_T
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 16, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_float); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 16, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_FLOAT_DTYPE, __pyx_t_1) < 0) __PYX_ERR(1, 16, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __pyx_f_5numpy_import_array(); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(1, 13, __pyx_L1_error)
 
   /* "ad3/extensions.pyx":1
  * from libcpp.vector cimport vector             # <<<<<<<<<<<<<<
  * from libcpp cimport bool
  * 
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_1) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "vector.to_py":60
  * 
@@ -14039,8 +13951,7 @@ if (!__Pyx_RefNanny) {
 
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_2);
   if (__pyx_m) {
     if (__pyx_d) {
       __Pyx_AddTraceback("init ad3.extensions", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -15450,106 +15361,6 @@ GOOD:
     Py_XDECREF(setstate);
     Py_XDECREF(setstate_cython);
     return ret;
-}
-
-/* Import */
-static PyObject *__Pyx_Import(PyObject *name, PyObject *from_list, int level) {
-    PyObject *empty_list = 0;
-    PyObject *module = 0;
-    PyObject *global_dict = 0;
-    PyObject *empty_dict = 0;
-    PyObject *list;
-    #if PY_MAJOR_VERSION < 3
-    PyObject *py_import;
-    py_import = __Pyx_PyObject_GetAttrStr(__pyx_b, __pyx_n_s_import);
-    if (!py_import)
-        goto bad;
-    #endif
-    if (from_list)
-        list = from_list;
-    else {
-        empty_list = PyList_New(0);
-        if (!empty_list)
-            goto bad;
-        list = empty_list;
-    }
-    global_dict = PyModule_GetDict(__pyx_m);
-    if (!global_dict)
-        goto bad;
-    empty_dict = PyDict_New();
-    if (!empty_dict)
-        goto bad;
-    {
-        #if PY_MAJOR_VERSION >= 3
-        if (level == -1) {
-            if (strchr(__Pyx_MODULE_NAME, '.')) {
-                module = PyImport_ImportModuleLevelObject(
-                    name, global_dict, empty_dict, list, 1);
-                if (!module) {
-                    if (!PyErr_ExceptionMatches(PyExc_ImportError))
-                        goto bad;
-                    PyErr_Clear();
-                }
-            }
-            level = 0;
-        }
-        #endif
-        if (!module) {
-            #if PY_MAJOR_VERSION < 3
-            PyObject *py_level = PyInt_FromLong(level);
-            if (!py_level)
-                goto bad;
-            module = PyObject_CallFunctionObjArgs(py_import,
-                name, global_dict, empty_dict, list, py_level, (PyObject *)NULL);
-            Py_DECREF(py_level);
-            #else
-            module = PyImport_ImportModuleLevelObject(
-                name, global_dict, empty_dict, list, level);
-            #endif
-        }
-    }
-bad:
-    #if PY_MAJOR_VERSION < 3
-    Py_XDECREF(py_import);
-    #endif
-    Py_XDECREF(empty_list);
-    Py_XDECREF(empty_dict);
-    return module;
-}
-
-/* GetModuleGlobalName */
-#if CYTHON_USE_DICT_VERSIONS
-static PyObject *__Pyx__GetModuleGlobalName(PyObject *name, PY_UINT64_T *dict_version, PyObject **dict_cached_value)
-#else
-static CYTHON_INLINE PyObject *__Pyx__GetModuleGlobalName(PyObject *name)
-#endif
-{
-    PyObject *result;
-#if !CYTHON_AVOID_BORROWED_REFS
-#if CYTHON_COMPILING_IN_CPYTHON && PY_VERSION_HEX >= 0x030500A1
-    result = _PyDict_GetItem_KnownHash(__pyx_d, name, ((PyASCIIObject *) name)->hash);
-    __PYX_UPDATE_DICT_CACHE(__pyx_d, result, *dict_cached_value, *dict_version)
-    if (likely(result)) {
-        return __Pyx_NewRef(result);
-    } else if (unlikely(PyErr_Occurred())) {
-        return NULL;
-    }
-#else
-    result = PyDict_GetItem(__pyx_d, name);
-    __PYX_UPDATE_DICT_CACHE(__pyx_d, result, *dict_cached_value, *dict_version)
-    if (likely(result)) {
-        return __Pyx_NewRef(result);
-    }
-#endif
-#else
-    result = PyObject_GetItem(__pyx_d, name);
-    __PYX_UPDATE_DICT_CACHE(__pyx_d, result, *dict_cached_value, *dict_version)
-    if (likely(result)) {
-        return __Pyx_NewRef(result);
-    }
-    PyErr_Clear();
-#endif
-    return __Pyx_GetBuiltinName(name);
 }
 
 /* CLineInTraceback */
