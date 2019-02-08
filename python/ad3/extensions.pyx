@@ -324,10 +324,9 @@ cdef class PFactorHeadAutomaton(PGenericFactor):
 
         if isinstance(arcs_or_length, list):
             for arc in arcs_or_length:
-                arcs_v.push_back(new Arc(arcs_or_length[0], arcs_or_length[1]))
+                arcs_v.push_back(new Arc(arc[0], arc[1]))
 
             (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
-
             for arcp in arcs_v:
                 del arcp
         else:

@@ -1036,7 +1036,7 @@ struct __pyx_obj_3ad3_10extensions_PFactorHeadAutomaton {
 };
 
 
-/* "ad3/extensions.pyx":339
+/* "ad3/extensions.pyx":338
  *             del sibp
  * 
  * cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -1233,7 +1233,7 @@ struct __pyx_vtabstruct_3ad3_10extensions_PFactorHeadAutomaton {
 static struct __pyx_vtabstruct_3ad3_10extensions_PFactorHeadAutomaton *__pyx_vtabptr_3ad3_10extensions_PFactorHeadAutomaton;
 
 
-/* "ad3/extensions.pyx":339
+/* "ad3/extensions.pyx":338
  *             del sibp
  * 
  * cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):             # <<<<<<<<<<<<<<
@@ -6368,7 +6368,7 @@ static PyObject *__pyx_gb_3ad3_10extensions_20PFactorHeadAutomaton_10initialize_
 
 static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(struct __pyx_obj_3ad3_10extensions_PFactorHeadAutomaton *__pyx_v_self, PyObject *__pyx_v_arcs_or_length, PyObject *__pyx_v_siblings, bool __pyx_v_validate) {
   struct __pyx_obj_3ad3_10extensions___pyx_scope_struct__initialize *__pyx_cur_scope;
-  CYTHON_UNUSED PyObject *__pyx_v_arc = 0;
+  PyObject *__pyx_v_arc = 0;
   std::vector<AD3::Arc *>  __pyx_v_arcs_v;
   std::vector<AD3::Sibling *>  __pyx_v_siblings_v;
   PyObject *__pyx_v_sibling = 0;
@@ -6637,7 +6637,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  * 
  *         if isinstance(arcs_or_length, list):             # <<<<<<<<<<<<<<
  *             for arc in arcs_or_length:
- *                 arcs_v.push_back(new Arc(arcs_or_length[0], arcs_or_length[1]))
+ *                 arcs_v.push_back(new Arc(arc[0], arc[1]))
  */
   __pyx_t_8 = PyList_Check(__pyx_v_arcs_or_length); 
   __pyx_t_7 = (__pyx_t_8 != 0);
@@ -6647,7 +6647,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  * 
  *         if isinstance(arcs_or_length, list):
  *             for arc in arcs_or_length:             # <<<<<<<<<<<<<<
- *                 arcs_v.push_back(new Arc(arcs_or_length[0], arcs_or_length[1]))
+ *                 arcs_v.push_back(new Arc(arc[0], arc[1]))
  * 
  */
     if (likely(PyList_CheckExact(__pyx_v_arcs_or_length)) || PyTuple_CheckExact(__pyx_v_arcs_or_length)) {
@@ -6696,15 +6696,23 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
       /* "ad3/extensions.pyx":327
  *         if isinstance(arcs_or_length, list):
  *             for arc in arcs_or_length:
- *                 arcs_v.push_back(new Arc(arcs_or_length[0], arcs_or_length[1]))             # <<<<<<<<<<<<<<
+ *                 arcs_v.push_back(new Arc(arc[0], arc[1]))             # <<<<<<<<<<<<<<
  * 
  *             (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
  */
-      __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_arcs_or_length, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 327, __pyx_L1_error)
+      if (unlikely(__pyx_v_arc == Py_None)) {
+        PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+        __PYX_ERR(1, 327, __pyx_L1_error)
+      }
+      __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 327, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 327, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_arcs_or_length, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 327, __pyx_L1_error)
+      if (unlikely(__pyx_v_arc == Py_None)) {
+        PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
+        __PYX_ERR(1, 327, __pyx_L1_error)
+      }
+      __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 327, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 327, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -6719,24 +6727,24 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  * 
  *         if isinstance(arcs_or_length, list):
  *             for arc in arcs_or_length:             # <<<<<<<<<<<<<<
- *                 arcs_v.push_back(new Arc(arcs_or_length[0], arcs_or_length[1]))
+ *                 arcs_v.push_back(new Arc(arc[0], arc[1]))
  * 
  */
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "ad3/extensions.pyx":329
- *                 arcs_v.push_back(new Arc(arcs_or_length[0], arcs_or_length[1]))
+ *                 arcs_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *             (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)             # <<<<<<<<<<<<<<
- * 
  *             for arcp in arcs_v:
+ *                 del arcp
  */
     ((AD3::FactorHeadAutomaton *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_arcs_v, __pyx_v_siblings_v);
 
-    /* "ad3/extensions.pyx":331
- *             (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
+    /* "ad3/extensions.pyx":330
  * 
+ *             (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
  *             for arcp in arcs_v:             # <<<<<<<<<<<<<<
  *                 del arcp
  *         else:
@@ -6748,8 +6756,8 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
       ++__pyx_t_10;
       __pyx_v_arcp = __pyx_t_11;
 
-      /* "ad3/extensions.pyx":332
- * 
+      /* "ad3/extensions.pyx":331
+ *             (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
  *             for arcp in arcs_v:
  *                 del arcp             # <<<<<<<<<<<<<<
  *         else:
@@ -6757,9 +6765,9 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
       delete __pyx_v_arcp;
 
-      /* "ad3/extensions.pyx":331
- *             (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
+      /* "ad3/extensions.pyx":330
  * 
+ *             (<FactorHeadAutomaton*>self.thisptr).Initialize(arcs_v, siblings_v)
  *             for arcp in arcs_v:             # <<<<<<<<<<<<<<
  *                 del arcp
  *         else:
@@ -6771,12 +6779,12 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  * 
  *         if isinstance(arcs_or_length, list):             # <<<<<<<<<<<<<<
  *             for arc in arcs_or_length:
- *                 arcs_v.push_back(new Arc(arcs_or_length[0], arcs_or_length[1]))
+ *                 arcs_v.push_back(new Arc(arc[0], arc[1]))
  */
     goto __pyx_L9;
   }
 
-  /* "ad3/extensions.pyx":334
+  /* "ad3/extensions.pyx":333
  *                 del arcp
  *         else:
  *             (<FactorHeadAutomaton*>self.thisptr).Initialize(length, siblings_v)             # <<<<<<<<<<<<<<
@@ -6788,7 +6796,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
   }
   __pyx_L9:;
 
-  /* "ad3/extensions.pyx":336
+  /* "ad3/extensions.pyx":335
  *             (<FactorHeadAutomaton*>self.thisptr).Initialize(length, siblings_v)
  * 
  *         for sibp in siblings_v:             # <<<<<<<<<<<<<<
@@ -6802,7 +6810,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
     ++__pyx_t_12;
     __pyx_v_sibp = __pyx_t_13;
 
-    /* "ad3/extensions.pyx":337
+    /* "ad3/extensions.pyx":336
  * 
  *         for sibp in siblings_v:
  *             del sibp             # <<<<<<<<<<<<<<
@@ -6811,7 +6819,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_4initialize(s
  */
     delete __pyx_v_sibp;
 
-    /* "ad3/extensions.pyx":336
+    /* "ad3/extensions.pyx":335
  *             (<FactorHeadAutomaton*>self.thisptr).Initialize(length, siblings_v)
  * 
  *         for sibp in siblings_v:             # <<<<<<<<<<<<<<
@@ -6952,7 +6960,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_20PFactorHeadAutomaton_8__setstate_c
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":340
+/* "ad3/extensions.pyx":339
  * 
  * cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -6989,7 +6997,7 @@ static int __pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_1__cinit
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 340, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 339, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7003,7 +7011,7 @@ static int __pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_1__cinit
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 340, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 339, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorGrandparentHeadAutomaton.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -7023,27 +7031,27 @@ static int __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton___cinit_
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "ad3/extensions.pyx":341
+  /* "ad3/extensions.pyx":340
  * cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate             # <<<<<<<<<<<<<<
  *         if allocate:
  *             self.thisptr = new FactorGrandparentHeadAutomaton()
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 341, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely((__pyx_t_1 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 340, __pyx_L1_error)
   __pyx_v_self->__pyx_base.__pyx_base.allocate = __pyx_t_1;
 
-  /* "ad3/extensions.pyx":342
+  /* "ad3/extensions.pyx":341
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
  *             self.thisptr = new FactorGrandparentHeadAutomaton()
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 342, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_allocate); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(1, 341, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "ad3/extensions.pyx":343
+    /* "ad3/extensions.pyx":342
  *         self.allocate = allocate
  *         if allocate:
  *             self.thisptr = new FactorGrandparentHeadAutomaton()             # <<<<<<<<<<<<<<
@@ -7052,7 +7060,7 @@ static int __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton___cinit_
  */
     __pyx_v_self->__pyx_base.__pyx_base.thisptr = new AD3::FactorGrandparentHeadAutomaton();
 
-    /* "ad3/extensions.pyx":342
+    /* "ad3/extensions.pyx":341
  *     def __cinit__(self, allocate=True):
  *         self.allocate = allocate
  *         if allocate:             # <<<<<<<<<<<<<<
@@ -7061,7 +7069,7 @@ static int __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton___cinit_
  */
   }
 
-  /* "ad3/extensions.pyx":340
+  /* "ad3/extensions.pyx":339
  * 
  * cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
  *     def __cinit__(self, allocate=True):             # <<<<<<<<<<<<<<
@@ -7080,7 +7088,7 @@ static int __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton___cinit_
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":345
+/* "ad3/extensions.pyx":344
  *             self.thisptr = new FactorGrandparentHeadAutomaton()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -7104,7 +7112,7 @@ static void __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_2__deal
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "ad3/extensions.pyx":346
+  /* "ad3/extensions.pyx":345
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -7114,7 +7122,7 @@ static void __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_2__deal
   __pyx_t_1 = (__pyx_v_self->__pyx_base.__pyx_base.allocate != 0);
   if (__pyx_t_1) {
 
-    /* "ad3/extensions.pyx":347
+    /* "ad3/extensions.pyx":346
  *     def __dealloc__(self):
  *         if self.allocate:
  *             del self.thisptr             # <<<<<<<<<<<<<<
@@ -7123,7 +7131,7 @@ static void __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_2__deal
  */
     delete __pyx_v_self->__pyx_base.__pyx_base.thisptr;
 
-    /* "ad3/extensions.pyx":346
+    /* "ad3/extensions.pyx":345
  * 
  *     def __dealloc__(self):
  *         if self.allocate:             # <<<<<<<<<<<<<<
@@ -7132,7 +7140,7 @@ static void __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_2__deal
  */
   }
 
-  /* "ad3/extensions.pyx":345
+  /* "ad3/extensions.pyx":344
  *             self.thisptr = new FactorGrandparentHeadAutomaton()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -7144,7 +7152,7 @@ static void __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_2__deal
   __Pyx_RefNannyFinishContext();
 }
 
-/* "ad3/extensions.pyx":349
+/* "ad3/extensions.pyx":348
  *             del self.thisptr
  * 
  *     def print_factor(self):             # <<<<<<<<<<<<<<
@@ -7170,7 +7178,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_4p
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("print_factor", 0);
 
-  /* "ad3/extensions.pyx":350
+  /* "ad3/extensions.pyx":349
  * 
  *     def print_factor(self):
  *         (<FactorGrandparentHeadAutomaton*>self.thisptr).Print(cout)             # <<<<<<<<<<<<<<
@@ -7179,7 +7187,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_4p
  */
   ((AD3::FactorGrandparentHeadAutomaton *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Print(std::cout);
 
-  /* "ad3/extensions.pyx":349
+  /* "ad3/extensions.pyx":348
  *             del self.thisptr
  * 
  *     def print_factor(self):             # <<<<<<<<<<<<<<
@@ -7194,7 +7202,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_4p
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":352
+/* "ad3/extensions.pyx":351
  *         (<FactorGrandparentHeadAutomaton*>self.thisptr).Print(cout)
  * 
  *     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,             # <<<<<<<<<<<<<<
@@ -7218,7 +7226,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_7i
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_incoming_arcs,&__pyx_n_s_outgoing_arcs,&__pyx_n_s_grandparents,&__pyx_n_s_siblings,&__pyx_n_s_grandsiblings,0};
     PyObject* values[5] = {0,0,0,0,0};
 
-    /* "ad3/extensions.pyx":353
+    /* "ad3/extensions.pyx":352
  * 
  *     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,
  *         list siblings, list grandsiblings=None):             # <<<<<<<<<<<<<<
@@ -7252,19 +7260,19 @@ static PyObject *__pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_7i
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_outgoing_arcs)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 1); __PYX_ERR(1, 352, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 1); __PYX_ERR(1, 351, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_grandparents)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 2); __PYX_ERR(1, 352, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 2); __PYX_ERR(1, 351, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_siblings)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 3); __PYX_ERR(1, 352, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, 3); __PYX_ERR(1, 351, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -7274,7 +7282,7 @@ static PyObject *__pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_7i
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 352, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "initialize") < 0)) __PYX_ERR(1, 351, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7296,20 +7304,20 @@ static PyObject *__pyx_pw_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_7i
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 352, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("initialize", 0, 4, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 351, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.PFactorGrandparentHeadAutomaton.initialize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_incoming_arcs), (&PyList_Type), 1, "incoming_arcs", 1))) __PYX_ERR(1, 352, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_outgoing_arcs), (&PyList_Type), 1, "outgoing_arcs", 1))) __PYX_ERR(1, 352, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_grandparents), (&PyList_Type), 1, "grandparents", 1))) __PYX_ERR(1, 352, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_siblings), (&PyList_Type), 1, "siblings", 1))) __PYX_ERR(1, 353, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_grandsiblings), (&PyList_Type), 1, "grandsiblings", 1))) __PYX_ERR(1, 353, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_incoming_arcs), (&PyList_Type), 1, "incoming_arcs", 1))) __PYX_ERR(1, 351, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_outgoing_arcs), (&PyList_Type), 1, "outgoing_arcs", 1))) __PYX_ERR(1, 351, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_grandparents), (&PyList_Type), 1, "grandparents", 1))) __PYX_ERR(1, 351, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_siblings), (&PyList_Type), 1, "siblings", 1))) __PYX_ERR(1, 352, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_grandsiblings), (&PyList_Type), 1, "grandsiblings", 1))) __PYX_ERR(1, 352, __pyx_L1_error)
   __pyx_r = __pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6initialize(((struct __pyx_obj_3ad3_10extensions_PFactorGrandparentHeadAutomaton *)__pyx_v_self), __pyx_v_incoming_arcs, __pyx_v_outgoing_arcs, __pyx_v_grandparents, __pyx_v_siblings, __pyx_v_grandsiblings);
 
-  /* "ad3/extensions.pyx":352
+  /* "ad3/extensions.pyx":351
  *         (<FactorGrandparentHeadAutomaton*>self.thisptr).Print(cout)
  * 
  *     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,             # <<<<<<<<<<<<<<
@@ -7361,7 +7369,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   AD3::Grandsibling *__pyx_t_17;
   __Pyx_RefNannySetupContext("initialize", 0);
 
-  /* "ad3/extensions.pyx":392
+  /* "ad3/extensions.pyx":391
  *         cdef tuple grandparent
  *         cdef tuple grandsibling
  *         for arc in incoming_arcs:             # <<<<<<<<<<<<<<
@@ -7370,22 +7378,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   if (unlikely(__pyx_v_incoming_arcs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 392, __pyx_L1_error)
+    __PYX_ERR(1, 391, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_incoming_arcs; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 392, __pyx_L1_error)
+    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 391, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 392, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 391, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 392, __pyx_L1_error)
+    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 391, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_arc, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":393
+    /* "ad3/extensions.pyx":392
  *         cdef tuple grandsibling
  *         for arc in incoming_arcs:
  *             incoming_v.push_back(new Arc(arc[0], arc[1]))             # <<<<<<<<<<<<<<
@@ -7394,28 +7402,28 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 393, __pyx_L1_error)
+      __PYX_ERR(1, 392, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 393, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 392, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 393, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 392, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 393, __pyx_L1_error)
+      __PYX_ERR(1, 392, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 393, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 392, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 393, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 392, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     try {
       __pyx_v_incoming_v.push_back(new AD3::Arc(__pyx_t_4, __pyx_t_5));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 393, __pyx_L1_error)
+      __PYX_ERR(1, 392, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":392
+    /* "ad3/extensions.pyx":391
  *         cdef tuple grandparent
  *         cdef tuple grandsibling
  *         for arc in incoming_arcs:             # <<<<<<<<<<<<<<
@@ -7425,7 +7433,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":395
+  /* "ad3/extensions.pyx":394
  *             incoming_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *         for arc in outgoing_arcs:             # <<<<<<<<<<<<<<
@@ -7434,22 +7442,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   if (unlikely(__pyx_v_outgoing_arcs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 395, __pyx_L1_error)
+    __PYX_ERR(1, 394, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_outgoing_arcs; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 395, __pyx_L1_error)
+    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 394, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 395, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 394, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 395, __pyx_L1_error)
+    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 394, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_arc, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":396
+    /* "ad3/extensions.pyx":395
  * 
  *         for arc in outgoing_arcs:
  *             outgoing_v.push_back(new Arc(arc[0], arc[1]))             # <<<<<<<<<<<<<<
@@ -7458,28 +7466,28 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 396, __pyx_L1_error)
+      __PYX_ERR(1, 395, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 396, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 395, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 396, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 395, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 396, __pyx_L1_error)
+      __PYX_ERR(1, 395, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 396, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 395, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 396, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 395, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     try {
       __pyx_v_outgoing_v.push_back(new AD3::Arc(__pyx_t_5, __pyx_t_4));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 396, __pyx_L1_error)
+      __PYX_ERR(1, 395, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":395
+    /* "ad3/extensions.pyx":394
  *             incoming_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *         for arc in outgoing_arcs:             # <<<<<<<<<<<<<<
@@ -7489,7 +7497,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":398
+  /* "ad3/extensions.pyx":397
  *             outgoing_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *         for sibling in siblings:             # <<<<<<<<<<<<<<
@@ -7498,22 +7506,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   if (unlikely(__pyx_v_siblings == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 398, __pyx_L1_error)
+    __PYX_ERR(1, 397, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_siblings; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 398, __pyx_L1_error)
+    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 397, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 398, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 397, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 398, __pyx_L1_error)
+    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 397, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_sibling, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":399
+    /* "ad3/extensions.pyx":398
  * 
  *         for sibling in siblings:
  *             siblings_v.push_back(new Sibling(sibling[0],             # <<<<<<<<<<<<<<
@@ -7522,14 +7530,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_sibling == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 399, __pyx_L1_error)
+      __PYX_ERR(1, 398, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 399, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 398, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 399, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 398, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":400
+    /* "ad3/extensions.pyx":399
  *         for sibling in siblings:
  *             siblings_v.push_back(new Sibling(sibling[0],
  *                                              sibling[1],             # <<<<<<<<<<<<<<
@@ -7538,14 +7546,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_sibling == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 400, __pyx_L1_error)
+      __PYX_ERR(1, 399, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 400, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 399, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 400, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 399, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":401
+    /* "ad3/extensions.pyx":400
  *             siblings_v.push_back(new Sibling(sibling[0],
  *                                              sibling[1],
  *                                              sibling[2]))             # <<<<<<<<<<<<<<
@@ -7554,14 +7562,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_sibling == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 401, __pyx_L1_error)
+      __PYX_ERR(1, 400, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 401, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_sibling, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 400, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 401, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 400, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":399
+    /* "ad3/extensions.pyx":398
  * 
  *         for sibling in siblings:
  *             siblings_v.push_back(new Sibling(sibling[0],             # <<<<<<<<<<<<<<
@@ -7572,10 +7580,10 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
       __pyx_v_siblings_v.push_back(new AD3::Sibling(__pyx_t_4, __pyx_t_5, __pyx_t_6));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 399, __pyx_L1_error)
+      __PYX_ERR(1, 398, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":398
+    /* "ad3/extensions.pyx":397
  *             outgoing_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *         for sibling in siblings:             # <<<<<<<<<<<<<<
@@ -7585,7 +7593,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":403
+  /* "ad3/extensions.pyx":402
  *                                              sibling[2]))
  * 
  *         for grandparent in grandparents:             # <<<<<<<<<<<<<<
@@ -7594,22 +7602,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   if (unlikely(__pyx_v_grandparents == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 403, __pyx_L1_error)
+    __PYX_ERR(1, 402, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_grandparents; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 403, __pyx_L1_error)
+    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 402, __pyx_L1_error)
     #else
-    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 403, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 402, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 403, __pyx_L1_error)
+    if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 402, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_grandparent, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":404
+    /* "ad3/extensions.pyx":403
  * 
  *         for grandparent in grandparents:
  *             grandparents_v.push_back(new Grandparent(grandparent[0],             # <<<<<<<<<<<<<<
@@ -7618,14 +7626,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_grandparent == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 404, __pyx_L1_error)
+      __PYX_ERR(1, 403, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 404, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 403, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 404, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 403, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":405
+    /* "ad3/extensions.pyx":404
  *         for grandparent in grandparents:
  *             grandparents_v.push_back(new Grandparent(grandparent[0],
  *                                                      grandparent[1],             # <<<<<<<<<<<<<<
@@ -7634,14 +7642,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_grandparent == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 405, __pyx_L1_error)
+      __PYX_ERR(1, 404, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 405, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 404, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 405, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 404, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":406
+    /* "ad3/extensions.pyx":405
  *             grandparents_v.push_back(new Grandparent(grandparent[0],
  *                                                      grandparent[1],
  *                                                      grandparent[2]))             # <<<<<<<<<<<<<<
@@ -7650,14 +7658,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     if (unlikely(__pyx_v_grandparent == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 406, __pyx_L1_error)
+      __PYX_ERR(1, 405, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 406, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandparent, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 405, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 406, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 405, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "ad3/extensions.pyx":404
+    /* "ad3/extensions.pyx":403
  * 
  *         for grandparent in grandparents:
  *             grandparents_v.push_back(new Grandparent(grandparent[0],             # <<<<<<<<<<<<<<
@@ -7668,10 +7676,10 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
       __pyx_v_grandparents_v.push_back(new AD3::Grandparent(__pyx_t_6, __pyx_t_5, __pyx_t_4));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 404, __pyx_L1_error)
+      __PYX_ERR(1, 403, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":403
+    /* "ad3/extensions.pyx":402
  *                                              sibling[2]))
  * 
  *         for grandparent in grandparents:             # <<<<<<<<<<<<<<
@@ -7681,7 +7689,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":408
+  /* "ad3/extensions.pyx":407
  *                                                      grandparent[2]))
  * 
  *         if grandsiblings is None:             # <<<<<<<<<<<<<<
@@ -7692,7 +7700,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   __pyx_t_8 = (__pyx_t_7 != 0);
   if (__pyx_t_8) {
 
-    /* "ad3/extensions.pyx":409
+    /* "ad3/extensions.pyx":408
  * 
  *         if grandsiblings is None:
  *             (<FactorGrandparentHeadAutomaton*>self.thisptr).Initialize(             # <<<<<<<<<<<<<<
@@ -7701,7 +7709,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     ((AD3::FactorGrandparentHeadAutomaton *)__pyx_v_self->__pyx_base.__pyx_base.thisptr)->Initialize(__pyx_v_incoming_v, __pyx_v_outgoing_v, __pyx_v_grandparents_v, __pyx_v_siblings_v);
 
-    /* "ad3/extensions.pyx":408
+    /* "ad3/extensions.pyx":407
  *                                                      grandparent[2]))
  * 
  *         if grandsiblings is None:             # <<<<<<<<<<<<<<
@@ -7711,7 +7719,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     goto __pyx_L11;
   }
 
-  /* "ad3/extensions.pyx":412
+  /* "ad3/extensions.pyx":411
  *                 incoming_v, outgoing_v, grandparents_v, siblings_v)
  *         else:
  *             for grandsibling in grandsiblings:             # <<<<<<<<<<<<<<
@@ -7721,22 +7729,22 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   /*else*/ {
     if (unlikely(__pyx_v_grandsiblings == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-      __PYX_ERR(1, 412, __pyx_L1_error)
+      __PYX_ERR(1, 411, __pyx_L1_error)
     }
     __pyx_t_1 = __pyx_v_grandsiblings; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     for (;;) {
       if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 412, __pyx_L1_error)
+      __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_3); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 411, __pyx_L1_error)
       #else
-      __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 412, __pyx_L1_error)
+      __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 411, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       #endif
-      if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 412, __pyx_L1_error)
+      if (!(likely(PyTuple_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(1, 411, __pyx_L1_error)
       __Pyx_XDECREF_SET(__pyx_v_grandsibling, ((PyObject*)__pyx_t_3));
       __pyx_t_3 = 0;
 
-      /* "ad3/extensions.pyx":413
+      /* "ad3/extensions.pyx":412
  *         else:
  *             for grandsibling in grandsiblings:
  *                 grandsiblings_v.push_back(new Grandsibling(grandsibling[0],             # <<<<<<<<<<<<<<
@@ -7745,14 +7753,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
       if (unlikely(__pyx_v_grandsibling == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(1, 413, __pyx_L1_error)
+        __PYX_ERR(1, 412, __pyx_L1_error)
       }
-      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 413, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 412, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 413, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 412, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "ad3/extensions.pyx":414
+      /* "ad3/extensions.pyx":413
  *             for grandsibling in grandsiblings:
  *                 grandsiblings_v.push_back(new Grandsibling(grandsibling[0],
  *                                                            grandsibling[1],             # <<<<<<<<<<<<<<
@@ -7761,14 +7769,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
       if (unlikely(__pyx_v_grandsibling == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(1, 414, __pyx_L1_error)
+        __PYX_ERR(1, 413, __pyx_L1_error)
       }
-      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 414, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 413, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 414, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 413, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "ad3/extensions.pyx":415
+      /* "ad3/extensions.pyx":414
  *                 grandsiblings_v.push_back(new Grandsibling(grandsibling[0],
  *                                                            grandsibling[1],
  *                                                            grandsibling[2],             # <<<<<<<<<<<<<<
@@ -7777,14 +7785,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
       if (unlikely(__pyx_v_grandsibling == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(1, 415, __pyx_L1_error)
+        __PYX_ERR(1, 414, __pyx_L1_error)
       }
-      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 415, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 414, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 415, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 414, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "ad3/extensions.pyx":416
+      /* "ad3/extensions.pyx":415
  *                                                            grandsibling[1],
  *                                                            grandsibling[2],
  *                                                            grandsibling[3]))             # <<<<<<<<<<<<<<
@@ -7793,14 +7801,14 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
       if (unlikely(__pyx_v_grandsibling == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        __PYX_ERR(1, 416, __pyx_L1_error)
+        __PYX_ERR(1, 415, __pyx_L1_error)
       }
-      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 416, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_GetItemInt_Tuple(__pyx_v_grandsibling, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 415, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 416, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 415, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "ad3/extensions.pyx":413
+      /* "ad3/extensions.pyx":412
  *         else:
  *             for grandsibling in grandsiblings:
  *                 grandsiblings_v.push_back(new Grandsibling(grandsibling[0],             # <<<<<<<<<<<<<<
@@ -7811,10 +7819,10 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
         __pyx_v_grandsiblings_v.push_back(new AD3::Grandsibling(__pyx_t_4, __pyx_t_5, __pyx_t_6, __pyx_t_9));
       } catch(...) {
         __Pyx_CppExn2PyErr();
-        __PYX_ERR(1, 413, __pyx_L1_error)
+        __PYX_ERR(1, 412, __pyx_L1_error)
       }
 
-      /* "ad3/extensions.pyx":412
+      /* "ad3/extensions.pyx":411
  *                 incoming_v, outgoing_v, grandparents_v, siblings_v)
  *         else:
  *             for grandsibling in grandsiblings:             # <<<<<<<<<<<<<<
@@ -7824,7 +7832,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "ad3/extensions.pyx":418
+    /* "ad3/extensions.pyx":417
  *                                                            grandsibling[3]))
  * 
  *             (<FactorGrandparentHeadAutomaton*>self.thisptr).Initialize(             # <<<<<<<<<<<<<<
@@ -7835,7 +7843,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
   }
   __pyx_L11:;
 
-  /* "ad3/extensions.pyx":421
+  /* "ad3/extensions.pyx":420
  *                 incoming_v, outgoing_v, grandparents_v, siblings_v, grandsiblings_v)
  * 
  *         for arcp in incoming_v:             # <<<<<<<<<<<<<<
@@ -7849,7 +7857,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     ++__pyx_t_10;
     __pyx_v_arcp = __pyx_t_11;
 
-    /* "ad3/extensions.pyx":422
+    /* "ad3/extensions.pyx":421
  * 
  *         for arcp in incoming_v:
  *             del arcp             # <<<<<<<<<<<<<<
@@ -7858,7 +7866,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     delete __pyx_v_arcp;
 
-    /* "ad3/extensions.pyx":421
+    /* "ad3/extensions.pyx":420
  *                 incoming_v, outgoing_v, grandparents_v, siblings_v, grandsiblings_v)
  * 
  *         for arcp in incoming_v:             # <<<<<<<<<<<<<<
@@ -7867,7 +7875,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   }
 
-  /* "ad3/extensions.pyx":423
+  /* "ad3/extensions.pyx":422
  *         for arcp in incoming_v:
  *             del arcp
  *         for arcp in outgoing_v:             # <<<<<<<<<<<<<<
@@ -7881,7 +7889,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     ++__pyx_t_10;
     __pyx_v_arcp = __pyx_t_11;
 
-    /* "ad3/extensions.pyx":424
+    /* "ad3/extensions.pyx":423
  *             del arcp
  *         for arcp in outgoing_v:
  *             del arcp             # <<<<<<<<<<<<<<
@@ -7890,7 +7898,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     delete __pyx_v_arcp;
 
-    /* "ad3/extensions.pyx":423
+    /* "ad3/extensions.pyx":422
  *         for arcp in incoming_v:
  *             del arcp
  *         for arcp in outgoing_v:             # <<<<<<<<<<<<<<
@@ -7899,7 +7907,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   }
 
-  /* "ad3/extensions.pyx":425
+  /* "ad3/extensions.pyx":424
  *         for arcp in outgoing_v:
  *             del arcp
  *         for sibp in siblings_v:             # <<<<<<<<<<<<<<
@@ -7913,7 +7921,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     ++__pyx_t_12;
     __pyx_v_sibp = __pyx_t_13;
 
-    /* "ad3/extensions.pyx":426
+    /* "ad3/extensions.pyx":425
  *             del arcp
  *         for sibp in siblings_v:
  *             del sibp             # <<<<<<<<<<<<<<
@@ -7922,7 +7930,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     delete __pyx_v_sibp;
 
-    /* "ad3/extensions.pyx":425
+    /* "ad3/extensions.pyx":424
  *         for arcp in outgoing_v:
  *             del arcp
  *         for sibp in siblings_v:             # <<<<<<<<<<<<<<
@@ -7931,7 +7939,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   }
 
-  /* "ad3/extensions.pyx":427
+  /* "ad3/extensions.pyx":426
  *         for sibp in siblings_v:
  *             del sibp
  *         for gpp in grandparents_v:             # <<<<<<<<<<<<<<
@@ -7945,7 +7953,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     ++__pyx_t_14;
     __pyx_v_gpp = __pyx_t_15;
 
-    /* "ad3/extensions.pyx":428
+    /* "ad3/extensions.pyx":427
  *             del sibp
  *         for gpp in grandparents_v:
  *             del gpp             # <<<<<<<<<<<<<<
@@ -7954,7 +7962,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     delete __pyx_v_gpp;
 
-    /* "ad3/extensions.pyx":427
+    /* "ad3/extensions.pyx":426
  *         for sibp in siblings_v:
  *             del sibp
  *         for gpp in grandparents_v:             # <<<<<<<<<<<<<<
@@ -7963,7 +7971,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   }
 
-  /* "ad3/extensions.pyx":429
+  /* "ad3/extensions.pyx":428
  *         for gpp in grandparents_v:
  *             del gpp
  *         for gsp in grandsiblings_v:             # <<<<<<<<<<<<<<
@@ -7977,7 +7985,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
     ++__pyx_t_16;
     __pyx_v_gsp = __pyx_t_17;
 
-    /* "ad3/extensions.pyx":430
+    /* "ad3/extensions.pyx":429
  *             del gpp
  *         for gsp in grandsiblings_v:
  *             del gsp             # <<<<<<<<<<<<<<
@@ -7986,7 +7994,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
     delete __pyx_v_gsp;
 
-    /* "ad3/extensions.pyx":429
+    /* "ad3/extensions.pyx":428
  *         for gpp in grandparents_v:
  *             del gpp
  *         for gsp in grandsiblings_v:             # <<<<<<<<<<<<<<
@@ -7995,7 +8003,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_6i
  */
   }
 
-  /* "ad3/extensions.pyx":352
+  /* "ad3/extensions.pyx":351
  *         (<FactorGrandparentHeadAutomaton*>self.thisptr).Print(cout)
  * 
  *     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,             # <<<<<<<<<<<<<<
@@ -8128,7 +8136,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_31PFactorGrandparentHeadAutomaton_10
   return __pyx_r;
 }
 
-/* "ad3/extensions.pyx":433
+/* "ad3/extensions.pyx":432
  * 
  * 
  * cpdef decode_matrix_tree(int sentence_length, dict index, list arcs, scores):             # <<<<<<<<<<<<<<
@@ -8174,7 +8182,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   std::vector<int> ::size_type __pyx_t_18;
   __Pyx_RefNannySetupContext("decode_matrix_tree", 0);
 
-  /* "ad3/extensions.pyx":449
+  /* "ad3/extensions.pyx":448
  *     cdef vector[int] *row_v
  * 
  *     for score in scores:             # <<<<<<<<<<<<<<
@@ -8185,26 +8193,26 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
     __pyx_t_1 = __pyx_v_scores; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_scores); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 449, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_scores); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 448, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 449, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 448, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 449, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 448, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 449, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 448, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 449, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 448, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 449, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 448, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -8214,7 +8222,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(1, 449, __pyx_L1_error)
+          else __PYX_ERR(1, 448, __pyx_L1_error)
         }
         break;
       }
@@ -8223,22 +8231,22 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
     __Pyx_XDECREF_SET(__pyx_v_score, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "ad3/extensions.pyx":450
+    /* "ad3/extensions.pyx":449
  * 
  *     for score in scores:
  *         scores_v.push_back(score)             # <<<<<<<<<<<<<<
  * 
  *     for arc in arcs:
  */
-    __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_v_score); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 450, __pyx_L1_error)
+    __pyx_t_5 = __pyx_PyFloat_AsDouble(__pyx_v_score); if (unlikely((__pyx_t_5 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 449, __pyx_L1_error)
     try {
       __pyx_v_scores_v.push_back(__pyx_t_5);
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 450, __pyx_L1_error)
+      __PYX_ERR(1, 449, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":449
+    /* "ad3/extensions.pyx":448
  *     cdef vector[int] *row_v
  * 
  *     for score in scores:             # <<<<<<<<<<<<<<
@@ -8248,7 +8256,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":452
+  /* "ad3/extensions.pyx":451
  *         scores_v.push_back(score)
  * 
  *     for arc in arcs:             # <<<<<<<<<<<<<<
@@ -8257,22 +8265,22 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
  */
   if (unlikely(__pyx_v_arcs == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 452, __pyx_L1_error)
+    __PYX_ERR(1, 451, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_arcs; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 452, __pyx_L1_error)
+    __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 451, __pyx_L1_error)
     #else
-    __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 452, __pyx_L1_error)
+    __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 451, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     #endif
-    if (!(likely(PyTuple_CheckExact(__pyx_t_4))||((__pyx_t_4) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_4)->tp_name), 0))) __PYX_ERR(1, 452, __pyx_L1_error)
+    if (!(likely(PyTuple_CheckExact(__pyx_t_4))||((__pyx_t_4) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_t_4)->tp_name), 0))) __PYX_ERR(1, 451, __pyx_L1_error)
     __Pyx_XDECREF_SET(__pyx_v_arc, ((PyObject*)__pyx_t_4));
     __pyx_t_4 = 0;
 
-    /* "ad3/extensions.pyx":453
+    /* "ad3/extensions.pyx":452
  * 
  *     for arc in arcs:
  *         arcs_v.push_back(new Arc(arc[0], arc[1]))             # <<<<<<<<<<<<<<
@@ -8281,28 +8289,28 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
  */
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 453, __pyx_L1_error)
+      __PYX_ERR(1, 452, __pyx_L1_error)
     }
-    __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 453, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 452, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 453, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 452, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if (unlikely(__pyx_v_arc == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(1, 453, __pyx_L1_error)
+      __PYX_ERR(1, 452, __pyx_L1_error)
     }
-    __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 453, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_arc, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 452, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 453, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 452, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     try {
       __pyx_v_arcs_v.push_back(new AD3::Arc(__pyx_t_6, __pyx_t_7));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 453, __pyx_L1_error)
+      __PYX_ERR(1, 452, __pyx_L1_error)
     }
 
-    /* "ad3/extensions.pyx":452
+    /* "ad3/extensions.pyx":451
  *         scores_v.push_back(score)
  * 
  *     for arc in arcs:             # <<<<<<<<<<<<<<
@@ -8312,7 +8320,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ad3/extensions.pyx":455
+  /* "ad3/extensions.pyx":454
  *         arcs_v.push_back(new Arc(arc[0], arc[1]))
  * 
  *     for i in range(sentence_length):             # <<<<<<<<<<<<<<
@@ -8324,7 +8332,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_6; __pyx_t_8+=1) {
     __pyx_v_i = __pyx_t_8;
 
-    /* "ad3/extensions.pyx":456
+    /* "ad3/extensions.pyx":455
  * 
  *     for i in range(sentence_length):
  *         row_v = new vector[int](sentence_length, -1)             # <<<<<<<<<<<<<<
@@ -8335,11 +8343,11 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __pyx_t_9 = new std::vector<int> (__pyx_v_sentence_length, -1);
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 456, __pyx_L1_error)
+      __PYX_ERR(1, 455, __pyx_L1_error)
     }
     __pyx_v_row_v = __pyx_t_9;
 
-    /* "ad3/extensions.pyx":457
+    /* "ad3/extensions.pyx":456
  *     for i in range(sentence_length):
  *         row_v = new vector[int](sentence_length, -1)
  *         index_v.push_back(row_v[0])             # <<<<<<<<<<<<<<
@@ -8350,11 +8358,11 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __pyx_v_index_v.push_back((__pyx_v_row_v[0]));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 457, __pyx_L1_error)
+      __PYX_ERR(1, 456, __pyx_L1_error)
     }
   }
 
-  /* "ad3/extensions.pyx":459
+  /* "ad3/extensions.pyx":458
  *         index_v.push_back(row_v[0])
  * 
  *     for head, modifier_dict in index.items():             # <<<<<<<<<<<<<<
@@ -8363,17 +8371,17 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
  */
   if (unlikely(__pyx_v_index == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "items");
-    __PYX_ERR(1, 459, __pyx_L1_error)
+    __PYX_ERR(1, 458, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_PyDict_Items(__pyx_v_index); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 459, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_Items(__pyx_v_index); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 458, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_4 = __pyx_t_1; __Pyx_INCREF(__pyx_t_4); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 459, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 458, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 459, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 458, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -8381,17 +8389,17 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_2); __Pyx_INCREF(__pyx_t_1); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 459, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_2); __Pyx_INCREF(__pyx_t_1); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 458, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_4, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 459, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_4, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 458, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_2); __Pyx_INCREF(__pyx_t_1); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 459, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_2); __Pyx_INCREF(__pyx_t_1); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(1, 458, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_4, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 459, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_4, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 458, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -8401,7 +8409,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(1, 459, __pyx_L1_error)
+          else __PYX_ERR(1, 458, __pyx_L1_error)
         }
         break;
       }
@@ -8413,7 +8421,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(1, 459, __pyx_L1_error)
+        __PYX_ERR(1, 458, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -8426,15 +8434,15 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __Pyx_INCREF(__pyx_t_10);
       __Pyx_INCREF(__pyx_t_11);
       #else
-      __pyx_t_10 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 459, __pyx_L1_error)
+      __pyx_t_10 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 458, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 459, __pyx_L1_error)
+      __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 458, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_12 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 459, __pyx_L1_error)
+      __pyx_t_12 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 458, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_13 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -8442,7 +8450,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __Pyx_GOTREF(__pyx_t_10);
       index = 1; __pyx_t_11 = __pyx_t_13(__pyx_t_12); if (unlikely(!__pyx_t_11)) goto __pyx_L11_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_11);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(1, 459, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 2) < 0) __PYX_ERR(1, 458, __pyx_L1_error)
       __pyx_t_13 = NULL;
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       goto __pyx_L12_unpacking_done;
@@ -8450,7 +8458,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __pyx_t_13 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(1, 459, __pyx_L1_error)
+      __PYX_ERR(1, 458, __pyx_L1_error)
       __pyx_L12_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_head, __pyx_t_10);
@@ -8458,14 +8466,14 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
     __Pyx_XDECREF_SET(__pyx_v_modifier_dict, __pyx_t_11);
     __pyx_t_11 = 0;
 
-    /* "ad3/extensions.pyx":460
+    /* "ad3/extensions.pyx":459
  * 
  *     for head, modifier_dict in index.items():
  *         for modifier, position in modifier_dict.items():             # <<<<<<<<<<<<<<
  *             index_v[head][modifier] = position
  * 
  */
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_modifier_dict, __pyx_n_s_items); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 460, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_modifier_dict, __pyx_n_s_items); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 459, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_11))) {
@@ -8479,16 +8487,16 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
     }
     __pyx_t_1 = (__pyx_t_10) ? __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_10) : __Pyx_PyObject_CallNoArg(__pyx_t_11);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 460, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 459, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
       __pyx_t_11 = __pyx_t_1; __Pyx_INCREF(__pyx_t_11); __pyx_t_14 = 0;
       __pyx_t_15 = NULL;
     } else {
-      __pyx_t_14 = -1; __pyx_t_11 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 460, __pyx_L1_error)
+      __pyx_t_14 = -1; __pyx_t_11 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 459, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_15 = Py_TYPE(__pyx_t_11)->tp_iternext; if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 460, __pyx_L1_error)
+      __pyx_t_15 = Py_TYPE(__pyx_t_11)->tp_iternext; if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 459, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     for (;;) {
@@ -8496,17 +8504,17 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         if (likely(PyList_CheckExact(__pyx_t_11))) {
           if (__pyx_t_14 >= PyList_GET_SIZE(__pyx_t_11)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(1, 460, __pyx_L1_error)
+          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(1, 459, __pyx_L1_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 460, __pyx_L1_error)
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 459, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           #endif
         } else {
           if (__pyx_t_14 >= PyTuple_GET_SIZE(__pyx_t_11)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(1, 460, __pyx_L1_error)
+          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_1); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(1, 459, __pyx_L1_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 460, __pyx_L1_error)
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 459, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           #endif
         }
@@ -8516,7 +8524,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(1, 460, __pyx_L1_error)
+            else __PYX_ERR(1, 459, __pyx_L1_error)
           }
           break;
         }
@@ -8528,7 +8536,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         if (unlikely(size != 2)) {
           if (size > 2) __Pyx_RaiseTooManyValuesError(2);
           else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-          __PYX_ERR(1, 460, __pyx_L1_error)
+          __PYX_ERR(1, 459, __pyx_L1_error)
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
@@ -8541,15 +8549,15 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         __Pyx_INCREF(__pyx_t_10);
         __Pyx_INCREF(__pyx_t_12);
         #else
-        __pyx_t_10 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 460, __pyx_L1_error)
+        __pyx_t_10 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 459, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_12 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 460, __pyx_L1_error)
+        __pyx_t_12 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 459, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         #endif
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       } else {
         Py_ssize_t index = -1;
-        __pyx_t_16 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 460, __pyx_L1_error)
+        __pyx_t_16 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 459, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_16);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_t_13 = Py_TYPE(__pyx_t_16)->tp_iternext;
@@ -8557,7 +8565,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         __Pyx_GOTREF(__pyx_t_10);
         index = 1; __pyx_t_12 = __pyx_t_13(__pyx_t_16); if (unlikely(!__pyx_t_12)) goto __pyx_L15_unpacking_failed;
         __Pyx_GOTREF(__pyx_t_12);
-        if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_16), 2) < 0) __PYX_ERR(1, 460, __pyx_L1_error)
+        if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_16), 2) < 0) __PYX_ERR(1, 459, __pyx_L1_error)
         __pyx_t_13 = NULL;
         __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
         goto __pyx_L16_unpacking_done;
@@ -8565,7 +8573,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
         __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
         __pyx_t_13 = NULL;
         if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-        __PYX_ERR(1, 460, __pyx_L1_error)
+        __PYX_ERR(1, 459, __pyx_L1_error)
         __pyx_L16_unpacking_done:;
       }
       __Pyx_XDECREF_SET(__pyx_v_modifier, __pyx_t_10);
@@ -8573,19 +8581,19 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
       __Pyx_XDECREF_SET(__pyx_v_position, __pyx_t_12);
       __pyx_t_12 = 0;
 
-      /* "ad3/extensions.pyx":461
+      /* "ad3/extensions.pyx":460
  *     for head, modifier_dict in index.items():
  *         for modifier, position in modifier_dict.items():
  *             index_v[head][modifier] = position             # <<<<<<<<<<<<<<
  * 
  *     DecodeMatrixTree(index_v, arcs_v, scores_v, &predicted_output,
  */
-      __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_position); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 461, __pyx_L1_error)
-      __pyx_t_17 = __Pyx_PyInt_As_size_t(__pyx_v_head); if (unlikely((__pyx_t_17 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 461, __pyx_L1_error)
-      __pyx_t_18 = __Pyx_PyInt_As_size_t(__pyx_v_modifier); if (unlikely((__pyx_t_18 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 461, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_position); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 460, __pyx_L1_error)
+      __pyx_t_17 = __Pyx_PyInt_As_size_t(__pyx_v_head); if (unlikely((__pyx_t_17 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 460, __pyx_L1_error)
+      __pyx_t_18 = __Pyx_PyInt_As_size_t(__pyx_v_modifier); if (unlikely((__pyx_t_18 == (size_t)-1) && PyErr_Occurred())) __PYX_ERR(1, 460, __pyx_L1_error)
       ((__pyx_v_index_v[__pyx_t_17])[__pyx_t_18]) = __pyx_t_7;
 
-      /* "ad3/extensions.pyx":460
+      /* "ad3/extensions.pyx":459
  * 
  *     for head, modifier_dict in index.items():
  *         for modifier, position in modifier_dict.items():             # <<<<<<<<<<<<<<
@@ -8595,7 +8603,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
     }
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
-    /* "ad3/extensions.pyx":459
+    /* "ad3/extensions.pyx":458
  *         index_v.push_back(row_v[0])
  * 
  *     for head, modifier_dict in index.items():             # <<<<<<<<<<<<<<
@@ -8605,7 +8613,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "ad3/extensions.pyx":463
+  /* "ad3/extensions.pyx":462
  *             index_v[head][modifier] = position
  * 
  *     DecodeMatrixTree(index_v, arcs_v, scores_v, &predicted_output,             # <<<<<<<<<<<<<<
@@ -8614,19 +8622,19 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
  */
   AD3::DecodeMatrixTree(__pyx_v_index_v, __pyx_v_arcs_v, __pyx_v_scores_v, (&__pyx_v_predicted_output), (&__pyx_v_log_partition_function), (&__pyx_v_entropy));
 
-  /* "ad3/extensions.pyx":466
+  /* "ad3/extensions.pyx":465
  *                      &log_partition_function, &entropy)
  * 
  *     return predicted_output, log_partition_function, entropy             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_4 = __pyx_convert_vector_to_py_double(__pyx_v_predicted_output); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 466, __pyx_L1_error)
+  __pyx_t_4 = __pyx_convert_vector_to_py_double(__pyx_v_predicted_output); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 465, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_11 = PyFloat_FromDouble(__pyx_v_log_partition_function); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 466, __pyx_L1_error)
+  __pyx_t_11 = PyFloat_FromDouble(__pyx_v_log_partition_function); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 465, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_entropy); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 466, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_entropy); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 465, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_12 = PyTuple_New(3); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 466, __pyx_L1_error)
+  __pyx_t_12 = PyTuple_New(3); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 465, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_4);
@@ -8641,7 +8649,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   __pyx_t_12 = 0;
   goto __pyx_L0;
 
-  /* "ad3/extensions.pyx":433
+  /* "ad3/extensions.pyx":432
  * 
  * 
  * cpdef decode_matrix_tree(int sentence_length, dict index, list arcs, scores):             # <<<<<<<<<<<<<<
@@ -8709,23 +8717,23 @@ static PyObject *__pyx_pw_3ad3_10extensions_1decode_matrix_tree(PyObject *__pyx_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_index)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 1); __PYX_ERR(1, 433, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 1); __PYX_ERR(1, 432, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_arcs)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 2); __PYX_ERR(1, 433, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 2); __PYX_ERR(1, 432, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_scores)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 3); __PYX_ERR(1, 433, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, 3); __PYX_ERR(1, 432, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decode_matrix_tree") < 0)) __PYX_ERR(1, 433, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decode_matrix_tree") < 0)) __PYX_ERR(1, 432, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -8735,21 +8743,21 @@ static PyObject *__pyx_pw_3ad3_10extensions_1decode_matrix_tree(PyObject *__pyx_
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
-    __pyx_v_sentence_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_sentence_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 433, __pyx_L3_error)
+    __pyx_v_sentence_length = __Pyx_PyInt_As_int(values[0]); if (unlikely((__pyx_v_sentence_length == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 432, __pyx_L3_error)
     __pyx_v_index = ((PyObject*)values[1]);
     __pyx_v_arcs = ((PyObject*)values[2]);
     __pyx_v_scores = values[3];
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 433, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decode_matrix_tree", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 432, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("ad3.extensions.decode_matrix_tree", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_index), (&PyDict_Type), 1, "index", 1))) __PYX_ERR(1, 433, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arcs), (&PyList_Type), 1, "arcs", 1))) __PYX_ERR(1, 433, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_index), (&PyDict_Type), 1, "index", 1))) __PYX_ERR(1, 432, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arcs), (&PyList_Type), 1, "arcs", 1))) __PYX_ERR(1, 432, __pyx_L1_error)
   __pyx_r = __pyx_pf_3ad3_10extensions_decode_matrix_tree(__pyx_self, __pyx_v_sentence_length, __pyx_v_index, __pyx_v_arcs, __pyx_v_scores);
 
   /* function exit code */
@@ -8767,7 +8775,7 @@ static PyObject *__pyx_pf_3ad3_10extensions_decode_matrix_tree(CYTHON_UNUSED PyO
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("decode_matrix_tree", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_3ad3_10extensions_decode_matrix_tree(__pyx_v_sentence_length, __pyx_v_index, __pyx_v_arcs, __pyx_v_scores, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 433, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_3ad3_10extensions_decode_matrix_tree(__pyx_v_sentence_length, __pyx_v_index, __pyx_v_arcs, __pyx_v_scores, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 432, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10257,7 +10265,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 2, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 263, __pyx_L1_error)
   __pyx_builtin_max = __Pyx_GetBuiltinName(__pyx_n_s_max); if (!__pyx_builtin_max) __PYX_ERR(1, 316, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(1, 455, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(1, 454, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -10690,14 +10698,14 @@ static int __Pyx_modinit_type_init_code(void) {
   __pyx_vtabptr_3ad3_10extensions_PFactorGrandparentHeadAutomaton = &__pyx_vtable_3ad3_10extensions_PFactorGrandparentHeadAutomaton;
   __pyx_vtable_3ad3_10extensions_PFactorGrandparentHeadAutomaton.__pyx_base = *__pyx_vtabptr_3ad3_4base_PGenericFactor;
   __pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_base = __pyx_ptype_3ad3_4base_PGenericFactor;
-  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 339, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 338, __pyx_L1_error)
   __pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_dictoffset && __pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 339, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorGrandparentHeadAutomaton, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 339, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 339, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton.tp_dict, __pyx_vtabptr_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 338, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PFactorGrandparentHeadAutomaton, (PyObject *)&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 338, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton) < 0) __PYX_ERR(1, 338, __pyx_L1_error)
   __pyx_ptype_3ad3_10extensions_PFactorGrandparentHeadAutomaton = &__pyx_type_3ad3_10extensions_PFactorGrandparentHeadAutomaton;
   if (PyType_Ready(&__pyx_type_3ad3_10extensions___pyx_scope_struct__initialize) < 0) __PYX_ERR(1, 291, __pyx_L1_error)
   __pyx_type_3ad3_10extensions___pyx_scope_struct__initialize.tp_print = 0;
