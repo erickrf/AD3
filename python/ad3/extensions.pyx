@@ -429,12 +429,20 @@ cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
             del gsp
 
 
-cpdef decode_matrix_tree(int sentence_length, dict index, list arcs, scores):
+cpdef decode_matrix_tree(int sentence_length, index, list arcs, scores):
     """
-    :param index: dictionary mapping each head to another dictionary; the second 
-        one maps modifiers to the position of the corresponding (h, m) arc in the
-        arcs list.
+    :param sentence_length: length of the sentence including the dummy root
+    :param index: either a dictionary or a numpy 2d array.
+        If a dictionary, it should map each head number to another dictionary; 
+        the second dict maps modifiers to the position of the corresponding (h, m) arc in 
+        the arcs list.
+        If a matrix, each cell (h, m) should be the position of the corresponding arc in
+        the arcs list, or -1 if it doesn't exist. The matrix must have shape (n, n) including
+        the dummy root.
     :param arcs: list of tuples (h, m)
+    :param scores: list or array with the score of each arc
+    :return: a tuple marginals, log_partition, entropy
+        marginals is an array with the marginal probability for each arc
     """
     cdef vector[double] predicted_output
     cdef vector[double] scores_v
@@ -455,9 +463,14 @@ cpdef decode_matrix_tree(int sentence_length, dict index, list arcs, scores):
         row_v = new vector[int](sentence_length, -1)
         index_v.push_back(row_v[0])
 
-    for head, modifier_dict in index.items():
-        for modifier, position in modifier_dict.items():
-            index_v[head][modifier] = position
+    if isinstance(index, dict):
+        for head, modifier_dict in index.items():
+            for modifier, position in modifier_dict.items():
+                index_v[head][modifier] = position
+    else:
+        for head in range(sentence_length):
+            for modifier in range(sentence_length):
+                index_v[head][modifier] = index[head][modifier]
     
     DecodeMatrixTree(index_v, arcs_v, scores_v, &predicted_output, 
                      &log_partition_function, &entropy)
