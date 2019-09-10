@@ -250,6 +250,11 @@ cdef class PFactorTree(PGenericFactor):
             del self.thisptr
 
     def initialize(self, int length, list arcs, bool validate=True):
+        """
+        :param length: length of the sentence, including root
+        :param arcs: list of (head, modifier) indices
+        :param validate: check if arguments make sense (not comprehensive!)
+        """
         cdef vector[Arc *] arcs_v
         cdef int head, modifier
 
