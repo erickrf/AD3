@@ -86,13 +86,13 @@ namespace AD3
       if (marginals(m, h).signbit()) {
       if (!NEARLY_ZERO_TOL(marginals(m, h).as_float(), 1e-6)) {
         // LOG(INFO) << "Marginals truncated to zero (" << marginals(m, h).as_float() << ")";
-        cerr << "Marginals truncated to zero (" << marginals(m, h).as_float() << ")";
+        cerr << "Marginals truncated to zero (" << marginals(m, h).as_float() << ")" << endl;
       }
       // CHECK(!std::isnan(marginals(m, h).as_float()));
       } else if (marginals(m, h).logabs() > 0) {
       if (!NEARLY_ZERO_TOL(marginals(m, h).as_float() - 1.0, 1e-6)) {
         // LOG(INFO) << "Marginals truncated to one (" << marginals(m, h).as_float() << ")";
-        cerr << "Marginals truncated to one (" << marginals(m, h).as_float() << ")";
+        cerr << "Marginals truncated to one (" << marginals(m, h).as_float() << ")" << endl;
       }
       }
       (*predicted_output)[r] = marginals(m, h).as_float();
@@ -101,7 +101,7 @@ namespace AD3
     if (*entropy < 0.0) {
       if (!NEARLY_ZERO_TOL(*entropy, 1e-6)) {
         // LOG(INFO) << "Entropy truncated to zero (" << *entropy << ")";
-        cerr << "Entropy truncated to zero (" << *entropy << ")";
+        cerr << "Entropy truncated to zero (" << *entropy << ")" << endl;
       }
       *entropy = 0.0;
     }
