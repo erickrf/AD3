@@ -475,4 +475,9 @@ cpdef decode_matrix_tree(int sentence_length, index, list arcs, scores):
     DecodeMatrixTree(index_v, arcs_v, scores_v, &predicted_output, 
                      &log_partition_function, &entropy)
     
+    for arcp in arcs_v:
+        del arcp
+    for scorep in scores_v:
+        del scorep
+    
     return predicted_output, log_partition_function, entropy

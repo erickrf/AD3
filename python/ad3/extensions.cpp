@@ -8134,6 +8134,8 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   PyObject *__pyx_v_modifier_dict = NULL;
   PyObject *__pyx_v_modifier = NULL;
   PyObject *__pyx_v_position = NULL;
+  AD3::Arc *__pyx_v_arcp;
+  PyObject *__pyx_v_scorep = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8156,6 +8158,9 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   PyObject *__pyx_t_18 = NULL;
   std::vector<std::vector<int> > ::size_type __pyx_t_19;
   std::vector<int> ::size_type __pyx_t_20;
+  std::vector<AD3::Arc *> ::iterator __pyx_t_21;
+  AD3::Arc *__pyx_t_22;
+  std::vector<double> ::iterator __pyx_t_23;
   __Pyx_RefNannySetupContext("decode_matrix_tree", 0);
 
   /* "ad3/extensions.pyx":456
@@ -8784,16 +8789,84 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   /* "ad3/extensions.pyx":478
  *                      &log_partition_function, &entropy)
  * 
+ *     for arcp in arcs_v:             # <<<<<<<<<<<<<<
+ *         del arcp
+ *     for scorep in scores_v:
+ */
+  __pyx_t_21 = __pyx_v_arcs_v.begin();
+  for (;;) {
+    if (!(__pyx_t_21 != __pyx_v_arcs_v.end())) break;
+    __pyx_t_22 = *__pyx_t_21;
+    ++__pyx_t_21;
+    __pyx_v_arcp = __pyx_t_22;
+
+    /* "ad3/extensions.pyx":479
+ * 
+ *     for arcp in arcs_v:
+ *         del arcp             # <<<<<<<<<<<<<<
+ *     for scorep in scores_v:
+ *         del scorep
+ */
+    delete __pyx_v_arcp;
+
+    /* "ad3/extensions.pyx":478
+ *                      &log_partition_function, &entropy)
+ * 
+ *     for arcp in arcs_v:             # <<<<<<<<<<<<<<
+ *         del arcp
+ *     for scorep in scores_v:
+ */
+  }
+
+  /* "ad3/extensions.pyx":480
+ *     for arcp in arcs_v:
+ *         del arcp
+ *     for scorep in scores_v:             # <<<<<<<<<<<<<<
+ *         del scorep
+ * 
+ */
+  __pyx_t_23 = __pyx_v_scores_v.begin();
+  for (;;) {
+    if (!(__pyx_t_23 != __pyx_v_scores_v.end())) break;
+    __pyx_t_5 = *__pyx_t_23;
+    ++__pyx_t_23;
+    __pyx_t_4 = PyFloat_FromDouble(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 480, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_v_scorep = __pyx_t_4;
+    __pyx_t_4 = 0;
+
+    /* "ad3/extensions.pyx":481
+ *         del arcp
+ *     for scorep in scores_v:
+ *         del scorep             # <<<<<<<<<<<<<<
+ * 
+ *     return predicted_output, log_partition_function, entropy
+ */
+    __Pyx_DECREF(__pyx_v_scorep);
+    __pyx_v_scorep = NULL;
+
+    /* "ad3/extensions.pyx":480
+ *     for arcp in arcs_v:
+ *         del arcp
+ *     for scorep in scores_v:             # <<<<<<<<<<<<<<
+ *         del scorep
+ * 
+ */
+  }
+
+  /* "ad3/extensions.pyx":483
+ *         del scorep
+ * 
  *     return predicted_output, log_partition_function, entropy             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_4 = __pyx_convert_vector_to_py_double(__pyx_v_predicted_output); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 478, __pyx_L1_error)
+  __pyx_t_4 = __pyx_convert_vector_to_py_double(__pyx_v_predicted_output); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 483, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_13 = PyFloat_FromDouble(__pyx_v_log_partition_function); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 478, __pyx_L1_error)
+  __pyx_t_13 = PyFloat_FromDouble(__pyx_v_log_partition_function); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 483, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
-  __pyx_t_14 = PyFloat_FromDouble(__pyx_v_entropy); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 478, __pyx_L1_error)
+  __pyx_t_14 = PyFloat_FromDouble(__pyx_v_entropy); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 483, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_14);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 478, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 483, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_4);
@@ -8833,6 +8906,7 @@ static PyObject *__pyx_f_3ad3_10extensions_decode_matrix_tree(int __pyx_v_senten
   __Pyx_XDECREF(__pyx_v_modifier_dict);
   __Pyx_XDECREF(__pyx_v_modifier);
   __Pyx_XDECREF(__pyx_v_position);
+  __Pyx_XDECREF(__pyx_v_scorep);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
