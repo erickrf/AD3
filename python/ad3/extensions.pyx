@@ -10,15 +10,6 @@ from base cimport FactorGraph
 from base cimport PBinaryVariable, PMultiVariable, PFactor, PGenericFactor
 
 
-cdef extern from "<iostream>" namespace "std":
-    cdef cppclass ostream:
-        ostream& write(const char*, int) except +
-
-
-cdef extern from "<iostream>" namespace "std":
-    ostream cout
-
-
 cdef extern from "../examples/cpp/dense/FactorSequence.h" namespace "AD3":
     cdef cppclass FactorSequence(Factor):
         FactorSequence()
@@ -101,14 +92,7 @@ cdef extern from "../examples/cpp/parsing/FactorGrandparentHeadAutomaton.h" name
             vector[Sibling*])
         void Initialize(vector[Arc*], vector[Arc*], vector[Grandparent*], 
             vector[Sibling*], vector[Grandsibling*])
-        void Print(ostream&)
 
-
-cdef extern from "../examples/cpp/parsing/Decode.cpp" namespace "AD3":
-    void DecodeMatrixTree(vector[vector [int]] &index, vector[Arc*] &arcs, 
-                        vector[double] &scores,
-                        vector[double] *predicted_output,
-                        double *log_partition_function, double *entropy)
 
 cdef class PFactorSequence(PGenericFactor):
     def __cinit__(self, allocate=True):
@@ -344,9 +328,6 @@ cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
     def __dealloc__(self):
         if self.allocate:
             del self.thisptr
-
-    def print_factor(self):
-        (<FactorGrandparentHeadAutomaton*>self.thisptr).Print(cout)
     
     def initialize(self, list incoming_arcs, list outgoing_arcs, list grandparents,
         list siblings, list grandsiblings=None):
@@ -356,7 +337,7 @@ cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
         
         Siblings are tuples (h, m, s)
         Grandparents are tuples (g, h, m)
-        Grandsiblings are tuples (g, h, m , s)
+        Grandsiblings are tuples (g, h, m, s)
 
         The variables linked to this factor must be in the same order as
         the incoming arcs, followed by the outgoing arcs.
@@ -427,52 +408,3 @@ cdef class PFactorGrandparentHeadAutomaton(PGenericFactor):
             del gpp
         for gsp in grandsiblings_v:
             del gsp
-
-
-cpdef decode_matrix_tree(int sentence_length, index, list arcs, scores):
-    """
-    :param sentence_length: length of the sentence including the dummy root
-    :param index: either a dictionary or a numpy 2d array.
-        If a dictionary, it should map each head number to another dictionary; 
-        the second dict maps modifiers to the position of the corresponding (h, m) arc in 
-        the arcs list.
-        If a matrix, each cell (h, m) should be the position of the corresponding arc in
-        the arcs list, or -1 if it doesn't exist. The matrix must have shape (n, n) including
-        the dummy root.
-    :param arcs: list of tuples (h, m)
-    :param scores: list or array with the score of each arc
-    :return: a tuple marginals, log_partition, entropy
-        marginals is an array with the marginal probability for each arc
-    """
-    cdef vector[double] predicted_output
-    cdef vector[double] scores_v
-    cdef vector[vector [int]] index_v
-    cdef vector[Arc*] arcs_v
-    cdef double log_partition_function
-    cdef double entropy
-    cdef tuple arc
-    cdef vector[int] *row_v
-
-    for score in scores:
-        scores_v.push_back(score)
-
-    for arc in arcs:
-        arcs_v.push_back(new Arc(arc[0], arc[1]))
-
-    for i in range(sentence_length):
-        row_v = new vector[int](sentence_length, -1)
-        index_v.push_back(row_v[0])
-
-    if isinstance(index, dict):
-        for head, modifier_dict in index.items():
-            for modifier, position in modifier_dict.items():
-                index_v[head][modifier] = position
-    else:
-        for head in range(sentence_length):
-            for modifier in range(sentence_length):
-                index_v[head][modifier] = index[head][modifier]
-    
-    DecodeMatrixTree(index_v, arcs_v, scores_v, &predicted_output, 
-                     &log_partition_function, &entropy)
-    
-    return predicted_output, log_partition_function, entropy
